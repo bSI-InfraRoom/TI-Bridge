@@ -7,7 +7,15 @@
 					<Rules>
 						<DocModelRuleAttribute Name="RelatingPositioningElement" Identification="PositioningElement">
 							<Rules>
-								<DocModelRuleEntity Name="IfcPositioningElement" />
+								<DocModelRuleEntity Name="IfcPositioningElement">
+									<Rules>
+										<DocModelRuleAttribute Name="Name" Identification="PositioningElementIdentifier">
+											<Rules>
+												<DocModelRuleEntity Name="IfcLabel" />
+											</Rules>
+										</DocModelRuleAttribute>
+									</Rules>
+								</DocModelRuleEntity>
 							</Rules>
 						</DocModelRuleAttribute>
 					</Rules>
