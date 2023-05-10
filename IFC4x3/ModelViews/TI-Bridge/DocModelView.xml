@@ -87,6 +87,7 @@
 			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="c4846a08-9340-4aa4-a023-30753ddc491e" Type="IfcBridge" />
 		</DocConceptRoot>
 		<DocConceptRoot Name="Project" UniqueId="0f5c9137-0635-4c6e-a0c4-1429f443f7c0">
+			<Documentation>All data sets shall consist of a single IfcProject instance, which identifies the overall project, provides defaults for units, and holds a graph of references to all data within scope.</Documentation>
 			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcProject" />
 			<Concepts>
 				<DocTemplateUsage Name="Name" UniqueId="f10112e6-72f5-4d58-ad80-b8456e33b3f1">
