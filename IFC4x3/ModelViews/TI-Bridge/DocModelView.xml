@@ -57,13 +57,6 @@
 						<DocTemplateItem UniqueId="d383f5bb-ec6a-4393-9b05-985853f69220" RuleParameters="ObjectName=17-1-305001 BIM BW 27-1 - 19.03.18;" />
 					</Items>
 				</DocTemplateUsage>
-				<DocTemplateUsage Name="Alignment" UniqueId="0aa57b9c-1f03-4760-95eb-dca8a736116c">
-					<Documentation>Reference to the alignment object used for positioning.</Documentation>
-					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Product_Relative_Positioning_1jo2X5iK969AcbDz7acLTX" />
-					<Items>
-						<DocTemplateItem UniqueId="e2d7a220-be95-4b60-9502-c7dbd9110f55" RuleParameters="PositioningElement=IfcReferent;PositioningElementIdentifier=Km.17+000;" />
-					</Items>
-				</DocTemplateUsage>
 				<DocTemplateUsage Name="Axis" UniqueId="2b6debc1-0d17-48af-9c97-3633c8361218">
 					<Documentation>Alignment extent of the bridge defined as a sub-span of the overall alignment.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Product_Span_Positioning_0StAgVXTL2pvgl3zPZiKxe" />
@@ -71,36 +64,14 @@
 						<DocTemplateItem UniqueId="4dcc9f07-f961-4484-9e2e-13a053a0448d" RuleParameters="StartPositionType=STATION;StartPositionName=Km.17+001;EndPositionType=STATION;EndPositionName=Km.17+083;" />
 					</Items>
 				</DocTemplateUsage>
-			</Concepts>
-			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="e392e308-e341-4e8c-876c-a894c79a71e1" Type="IfcBridge" />
-		</DocConceptRoot>
-		<DocConceptRoot Name="Bridge_with_adjusted_template" UniqueId="527315e7-0de8-4556-9970-e3c7eb5b6ee4">
-			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcBridge" />
-			<Concepts>
-				<DocTemplateUsage Name="Alignment" UniqueId="02d0494f-7c53-4899-a1de-98ebd83df71f">
+				<DocTemplateUsage Name="Alignment" UniqueId="367e34cc-f288-4dc5-b6d0-f630bddae4de">
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Alignment_3l4OGbMNP5sAr11P9Qt6a5" />
 					<Items>
 						<DocTemplateItem UniqueId="403feb17-ce7d-410b-9e52-2feb28d6afa7" RuleParameters="Station=Km.17+000;PositioningElement=IfcAlignment;PositioningElementIdentifier=Dunno yet;" />
 					</Items>
 				</DocTemplateUsage>
 			</Concepts>
-			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="c4846a08-9340-4aa4-a023-30753ddc491e" Type="IfcBridge" />
-		</DocConceptRoot>
-		<DocConceptRoot Name="ref_Bridge_Alignment_Referent" UniqueId="83e844f8-499b-4c41-a3dc-60a1d4ea866c">
-			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcReferent" />
-			<Concepts>
-				<DocTemplateUsage Name="Alignment" UniqueId="936d5230-371b-47ab-b7b5-408e4c19e095">
-					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Alignment_3l4OGbMNP5sAr11P9Qt6a5" />
-					<Items>
-						<DocTemplateItem UniqueId="c4d6b914-78a1-4c04-bf1c-b9d004daf7cf" RuleParameters="PositioningElement=IfcAlignment;" />
-						<DocTemplateItem UniqueId="532d88bd-6749-4bf8-bbee-3cd075eabd5c" />
-						<DocTemplateItem UniqueId="61e51fe0-a004-484d-ae9d-5249a778f5e0" />
-						<DocTemplateItem UniqueId="9a18f621-bd14-4712-8653-f4a85b20d050" />
-					</Items>
-				</DocTemplateUsage>
-			</Concepts>
-			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="427f4f17-8e59-435d-b223-c2e9d978749e" Type="IfcReferent" />
+			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="e392e308-e341-4e8c-876c-a894c79a71e1" Type="IfcBridge" />
 		</DocConceptRoot>
 	</ConceptRoots>
 </DocModelView>
-
