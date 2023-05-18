@@ -115,6 +115,7 @@
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Project_Units_1CogmCYFXC7P7z8XJGvHF4" />
 					<Items>
 						<DocTemplateItem UniqueId="986637a8-b557-46e2-826d-f2ba63ee6ac7" RuleParameters="HasUnits=IfcUnitAssignment;SIUnitType=MASSUNIT;SIUnitName=GRAM;" />
+						<DocTemplateItem UniqueId="d6d49074-1732-477d-9a5e-c8862012ace0" RuleParameters="HasUnits=IfcUnitAssignment;ConversionUnitType=MASSUNIT;ConversionUnitName=pound;" />
 					</Items>
 				</DocTemplateUsage>
 				<DocTemplateUsage Name="Temperature Unit" UniqueId="5f203dc7-daa5-4269-a0ca-ab493c7961dd" Operator="or">
@@ -122,7 +123,7 @@
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Project_Units_1CogmCYFXC7P7z8XJGvHF4" />
 					<Items>
 						<DocTemplateItem UniqueId="8ef2e7b3-e250-4aa4-9473-047c29cff927" RuleParameters="HasUnits=IfcUnitAssignment;SIUnitType=THERMODYNAMICTEMPERATUREUNIT;SIUnitName=DEGREE_CELSIUS;" />
-						<DocTemplateItem UniqueId="6e581b24-9e39-4dff-8a48-16364fbbbf1f" RuleParameters="HasUnits=IfcUnitAssignment;SIUnitType=THERMODYNAMICTEMPERATUREUNIT;" />
+						<DocTemplateItem UniqueId="6e581b24-9e39-4dff-8a48-16364fbbbf1f" RuleParameters="HasUnits=IfcUnitAssignment;ConversionUnitType=THERMODYNAMICTEMPERATUREUNIT;ConversionUnitName=Fahrenheit;" />
 					</Items>
 				</DocTemplateUsage>
 				<DocTemplateUsage Name="Site" UniqueId="cd0dc4fc-ae19-46f7-a9ee-c2b84b8bc0c1">
