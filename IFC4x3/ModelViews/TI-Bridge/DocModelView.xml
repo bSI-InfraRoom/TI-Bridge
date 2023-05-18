@@ -114,56 +114,5 @@
 			</Concepts>
 			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="e392e308-e341-4e8c-876c-a894c79a71e1" Type="IfcBridge" />
 		</DocConceptRoot>
-		<DocConceptRoot Name="Project" UniqueId="0f5c9137-0635-4c6e-a0c4-1429f443f7c0">
-			<Documentation>All data sets shall consist of a single IfcProject instance, which identifies the overall project, provides defaults for units, and holds a graph of references to all data within scope.</Documentation>
-			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcProject" />
-			<Concepts>
-				<DocTemplateUsage Name="Name" UniqueId="f10112e6-72f5-4d58-ad80-b8456e33b3f1">
-					<Documentation>The name or code identifying the project within the owning agency.</Documentation>
-					<Definition xsi:type="DocTemplateDefinition" Name="Name" UniqueId="69fa0453-2978-418a-b021-0251fef8a5f4" Type="IfcProject" />
-				</DocTemplateUsage>
-				<DocTemplateUsage Name="Length Unit" UniqueId="57cf383a-8757-4a12-8166-e6e3f9b061c0" Operator="or">
-					<Documentation>Default unit for length. For imperial, inches are recommended. SI Meters are the default if not provided.</Documentation>
-					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Project_Units_1CogmCYFXC7P7z8XJGvHF4" />
-					<Items>
-						<DocTemplateItem UniqueId="dd3cdeb3-b37d-4910-87a7-6cf081e954ac" RuleParameters="HasUnits=IfcUnitAssignment;SIUnitType=LENGTHUNIT;SIUnitName=METRE;" />
-						<DocTemplateItem UniqueId="13d50766-f8b6-4166-b634-ab9ebae77c6b" RuleParameters="HasUnits=IfcUnitAssignment;ConversionUnitType=LENGTHUNIT;ConversionUnitName=inch;" />
-					</Items>
-				</DocTemplateUsage>
-				<DocTemplateUsage Name="Angle Unit" UniqueId="a806c0ff-eb00-44b3-8421-1048b54dc107" Operator="or">
-					<Documentation>Default unit for angles. Degrees are recommended, and are the default if not provided.</Documentation>
-					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Project_Units_1CogmCYFXC7P7z8XJGvHF4" />
-					<Items>
-						<DocTemplateItem UniqueId="23d6a36d-e096-4d88-9d2b-2c07d9ad7f38" RuleParameters="HasUnits=IfcUnitAssignment;ConversionUnitType=PLANEANGLEUNIT;ConversionUnitName=degree;" />
-						<DocTemplateItem UniqueId="638ecb0b-2dc0-4445-a898-0e58a97305f6" RuleParameters="HasUnits=IfcUnitAssignment;SIUnitType=PLANEANGLEUNIT;SIUnitName=RADIAN;" />
-					</Items>
-				</DocTemplateUsage>
-				<DocTemplateUsage Name="Mass Unit" UniqueId="88f2eb0b-e99d-4a58-909c-8621c7c6faf6">
-					<Documentation>Default unit for mass. For imperial, pounds are recommended. SI Kilograms are the default if not provided.</Documentation>
-					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Project_Units_1CogmCYFXC7P7z8XJGvHF4" />
-					<Items>
-						<DocTemplateItem UniqueId="986637a8-b557-46e2-826d-f2ba63ee6ac7" RuleParameters="HasUnits=IfcUnitAssignment;SIUnitType=MASSUNIT;SIUnitName=GRAM;" />
-						<DocTemplateItem UniqueId="d6d49074-1732-477d-9a5e-c8862012ace0" RuleParameters="HasUnits=IfcUnitAssignment;ConversionUnitType=MASSUNIT;ConversionUnitName=pound;" />
-					</Items>
-				</DocTemplateUsage>
-				<DocTemplateUsage Name="Temperature Unit" UniqueId="5f203dc7-daa5-4269-a0ca-ab493c7961dd" Operator="or">
-					<Documentation>Default unit for temperature. For imperial, fahrenheit is recommended. SI Celcius is the default if not provided.</Documentation>
-					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Project_Units_1CogmCYFXC7P7z8XJGvHF4" />
-					<Items>
-						<DocTemplateItem UniqueId="8ef2e7b3-e250-4aa4-9473-047c29cff927" RuleParameters="HasUnits=IfcUnitAssignment;SIUnitType=THERMODYNAMICTEMPERATUREUNIT;SIUnitName=DEGREE_CELSIUS;" />
-						<DocTemplateItem UniqueId="6e581b24-9e39-4dff-8a48-16364fbbbf1f" RuleParameters="HasUnits=IfcUnitAssignment;ConversionUnitType=THERMODYNAMICTEMPERATUREUNIT;ConversionUnitName=Fahrenheit;" />
-					</Items>
-				</DocTemplateUsage>
-				<DocTemplateUsage Name="Site" UniqueId="cd0dc4fc-ae19-46f7-a9ee-c2b84b8bc0c1">
-					<Documentation>Site within project describing geospatial location and project boundaries.</Documentation>
-					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Project_Global_Positioning_3J9e0D0k14GeJdkFjFtWG0" />
-					<Items>
-						<DocTemplateItem UniqueId="fd43dad9-3387-4a9b-9d66-29bec715127f" />
-					</Items>
-				</DocTemplateUsage>
-			</Concepts>
-			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="0be01c15-124a-4f44-8e7e-83a223376a7c" Type="IfcProject" />
-		</DocConceptRoot>
 	</ConceptRoots>
 </DocModelView>
-
