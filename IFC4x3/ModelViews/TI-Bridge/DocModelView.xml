@@ -91,8 +91,38 @@
 						<DocTemplateItem UniqueId="57319180-2ea6-4688-b8e4-f04b377802b0" RuleParameters="RelatedObjects=IfcBridge;" />
 					</Items>
 				</DocTemplateUsage>
+				<DocTemplateUsage Name="Project" UniqueId="a9a7d68d-c84f-4fae-b753-f975c296bef8">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Composition_2C3zBtSRjEReR30ApKl5A" />
+					<Items>
+						<DocTemplateItem UniqueId="6effeb6a-ec4c-4587-8d33-df811fca5cfd" RuleParameters="RelatingObject=IfcProject;" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Surface Proposed" UniqueId="7c465244-9668-4fa0-8cc9-9e69f65369f7" Operator="or">
+					<Documentation>The ground surface of the site indicating final conditions.</Documentation>
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Container_1XtGZjG59LPCtYlqeIWvl" />
+					<Items>
+						<DocTemplateItem UniqueId="1bebfde7-91c2-4a32-a4aa-f4481dd37621" RuleParameters="Type=IfcGeotechnicalStratum;" />
+						<DocTemplateItem UniqueId="a0c003b4-3724-4346-8ca2-55a72df4e0c1" RuleParameters="Type=IfcGeomodel;" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Surface Existing" UniqueId="ac589648-5a70-4f3e-99d2-4ce5d30dba1d">
+					<Documentation>The ground surface of the site indicating existing conditions.</Documentation>
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Container_1XtGZjG59LPCtYlqeIWvl" />
+					<Items>
+						<DocTemplateItem UniqueId="875a4dfb-183b-4bda-8eb8-2c861cbb0506" RuleParameters="Type=IfcGeomodel;" />
+						<DocTemplateItem UniqueId="2fa38e7e-3f85-4c30-932c-83431815087f" RuleParameters="Type=IfcGeotechnicalStratum;" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Boring Points" UniqueId="50ec5b3c-82b7-432b-be2d-c61380eda8ab">
+					<Documentation>Boring points indicating soil layers and properties at discrete locations.</Documentation>
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Container_1XtGZjG59LPCtYlqeIWvl" />
+					<Items>
+						<DocTemplateItem UniqueId="d57e1c1b-1450-45a9-817f-7abe87917802" RuleParameters="Type=IfcBorehole;" />
+					</Items>
+				</DocTemplateUsage>
 			</Concepts>
 			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="9a30959e-16a1-442c-84ca-7521ed88a2e7" Type="IfcSite" />
 		</DocConceptRoot>
 	</ConceptRoots>
 </DocModelView>
+
