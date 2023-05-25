@@ -105,7 +105,7 @@
 						<DocTemplateItem UniqueId="a0c003b4-3724-4346-8ca2-55a72df4e0c1" RuleParameters="Type=IfcGeomodel;" />
 					</Items>
 				</DocTemplateUsage>
-				<DocTemplateUsage Name="Surface Existing" UniqueId="ac589648-5a70-4f3e-99d2-4ce5d30dba1d">
+				<DocTemplateUsage Name="Surface Existing" UniqueId="ac589648-5a70-4f3e-99d2-4ce5d30dba1d" Operator="or">
 					<Documentation>The ground surface of the site indicating existing conditions.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Container_1XtGZjG59LPCtYlqeIWvl" />
 					<Items>
@@ -125,4 +125,3 @@
 		</DocConceptRoot>
 	</ConceptRoots>
 </DocModelView>
-
