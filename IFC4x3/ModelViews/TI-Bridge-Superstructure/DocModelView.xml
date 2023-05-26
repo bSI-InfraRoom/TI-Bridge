@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocModelView xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="TI-Bridge-Superstructure" UniqueId="fcc6bbbc-8f8f-40a2-96d2-a00b1d46ea4c">
+	<ConceptRoots>
+		<DocConceptRoot Name="Girder Segment" UniqueId="5d25181b-c624-45c3-b4b2-16f9f5e8fede">
+			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcBeam" />
+			<Concepts>
+				<DocTemplateUsage Name="Name" UniqueId="0faf1f26-6ecf-49ae-bb15-ffced2edb174">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Object_User_Identity_31di66dFr7AJKdxDG2D1A" />
+					<Items>
+						<DocTemplateItem UniqueId="8c29057b-c687-45aa-86dc-edb87c501e54" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Material" UniqueId="1f641498-b3ba-45b4-af6e-b3ad3494dcd1">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Material_Single_1VEQWKHA1Fiut6tQe5OFnK" />
+					<Items>
+						<DocTemplateItem UniqueId="d4cf7a19-087b-46f7-857e-7ae7d2017719" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Solid Geometry" UniqueId="23678009-4cfa-44a7-9bf4-68b1304f3bf7">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Body_SectionedSolidHorizontal_1UlsKnHvEMBfv6swVDKBO" />
+					<Items>
+						<DocTemplateItem UniqueId="72ca4580-5f4c-44aa-8b1e-b53cd63603c2" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Connection Head" UniqueId="b04f73f2-4e19-433e-8152-c70c0577876c">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Path_Connectivity_1G5mELXyP9BgRydr_42n5F" />
+					<Items>
+						<DocTemplateItem UniqueId="1ac612f9-8fbc-4b38-bd0c-97364c8585f1" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Connection Tail" UniqueId="4f663f4e-aadb-40a8-bfc0-84f3ac63d5e9">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Path_Connectivity_1G5mELXyP9BgRydr_42n5F" />
+					<Items>
+						<DocTemplateItem UniqueId="93396472-db44-4190-b696-c07e2841fdf1" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Connection Support" UniqueId="eb850e4e-d236-4b40-b3ba-d761b0b6c906">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Element_Connectivity_0Nv2C1Ibb9HROhB6JsocmI" />
+					<Items>
+						<DocTemplateItem UniqueId="023b58e2-3107-41c7-ba6f-bbbe4b55d191" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Reinforcing" UniqueId="db8053ba-de64-4f9c-970b-1309cff09354">
+					<Definition xsi:type="DocTemplateDefinition" Name="Reinforcing" UniqueId="5b7c69cc-9598-4a4f-a91b-992c7201f15a" Type="IfcBeam" />
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Tendons" UniqueId="26fde2e7-7586-44ee-a325-0e1f4f42b32b">
+					<Definition xsi:type="DocTemplateDefinition" Name="Tendons" UniqueId="a7093537-e57f-415d-8be5-d48d120b1265" Type="IfcBeam" />
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Stiffeners" UniqueId="03080ed1-284c-4911-9b91-0a1a84dd6bcd">
+					<Definition xsi:type="DocTemplateDefinition" Name="Stiffeners" UniqueId="51c52317-dcd1-422e-bdb0-2fd0634f0adc" Type="IfcBeam" />
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Shear Studs" UniqueId="2a2cd4a4-840e-4200-9c87-7f6edc340b29">
+					<Definition xsi:type="DocTemplateDefinition" Name="Shear Studs" UniqueId="5f43b9a9-68f7-495e-94eb-bda0aa8ff2a9" Type="IfcBeam" />
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Camber" UniqueId="9c9249df-a749-46fc-8e8e-090427a7156c">
+					<Definition xsi:type="DocTemplateDefinition" Name="Camber" UniqueId="528707c1-1ea8-41bb-b307-5512a4ba47ff" Type="IfcBeam" />
+				</DocTemplateUsage>
+			</Concepts>
+			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="1c5e61c2-2c0e-45db-ba17-2c8518308d60" Type="IfcBeam">
+				<Rules>
+					<DocModelRuleAttribute Name="PredefinedType" Identification="PredefinedType" />
+				</Rules>
+			</ApplicableTemplate>
+		</DocConceptRoot>
+		<DocConceptRoot Name="Diaphragm" UniqueId="5e947f3b-87f5-4ce7-a930-c75299524396">
+			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="3008e22d-4035-43ec-841a-921b8975ab27" />
+		</DocConceptRoot>
+		<DocConceptRoot Name="Superstructure" UniqueId="3616397d-521c-4810-80ab-172f14356062">
+			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcBridgePart" />
+			<Concepts>
+				<DocTemplateUsage Name="Name" UniqueId="3d59816d-2ef8-470d-9a82-09ba0bddd095">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Object_User_Identity_31di66dFr7AJKdxDG2D1A" />
+					<Items>
+						<DocTemplateItem UniqueId="c9c75962-4f57-4abe-b9eb-321b88e06c3f" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Alignments" UniqueId="4dc839ff-3200-49fd-b765-8426124d3a3f">
+					<Definition xsi:type="DocTemplateDefinition" Name="Alignments" UniqueId="075a9f24-e844-4472-b691-9d9b40d7f29b" Type="IfcBridgePart" />
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Trusses" UniqueId="4cac19b5-d739-4700-b92c-e57929cc86b5">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Container_1XtGZjG59LPCtYlqeIWvl" />
+					<Items>
+						<DocTemplateItem UniqueId="c317cfeb-cf7a-47f5-8808-2be63670b4ea" RuleParameters="Type=IfcElementAssembly;">
+							<Documentation>TRUSS</Documentation>
+							<Concepts>
+								<DocTemplateUsage Name="Type" UniqueId="db3db62a-f865-4197-b084-c08b9b431e6a">
+									<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Object_Predefined_Type_0b989XcDzD2fDaLbDNNAGX" />
+									<Items>
+										<DocTemplateItem UniqueId="852a63c7-0de9-4c68-9415-870710c8eef8" RuleParameters="TypePredefinedType=TRUSS;" />
+									</Items>
+								</DocTemplateUsage>
+							</Concepts>
+						</DocTemplateItem>
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Girders" UniqueId="148dafa3-aa4c-406b-85fd-c557ecbe3020">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Container_1XtGZjG59LPCtYlqeIWvl" />
+					<Items>
+						<DocTemplateItem UniqueId="47c95fad-26c1-417f-bd68-0e2eeb9b18df" RuleParameters="Type=IfcElementAssembly;">
+							<Documentation>GIRDER</Documentation>
+							<Concepts>
+								<DocTemplateUsage Name="Type" UniqueId="03736d66-3828-43db-be0a-5feb72cae558">
+									<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Object_Predefined_Type_0b989XcDzD2fDaLbDNNAGX" />
+								</DocTemplateUsage>
+							</Concepts>
+						</DocTemplateItem>
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Cross Frames" UniqueId="370c7087-2b8b-4134-bbb2-69bc53b0fbe5">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Container_1XtGZjG59LPCtYlqeIWvl" />
+					<Items>
+						<DocTemplateItem UniqueId="3548debb-c326-4e23-9a10-142ab59e5819" RuleParameters="Type=IfcElementAssembly;">
+							<Documentation>CROSS_BRACING?</Documentation>
+						</DocTemplateItem>
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Floor Beams" UniqueId="abd97f83-66c8-4897-900c-969f879bf985">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Container_1XtGZjG59LPCtYlqeIWvl" />
+					<Items>
+						<DocTemplateItem UniqueId="791590a9-c5a0-4842-9c42-a4d3f3bef19b" RuleParameters="Type=IfcBeam;">
+							<Documentation>JOIST?</Documentation>
+						</DocTemplateItem>
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Stringers" UniqueId="a74dd762-c3dc-49f1-a375-d9863cfb449b">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Container_1XtGZjG59LPCtYlqeIWvl" />
+					<Items>
+						<DocTemplateItem UniqueId="6497f1e1-a970-4457-9f2f-6ca4ebb2a91a" RuleParameters="Type=IfcMember;">
+							<Documentation>STRINGER?</Documentation>
+						</DocTemplateItem>
+					</Items>
+				</DocTemplateUsage>
+			</Concepts>
+			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="e145a899-cfde-4262-84bc-e279b2936b83" Type="IfcBridgePart">
+				<Rules>
+					<DocModelRuleAttribute Name="PredefinedType" Identification="PredefinedType" />
+				</Rules>
+			</ApplicableTemplate>
+			<ApplicableItems>
+				<DocTemplateItem UniqueId="138c3834-b797-47e7-af75-0acf6bd46069" RuleParameters="PredefinedType=SUPERSTRUCTURE;" />
+			</ApplicableItems>
+		</DocConceptRoot>
+		<DocConceptRoot Name="Cross Frame" UniqueId="096b281a-518f-489d-b511-62717b96f38f">
+			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcElementAssembly" />
+			<Concepts>
+				<DocTemplateUsage Name="Name" UniqueId="71776bf1-fb91-4358-8cfe-1f17d7555c7f">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Object_User_Identity_31di66dFr7AJKdxDG2D1A" />
+					<Items>
+						<DocTemplateItem UniqueId="1449b50b-85f6-4a63-ad20-bd6c13a402bd" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Plates" UniqueId="be97cbc1-7a11-4543-a75c-59c4a61c5533">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Element_Decomposition_2A9y5QnEfCgOpEVxkXoRpW" />
+					<Items>
+						<DocTemplateItem UniqueId="6d6ae5dd-fcb9-4778-96b2-a09737b4229c" RuleParameters="RelatedObjects=IfcPlate;" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Members" UniqueId="de2c81ea-db01-4311-ac54-d3d42e87e59c">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Element_Decomposition_2A9y5QnEfCgOpEVxkXoRpW" />
+					<Items>
+						<DocTemplateItem UniqueId="2959171d-b667-41f0-877a-135770b9ef1c" RuleParameters="RelatedObjects=IfcMember;" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Position" UniqueId="b1cb7bdf-77d5-4d71-9843-b609ba037932">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Product_Relative_Positioning_1jo2X5iK969AcbDz7acLTX" />
+					<Items>
+						<DocTemplateItem UniqueId="b1b1692b-afe7-4023-803e-35073b0dd138" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Girder Segment Left" UniqueId="47cc5512-8b54-4f63-8d87-4cc95c712ddf">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Element_Connectivity_0Nv2C1Ibb9HROhB6JsocmI" />
+					<Items>
+						<DocTemplateItem UniqueId="cebb616d-eddd-498c-b1ac-5a843f691c7a" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Girder Segment Right" UniqueId="042e7da0-2c21-4c9d-8542-b9acddd03b46">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Element_Connectivity_0Nv2C1Ibb9HROhB6JsocmI" />
+					<Items>
+						<DocTemplateItem UniqueId="19632d3f-bf1a-4c96-9f50-305415fc1276" />
+					</Items>
+				</DocTemplateUsage>
+			</Concepts>
+			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="06e51d50-a53a-4602-bc33-8c1a334f56d0" Type="IfcElementAssembly">
+				<Rules>
+					<DocModelRuleAttribute Name="PredefinedType" Identification="PredefinedType" />
+				</Rules>
+			</ApplicableTemplate>
+			<ApplicableItems>
+				<DocTemplateItem UniqueId="3dd55068-e911-4524-a930-b12c88835d10" RuleParameters="PredefinedType=CROSS_BRACING;" />
+			</ApplicableItems>
+		</DocConceptRoot>
+		<DocConceptRoot Name="Truss" UniqueId="e60a06df-d7c5-46e6-8922-66241ebd35ed">
+			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcElementAssembly" />
+			<Concepts>
+				<DocTemplateUsage Name="Name" UniqueId="f2d950de-b1ec-48c1-87cf-31ce74172af8">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Object_User_Identity_31di66dFr7AJKdxDG2D1A" />
+					<Items>
+						<DocTemplateItem UniqueId="ebe4f53a-dff6-4788-b66d-b1d2b4382564" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Members" UniqueId="8334b8e1-147b-40c5-afce-7d5fea95f9ab">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Element_Decomposition_2A9y5QnEfCgOpEVxkXoRpW" />
+					<Items>
+						<DocTemplateItem UniqueId="8c33527c-90c6-4a4f-84b4-21ac5c107b3b" RuleParameters="RelatedObjects=IfcMember;" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Gusset Plates" UniqueId="5669e32c-5970-4311-8043-c22c23ee626e">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Element_Decomposition_2A9y5QnEfCgOpEVxkXoRpW" />
+					<Items>
+						<DocTemplateItem UniqueId="d94447c8-cffc-46c4-bb78-34699c6af102" RuleParameters="RelatedObjects=IfcPlate;">
+							<Documentation>GUSSET_PLATE</Documentation>
+						</DocTemplateItem>
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Connections" UniqueId="c07badb1-6cca-4c6d-aa4a-34b9edcf6719">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Element_Connectivity_0Nv2C1Ibb9HROhB6JsocmI" />
+					<Items>
+						<DocTemplateItem UniqueId="43588952-0646-4786-96ab-9a09482901fb" />
+					</Items>
+				</DocTemplateUsage>
+			</Concepts>
+			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="17cf9f91-0b80-4dda-9d83-71f2a1c95a3c" Type="IfcElementAssembly">
+				<Rules>
+					<DocModelRuleAttribute Name="PredefinedType" Identification="PredefinedType" />
+				</Rules>
+			</ApplicableTemplate>
+			<ApplicableItems>
+				<DocTemplateItem UniqueId="350f0d8f-d3f6-4cb0-85c5-92ccb0087540" RuleParameters="PredefinedType=TRUSS;" />
+			</ApplicableItems>
+		</DocConceptRoot>
+		<DocConceptRoot Name="Girder" UniqueId="fcaaa270-4b57-4c43-90a2-11c1bcb7aeec">
+			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcElementAssembly" />
+			<Concepts>
+				<DocTemplateUsage Name="Name" UniqueId="ea1a78dc-f7b0-4402-ac27-2ee461b5caca">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Object_User_Identity_31di66dFr7AJKdxDG2D1A" />
+					<Items>
+						<DocTemplateItem UniqueId="d0bb99f6-8e52-4cb6-82e3-2e45b606841c" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Alignment" UniqueId="5e82185b-39f1-457c-9dcd-09c34a4772d2">
+					<Definition xsi:type="DocTemplateDefinition" Name="Alignment" UniqueId="6641a9f1-4ed8-4e7a-8674-fe5e511fd9cd" Type="IfcElementAssembly" />
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Axis" UniqueId="c923e180-fc6c-494a-b859-db1be1bfa646">
+					<Definition xsi:type="DocTemplateDefinition" Name="Axis" UniqueId="dc803a94-5992-4c3e-8e8d-38051cd52669" Type="IfcElementAssembly" />
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Type" UniqueId="8a96806a-6b1c-4626-bda8-c741ba76b713">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Object_Predefined_Type_0b989XcDzD2fDaLbDNNAGX" />
+					<Items>
+						<DocTemplateItem UniqueId="f2a7cee8-d90d-47d7-933a-2fe605a9a997" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Material" UniqueId="b1809148-befc-43d4-a8f8-f35448334073">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Material_Single_1VEQWKHA1Fiut6tQe5OFnK" />
+					<Items>
+						<DocTemplateItem UniqueId="43226abe-20a0-49eb-b9fc-45ae97acd961" />
+						<DocTemplateItem UniqueId="700e477d-19c6-428d-bf8e-1e8a22348e53" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Segments" UniqueId="aaef6f97-f84c-4391-a290-c5e4e6021bb2">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Element_Decomposition_2A9y5QnEfCgOpEVxkXoRpW" />
+					<Items>
+						<DocTemplateItem UniqueId="67edb96a-b5e3-4748-8178-38815481a090" RuleParameters="RelatedObjects=IfcBeam;">
+							<Documentation>GIRDER_SEGMENT</Documentation>
+						</DocTemplateItem>
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Components" UniqueId="c6a6a48e-c468-41a6-8294-1ce2118a9d1d">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Element_Decomposition_2A9y5QnEfCgOpEVxkXoRpW" />
+					<Items>
+						<DocTemplateItem UniqueId="428f8536-98de-41aa-922b-6f9001e5e103" RuleParameters="RelatedObjects=IfcPlate;" />
+						<DocTemplateItem UniqueId="964857d5-06ae-4125-b6d9-b74ca578f480" RuleParameters="RelatedObjects=IfcMember;" />
+					</Items>
+				</DocTemplateUsage>
+			</Concepts>
+			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="564a4cde-b65b-4219-887e-2027e45f84c6" Type="IfcElementAssembly">
+				<Rules>
+					<DocModelRuleAttribute Name="PredefinedType" Identification="PredefinedType" />
+				</Rules>
+			</ApplicableTemplate>
+		</DocConceptRoot>
+	</ConceptRoots>
+</DocModelView>
+

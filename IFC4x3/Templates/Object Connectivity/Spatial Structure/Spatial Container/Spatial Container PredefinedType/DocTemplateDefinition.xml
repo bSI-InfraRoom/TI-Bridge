@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="Spatial Container PredefinedType" UniqueId="c7d9a1ae-632b-4e98-aabc-b7b188e61bba" Type="IfcSpatialElement">
+	<Rules>
+		<DocModelRuleAttribute Name="ContainsElements">
+			<Rules>
+				<DocModelRuleEntity Name="IfcRelContainedInSpatialStructure">
+					<Rules>
+						<DocModelRuleAttribute Name="RelatedElements" Identification="Type">
+							<Rules>
+								<DocModelRuleEntity Name="IfcProduct">
+									<References>
+										<DocTemplateDefinition xsi:nil="true" href="Object_Predefined_Type_0b989XcDzD2fDaLbDNNAGX" />
+									</References>
+								</DocModelRuleEntity>
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocModelRuleEntity>
+			</Rules>
+		</DocModelRuleAttribute>
+	</Rules>
+</DocTemplateDefinition>
+
