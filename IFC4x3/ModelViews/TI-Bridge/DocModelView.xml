@@ -1,6 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
 <DocModelView xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="TI-Bridge" UniqueId="14849e45-e262-4cfc-a27c-2bf98308d8f3" BaseView="e5d27119-bcb5-43e6-b6b3-8ababc4593f4">
 	<ConceptRoots>
+		<DocConceptRoot Name="Boring Point" UniqueId="3b40b2cc-9440-430c-8e6e-7f543b8c3c25">
+			<Concepts>
+				<DocTemplateUsage Name="Properties" UniqueId="e8875ea3-3dc3-4f3e-b429-a1ca155a9312">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Property_Sets_for_Objects_3tGbMc30vFCOIj99WTjYHX" />
+					<Items>
+						<DocTemplateItem UniqueId="614842e8-e327-45bd-9d6f-0f5ab3fa1020" RuleParameters="PsetName=Pset_BoreholeCommon;">
+							<Concepts>
+								<DocTemplateUsage Name="Properties" UniqueId="9c755010-4bbe-44f7-a6e1-0130efec88fe">
+									<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Single_Value_1cLVRGAQX7k8yzoVpfoQOW" />
+								</DocTemplateUsage>
+							</Concepts>
+						</DocTemplateItem>
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Product Local Placement" UniqueId="768316c5-4071-4279-817a-d1679cf4c55b">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Product_Local_Placement_3Bw5jVUH9AGukt7cEGB9j" />
+					<Items>
+						<DocTemplateItem UniqueId="063b4fbf-8496-447a-8ee0-3f5f9ffb38b4" RuleParameters="RelativeToElement=IfcSite;ElementName=HDMI Plattrambro;" />
+					</Items>
+				</DocTemplateUsage>
+			</Concepts>
+			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="be7b880f-5290-4669-a181-31817ef3d59f" Type="IfcBorehole" />
+		</DocConceptRoot>
+		<DocConceptRoot Name="Surface Proposed Geotechnical Stratum" UniqueId="49dde5fa-446a-4d74-8b37-dbee334423c7">
+			<Concepts>
+				<DocTemplateUsage Name="Product Local Placement" UniqueId="9638f81d-7179-45f7-b04b-699960684a0a">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Product_Local_Placement_3Bw5jVUH9AGukt7cEGB9j" />
+					<Items>
+						<DocTemplateItem UniqueId="e23826a6-9eb2-46cc-ad7e-24c3f34ad57e" RuleParameters="RelativeToElement=IfcSite;ElementName=HDMI Plattrambro;" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Geometry" UniqueId="a87476ed-13ba-43e9-964b-6c4d0b88869e">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Surface_Tessellation_Geometry_0gcN00aHT7P84eQ4tB7HA6" />
+					<Items>
+						<DocTemplateItem UniqueId="7c165059-faa5-41b6-9a67-7d063165a844" RuleParameters="Items=IfcTriangulatedIrregularNetwork;" />
+					</Items>
+				</DocTemplateUsage>
+			</Concepts>
+			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="eb0518a8-7730-4eb4-a30d-d9ce60889aa1" Type="IfcGeotechnicalStratum" />
+		</DocConceptRoot>
+		<DocConceptRoot Name="Surface Proposed Geomodel" UniqueId="ebba4eee-4b5d-4399-8e9f-77602195d28c">
+			<Concepts>
+				<DocTemplateUsage Name="Product Local Placement" UniqueId="52718638-0df6-4826-a4ae-cc5ec683a410">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Product_Local_Placement_3Bw5jVUH9AGukt7cEGB9j" />
+					<Items>
+						<DocTemplateItem UniqueId="21fccf7f-21bc-47b2-8144-ac2d7a3134fd" RuleParameters="RelativeToElement=IfcSite;ElementName=HDMI Plattrambro;" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Geometry" UniqueId="8057968e-6351-4ee9-88aa-a7791000fe4f">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Surface_Tessellation_Geometry_0gcN00aHT7P84eQ4tB7HA6" />
+					<Items>
+						<DocTemplateItem UniqueId="c4746c74-b98a-436e-80d7-48789063752e" RuleParameters="Items=IfcTriangulatedIrregularNetwork;" />
+					</Items>
+				</DocTemplateUsage>
+			</Concepts>
+			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="f3811f64-c132-4240-89da-fa649f266b5d" Type="IfcGeomodel" />
+		</DocConceptRoot>
 		<DocConceptRoot Name="Beam" UniqueId="e46e0915-a31b-45d4-9111-ae1a4ba6b92b">
 			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcBeam" />
 			<Concepts>
@@ -33,30 +90,6 @@
 				</DocTemplateUsage>
 			</Concepts>
 			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="2c709a05-e33d-4567-97af-b4b2263ef509" Type="IfcBeam" />
-		</DocConceptRoot>
-		<DocConceptRoot Name="Boring Point" UniqueId="3b40b2cc-9440-430c-8e6e-7f543b8c3c25">
-			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcBorehole" />
-			<Concepts>
-				<DocTemplateUsage Name="Properties" UniqueId="e8875ea3-3dc3-4f3e-b429-a1ca155a9312">
-					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Property_Sets_for_Objects_3tGbMc30vFCOIj99WTjYHX" />
-					<Items>
-						<DocTemplateItem UniqueId="614842e8-e327-45bd-9d6f-0f5ab3fa1020" RuleParameters="PsetName=Pset_BoreholeCommon;">
-							<Concepts>
-								<DocTemplateUsage Name="Properties" UniqueId="9c755010-4bbe-44f7-a6e1-0130efec88fe">
-									<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Single_Value_1cLVRGAQX7k8yzoVpfoQOW" />
-								</DocTemplateUsage>
-							</Concepts>
-						</DocTemplateItem>
-					</Items>
-				</DocTemplateUsage>
-				<DocTemplateUsage Name="Product Local Placement" UniqueId="768316c5-4071-4279-817a-d1679cf4c55b">
-					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Product_Local_Placement_3Bw5jVUH9AGukt7cEGB9j" />
-					<Items>
-						<DocTemplateItem UniqueId="063b4fbf-8496-447a-8ee0-3f5f9ffb38b4" RuleParameters="RelativeToElement=IfcSite;ElementName=HDMI Plattrambro;" />
-					</Items>
-				</DocTemplateUsage>
-			</Concepts>
-			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="be7b880f-5290-4669-a181-31817ef3d59f" Type="IfcBorehole" />
 		</DocConceptRoot>
 		<DocConceptRoot Name="Bridge" UniqueId="68dc0eb6-a3d9-42c1-820b-fcaa996ecd06">
 			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcBridge" />
@@ -146,42 +179,6 @@
 				</DocTemplateUsage>
 			</Concepts>
 			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="9a30959e-16a1-442c-84ca-7521ed88a2e7" Type="IfcSite" />
-		</DocConceptRoot>
-		<DocConceptRoot Name="Surface Proposed Geomodel" UniqueId="ebba4eee-4b5d-4399-8e9f-77602195d28c">
-			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcGeomodel" />
-			<Concepts>
-				<DocTemplateUsage Name="Product Local Placement" UniqueId="52718638-0df6-4826-a4ae-cc5ec683a410">
-					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Product_Local_Placement_3Bw5jVUH9AGukt7cEGB9j" />
-					<Items>
-						<DocTemplateItem UniqueId="21fccf7f-21bc-47b2-8144-ac2d7a3134fd" RuleParameters="RelativeToElement=IfcSite;ElementName=HDMI Plattrambro;" />
-					</Items>
-				</DocTemplateUsage>
-				<DocTemplateUsage Name="Geometry" UniqueId="8057968e-6351-4ee9-88aa-a7791000fe4f">
-					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Surface_Tessellation_Geometry_0gcN00aHT7P84eQ4tB7HA6" />
-					<Items>
-						<DocTemplateItem UniqueId="c4746c74-b98a-436e-80d7-48789063752e" RuleParameters="Items=IfcTriangulatedIrregularNetwork;" />
-					</Items>
-				</DocTemplateUsage>
-			</Concepts>
-			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="f3811f64-c132-4240-89da-fa649f266b5d" Type="IfcGeomodel" />
-		</DocConceptRoot>
-		<DocConceptRoot Name="Surface Proposed Geotechnical Stratum" UniqueId="49dde5fa-446a-4d74-8b37-dbee334423c7">
-			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcGeotechnicalStratum" />
-			<Concepts>
-				<DocTemplateUsage Name="Product Local Placement" UniqueId="9638f81d-7179-45f7-b04b-699960684a0a">
-					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Product_Local_Placement_3Bw5jVUH9AGukt7cEGB9j" />
-					<Items>
-						<DocTemplateItem UniqueId="e23826a6-9eb2-46cc-ad7e-24c3f34ad57e" RuleParameters="RelativeToElement=IfcSite;ElementName=HDMI Plattrambro;" />
-					</Items>
-				</DocTemplateUsage>
-				<DocTemplateUsage Name="Geometry" UniqueId="a87476ed-13ba-43e9-964b-6c4d0b88869e">
-					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Surface_Tessellation_Geometry_0gcN00aHT7P84eQ4tB7HA6" />
-					<Items>
-						<DocTemplateItem UniqueId="7c165059-faa5-41b6-9a67-7d063165a844" RuleParameters="Items=IfcTriangulatedIrregularNetwork;" />
-					</Items>
-				</DocTemplateUsage>
-			</Concepts>
-			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="eb0518a8-7730-4eb4-a30d-d9ce60889aa1" Type="IfcGeotechnicalStratum" />
 		</DocConceptRoot>
 	</ConceptRoots>
 </DocModelView>
