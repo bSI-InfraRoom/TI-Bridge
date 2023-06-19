@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="Element Connectivity With Realizing Element" UniqueId="c8444628-a549-435e-9a97-8f37dce342a7" Type="IfcElement">
+	<Rules>
+		<DocModelRuleAttribute Name="ConnectedFrom" />
+		<DocModelRuleAttribute Name="ConnectedTo">
+			<Rules>
+				<DocModelRuleEntity Name="IfcRelConnectsWithRealizingElements">
+					<Rules>
+						<DocModelRuleAttribute Name="RelatedElement" Identification="RelatedElement">
+							<Rules>
+								<DocModelRuleEntity Name="IfcElement" />
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute Name="RealizingElements" Identification="RealizingElements">
+							<Rules>
+								<DocModelRuleEntity Name="IfcElement" />
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute Name="ConnectionType">
+							<Rules>
+								<DocModelRuleEntity Name="IfcLabel" />
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocModelRuleEntity>
+			</Rules>
+		</DocModelRuleAttribute>
+	</Rules>
+</DocTemplateDefinition>
+

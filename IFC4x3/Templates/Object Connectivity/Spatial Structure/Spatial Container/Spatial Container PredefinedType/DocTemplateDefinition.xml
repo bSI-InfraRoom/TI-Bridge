@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="Spatial Container PredefinedType" UniqueId="c7d9a1ae-632b-4e98-aabc-b7b188e61bba" Type="IfcSpatialElement">
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Spatial_Container_PredefinedType_37sQ6kOojEcAgyjx68vXkw" Name="Spatial Container PredefinedType" UniqueId="c7d9a1ae-632b-4e98-aabc-b7b188e61bba" Type="IfcSpatialElement">
 	<Rules>
 		<DocModelRuleAttribute Name="ContainsElements">
 			<Rules>
