@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="Element Decomposition with Predefined Type" UniqueId="a7ca209d-d1fd-4603-b935-09051cb10451" Type="IfcElement">
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Element_Decomposition_with_Predefined_Type_2doY2TqVr60xar2GKSiGHH" Name="Element Decomposition with Predefined Type" UniqueId="a7ca209d-d1fd-4603-b935-09051cb10451" Type="IfcElement">
 	<Rules>
 		<DocModelRuleAttribute Name="IsDecomposedBy" Identification="IsDecomposedBy">
 			<Rules>

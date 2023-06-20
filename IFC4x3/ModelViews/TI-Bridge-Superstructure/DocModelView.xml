@@ -1,44 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <DocModelView xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="TI-Bridge-Superstructure" UniqueId="fcc6bbbc-8f8f-40a2-96d2-a00b1d46ea4c">
 	<ConceptRoots>
-		<DocConceptRoot Name="Diaphragm" UniqueId="5e947f3b-87f5-4ce7-a930-c75299524396">
-			<Documentation>Diaphragms refer to sections of bridge girders immediately above supporting structures that provide additional lateral and vertical support. Diaphragms are modeled similarly as concrete girder segments, except are distinguished according to a predefined type (e.g. IfcBeamTypeEnum.DIAPHRAGM), and have connections to underlying supports.</Documentation>
-			<Concepts>
-				<DocTemplateUsage Name="Name" UniqueId="3ad0aa21-111a-4a8b-a12d-da51f94e0453">
-					<Documentation>Name of the diaphragm for referencing purposes as would be found on construction plans.</Documentation>
-					<Definition xsi:type="DocTemplateDefinition" Name="Name" UniqueId="09880d9e-28dc-457d-9cf2-f365b85184aa" />
-				</DocTemplateUsage>
-				<DocTemplateUsage Name="Material" UniqueId="a23c9639-1794-468c-875f-3621a7b4576c">
-					<Documentation>Material of the girder segment.</Documentation>
-					<Definition xsi:type="DocTemplateDefinition" Name="Material" UniqueId="05b10ba1-5fb2-4d43-ac50-875fc9c85e58" />
-				</DocTemplateUsage>
-				<DocTemplateUsage Name="Solid Geometry" UniqueId="ac985208-9455-4948-8c38-f2882e13e174">
-					<Documentation>Geometry defined as a cross section that may be constant or variable (linearly or parabolic), swept along the alignment at starting and ending positions.</Documentation>
-					<Definition xsi:type="DocTemplateDefinition" Name="Solid Geometry" UniqueId="0c5368c8-6365-4d0a-a09c-0ff7a5b21457" />
-				</DocTemplateUsage>
-				<DocTemplateUsage Name="Connection Head" UniqueId="95c164f3-d73b-4694-8546-e9b430ff8f2a">
-					<Documentation>Relationship connecting head of diaphragm with a girder segment.</Documentation>
-					<Definition xsi:type="DocTemplateDefinition" Name="Connection Head" UniqueId="c3ab4486-9f82-49b4-ac3c-872d000d4084" />
-				</DocTemplateUsage>
-				<DocTemplateUsage Name="Connection Tail" UniqueId="f705446e-40cf-48f3-8b44-3d912e1704ce">
-					<Documentation>Relationship connecting tail of diaphragm with a girder segment.</Documentation>
-					<Definition xsi:type="DocTemplateDefinition" Name="Connection Tail" UniqueId="1cb94dfb-68de-4db5-b13d-b21f4d8a4de9" />
-				</DocTemplateUsage>
-				<DocTemplateUsage Name="Connection Support" UniqueId="7b62f6d8-dfa6-4405-8cb4-942d1edff4ff">
-					<Documentation>Relationship connecting diaphragm to substructure, where realizing element refers to bearing if present.</Documentation>
-					<Definition xsi:type="DocTemplateDefinition" Name="Connection Support" UniqueId="417deb8f-a9f4-44a2-9237-fdfdb4552715" />
-				</DocTemplateUsage>
-				<DocTemplateUsage Name="Reinforcing" UniqueId="d487eea8-b262-4aeb-b449-705a1f98c019">
-					<Documentation>For concrete diaphragms, reinforcing embedded.</Documentation>
-					<Definition xsi:type="DocTemplateDefinition" Name="Reinforcing" UniqueId="e851122b-a56d-40d5-8724-14e3e40a500d" />
-				</DocTemplateUsage>
-				<DocTemplateUsage Name="Tendons" UniqueId="f856256e-bf8e-4394-b24f-7e5132b40f52">
-					<Documentation>For concrete diaphragms, tendons embedded.</Documentation>
-					<Definition xsi:type="DocTemplateDefinition" Name="Tendons" UniqueId="ec3d693e-43e3-4178-8f35-5e44d5bbad7c" />
-				</DocTemplateUsage>
-			</Concepts>
-			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="3008e22d-4035-43ec-841a-921b8975ab27" />
-		</DocConceptRoot>
 		<DocConceptRoot Name="Girder Segment" UniqueId="5d25181b-c624-45c3-b4b2-16f9f5e8fede">
 			<Documentation>Girder segments refer to discrete sections along a girder line. They may be modelled as one object that encapsulates the overall cross section (e.g. I-Shape steel, arbitrary precast profile), or as separate objects (e.g. steel flange plates, steel web plate). Each segment may have a constant cross section, a tapered cross section (linearly interpolated from start to end), a variable cross section (linearly interpolated at multiple points between start and end), or free-form geometry. The connection between beams is represented using IfcRelConnectsWithRealizingElements, where the RealizingElements refers to IfcPlate elements for fastening plates on each side, IfcFastener for bolts, and IfcPlate for any flange transition plates. The reason for using this connection relationship specifically (as opposed to just placing the elements) is to be able to derive an IfcStructuralAnalysisModel that captures the beam connectivity.</Documentation>
 			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcBeam" />
@@ -66,23 +28,26 @@
 				</DocTemplateUsage>
 				<DocTemplateUsage Name="Connection Head" UniqueId="b04f73f2-4e19-433e-8152-c70c0577876c">
 					<Documentation>Relationship connecting head of girder segment with abutment or another girder segment, where realizing element refers to splice plates.</Documentation>
-					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Path_Connectivity_1G5mELXyP9BgRydr_42n5F" />
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Element_Connectivity_With_Realizing_Element_38H4OefKb3NfgNZpVSuqAd" />
 					<Items>
-						<DocTemplateItem UniqueId="1ac612f9-8fbc-4b38-bd0c-97364c8585f1" />
+						<DocTemplateItem UniqueId="1ac612f9-8fbc-4b38-bd0c-97364c8585f1" RuleParameters="RelatedElement=IfcBeam;RealizingElements=IfcPlate;" />
+						<DocTemplateItem UniqueId="11002346-bf93-49e9-9376-c7a453cc0e66" RuleParameters="RelatedElement=IfcElementAssembly;RealizingElements=IfcPlate;" />
 					</Items>
 				</DocTemplateUsage>
 				<DocTemplateUsage Name="Connection Tail" UniqueId="4f663f4e-aadb-40a8-bfc0-84f3ac63d5e9">
 					<Documentation>Relationship connecting tail of girder segment with another girder segment or abutment, where realizing element refers to splice plates.</Documentation>
-					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Path_Connectivity_1G5mELXyP9BgRydr_42n5F" />
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Element_Connectivity_With_Realizing_Element_38H4OefKb3NfgNZpVSuqAd" />
 					<Items>
-						<DocTemplateItem UniqueId="93396472-db44-4190-b696-c07e2841fdf1" />
+						<DocTemplateItem UniqueId="93396472-db44-4190-b696-c07e2841fdf1" RuleParameters="RelatedElement=IfcBeam;RealizingElements=IfcPlate;" />
+						<DocTemplateItem UniqueId="9465c13e-11c7-4416-ab70-820aea6c2cc7" RuleParameters="RelatedElement=IfcElementAssembly;RealizingElements=IfcPlate;" />
 					</Items>
 				</DocTemplateUsage>
 				<DocTemplateUsage Name="Connection Support" UniqueId="eb850e4e-d236-4b40-b3ba-d761b0b6c906">
 					<Documentation>Relationship connecting girder segment to substructure, where realizing element refers to bearing if present.</Documentation>
-					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Element_Connectivity_0Nv2C1Ibb9HROhB6JsocmI" />
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Element_Connectivity_With_Realizing_Element_38H4OefKb3NfgNZpVSuqAd" />
 					<Items>
 						<DocTemplateItem UniqueId="023b58e2-3107-41c7-ba6f-bbbe4b55d191" />
+						<DocTemplateItem UniqueId="668a1c98-dfad-4ab7-b5c3-81adc7ed84b1" />
 					</Items>
 				</DocTemplateUsage>
 				<DocTemplateUsage Name="Reinforcing" UniqueId="db8053ba-de64-4f9c-970b-1309cff09354">
@@ -111,6 +76,74 @@
 					<DocModelRuleAttribute Name="PredefinedType" Identification="PredefinedType" />
 				</Rules>
 			</ApplicableTemplate>
+		</DocConceptRoot>
+		<DocConceptRoot Name="Diaphragm" UniqueId="5e947f3b-87f5-4ce7-a930-c75299524396">
+			<Documentation>Diaphragms refer to sections of bridge girders immediately above supporting structures that provide additional lateral and vertical support. Diaphragms are modeled similarly as concrete girder segments, except are distinguished according to a predefined type (e.g. IfcBeamTypeEnum.DIAPHRAGM), and have connections to underlying supports.</Documentation>
+			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcBeam" />
+			<Concepts>
+				<DocTemplateUsage Name="Name" UniqueId="3ad0aa21-111a-4a8b-a12d-da51f94e0453">
+					<Documentation>Name of the diaphragm for referencing purposes as would be found on construction plans.</Documentation>
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Object_User_Identity_31di66dFr7AJKdxDG2D1A" />
+					<Items>
+						<DocTemplateItem UniqueId="f3a1e121-85ba-44e3-b18a-f07390859333" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Material" UniqueId="a23c9639-1794-468c-875f-3621a7b4576c">
+					<Documentation>Material of the girder segment.</Documentation>
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Material_Single_1VEQWKHA1Fiut6tQe5OFnK" />
+					<Items>
+						<DocTemplateItem UniqueId="0362322b-ef58-48c7-b439-da06e9c85c69" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Solid Geometry" UniqueId="ac985208-9455-4948-8c38-f2882e13e174">
+					<Documentation>Geometry defined as a cross section that may be constant or variable (linearly or parabolic), swept along the alignment at starting and ending positions.</Documentation>
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Body_SectionedSolidHorizontal_1UlsKnHvEMBfv6swVDKBO" />
+					<Items>
+						<DocTemplateItem UniqueId="85716367-b65b-49da-b053-59ee8ea75a35" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Connection Head" UniqueId="95c164f3-d73b-4694-8546-e9b430ff8f2a">
+					<Documentation>Relationship connecting head of diaphragm with a girder segment.</Documentation>
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Element_Connectivity_0Nv2C1Ibb9HROhB6JsocmI" />
+					<Items>
+						<DocTemplateItem UniqueId="af175ac1-6ba4-4cc1-8553-c85ff59bac10" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Connection Tail" UniqueId="f705446e-40cf-48f3-8b44-3d912e1704ce">
+					<Documentation>Relationship connecting tail of diaphragm with a girder segment.</Documentation>
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Element_Connectivity_0Nv2C1Ibb9HROhB6JsocmI" />
+					<Items>
+						<DocTemplateItem UniqueId="25e1fb44-cbe1-46d0-97b4-5ff607efca7d" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Connection Support" UniqueId="7b62f6d8-dfa6-4405-8cb4-942d1edff4ff">
+					<Documentation>Relationship connecting diaphragm to substructure, where realizing element refers to bearing if present.</Documentation>
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Element_Connectivity_With_Realizing_Element_38H4OefKb3NfgNZpVSuqAd" />
+					<Items>
+						<DocTemplateItem UniqueId="6b993492-a207-4dcc-845e-adb785e3c619" RuleParameters="RealizingElements=IfcBearing;" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Reinforcing" UniqueId="d487eea8-b262-4aeb-b449-705a1f98c019">
+					<Documentation>For concrete diaphragms, reinforcing embedded.</Documentation>
+					<Definition xsi:type="DocTemplateDefinition" Name="Reinforcing" UniqueId="e851122b-a56d-40d5-8724-14e3e40a500d" />
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Tendons" UniqueId="f856256e-bf8e-4394-b24f-7e5132b40f52">
+					<Documentation>For concrete diaphragms, tendons embedded.</Documentation>
+					<Definition xsi:type="DocTemplateDefinition" Name="Tendons" UniqueId="ec3d693e-43e3-4178-8f35-5e44d5bbad7c" />
+				</DocTemplateUsage>
+			</Concepts>
+			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="3008e22d-4035-43ec-841a-921b8975ab27" Type="IfcBeam">
+				<Rules>
+					<DocModelRuleAttribute Name="PredefinedType" Identification="PredefinedType">
+						<Rules>
+							<DocModelRuleEntity Name="IfcBeamTypeEnum" />
+						</Rules>
+					</DocModelRuleAttribute>
+				</Rules>
+			</ApplicableTemplate>
+			<ApplicableItems>
+				<DocTemplateItem UniqueId="5789b406-b164-48d0-b6b0-fe374bb83f69" RuleParameters="PredefinedType=DIAPHRAGM;" />
+			</ApplicableItems>
 		</DocConceptRoot>
 		<DocConceptRoot Name="Superstructure" UniqueId="3616397d-521c-4810-80ab-172f14356062">
 			<Documentation>The superstructure of a bridge refers to those elements than span horizontally to carry loads onto substructures.</Documentation>
@@ -221,7 +254,9 @@
 					<Documentation>Position of cross frame relative to alignment.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Product_Relative_Positioning_1jo2X5iK969AcbDz7acLTX" />
 					<Items>
-						<DocTemplateItem UniqueId="b1b1692b-afe7-4023-803e-35073b0dd138" />
+						<DocTemplateItem UniqueId="b1b1692b-afe7-4023-803e-35073b0dd138">
+							<Documentation>How do we specify more than one instance?</Documentation>
+						</DocTemplateItem>
 					</Items>
 				</DocTemplateUsage>
 				<DocTemplateUsage Name="Girder Segment Left" UniqueId="47cc5512-8b54-4f63-8d87-4cc95c712ddf">
@@ -268,11 +303,12 @@
 				</DocTemplateUsage>
 				<DocTemplateUsage Name="Gusset Plates" UniqueId="5669e32c-5970-4311-8043-c22c23ee626e">
 					<Documentation>Gusset plates connecting truss memers.</Documentation>
-					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Element_Decomposition_2A9y5QnEfCgOpEVxkXoRpW" />
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Element_Decomposition_with_Predefined_Type_2doY2TqVr60xar2GKSiGHH" />
 					<Items>
 						<DocTemplateItem UniqueId="d94447c8-cffc-46c4-bb78-34699c6af102" RuleParameters="RelatedObjects=IfcPlate;">
 							<Documentation>GUSSET_PLATE</Documentation>
 						</DocTemplateItem>
+						<DocTemplateItem UniqueId="7a9b7509-c392-49e2-acd2-22446a76602f" />
 					</Items>
 				</DocTemplateUsage>
 				<DocTemplateUsage Name="Connections" UniqueId="c07badb1-6cca-4c6d-aa4a-34b9edcf6719">

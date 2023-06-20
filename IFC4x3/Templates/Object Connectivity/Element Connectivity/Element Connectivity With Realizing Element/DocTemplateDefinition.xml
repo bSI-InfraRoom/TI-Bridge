@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="Element Connectivity With Realizing Element" UniqueId="c8444628-a549-435e-9a97-8f37dce342a7" Type="IfcElement">
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Element_Connectivity_With_Realizing_Element_38H4OefKb3NfgNZpVSuqAd" Name="Element Connectivity With Realizing Element" UniqueId="c8444628-a549-435e-9a97-8f37dce342a7" Type="IfcElement">
 	<Rules>
 		<DocModelRuleAttribute Name="ConnectedFrom" />
 		<DocModelRuleAttribute Name="ConnectedTo">
