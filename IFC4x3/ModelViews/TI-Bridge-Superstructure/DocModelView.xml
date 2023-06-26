@@ -168,9 +168,6 @@
 							<Concepts>
 								<DocTemplateUsage Name="Type" UniqueId="db3db62a-f865-4197-b084-c08b9b431e6a">
 									<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Object_Predefined_Type_0b989XcDzD2fDaLbDNNAGX" />
-									<Items>
-										<DocTemplateItem UniqueId="852a63c7-0de9-4c68-9415-870710c8eef8" RuleParameters="TypePredefinedType=TRUSS;" />
-									</Items>
 								</DocTemplateUsage>
 							</Concepts>
 						</DocTemplateItem>
