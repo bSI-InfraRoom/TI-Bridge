@@ -153,7 +153,7 @@
 					<Documentation>Name of the superstructure for organizational purposes.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Object_User_Identity_31di66dFr7AJKdxDG2D1A" />
 					<Items>
-						<DocTemplateItem UniqueId="c9c75962-4f57-4abe-b9eb-321b88e06c3f" />
+						<DocTemplateItem UniqueId="c9c75962-4f57-4abe-b9eb-321b88e06c3f" RuleParameters="ObjectName=Överbyggnad;" />
 					</Items>
 				</DocTemplateUsage>
 				<DocTemplateUsage Name="Alignments" UniqueId="4dc839ff-3200-49fd-b765-8426124d3a3f">
@@ -348,7 +348,7 @@
 					<Documentation>Template defining general construction that may be used across projects.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Object_Predefined_Type_0b989XcDzD2fDaLbDNNAGX" />
 					<Items>
-						<DocTemplateItem UniqueId="f2a7cee8-d90d-47d7-933a-2fe605a9a997" />
+						<DocTemplateItem UniqueId="f2a7cee8-d90d-47d7-933a-2fe605a9a997" RuleParameters="TypePredefinedType=GIRDER;" />
 					</Items>
 				</DocTemplateUsage>
 				<DocTemplateUsage Name="Material" UniqueId="b1809148-befc-43d4-a8f8-f35448334073">
@@ -382,6 +382,9 @@
 					<DocModelRuleAttribute Name="PredefinedType" Identification="PredefinedType" />
 				</Rules>
 			</ApplicableTemplate>
+			<ApplicableItems>
+				<DocTemplateItem UniqueId="5ea7c2b9-de24-418a-a52c-745b3ce292c5" RuleParameters="PredefinedType=GIRDER;" />
+			</ApplicableItems>
 		</DocConceptRoot>
 	</ConceptRoots>
 </DocModelView>
