@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Element_Connectivity_with_Predefined_Type_2xpS19ZiH9sfTkBuMqmZIW" Name="Element Connectivity with Predefined Type" UniqueId="bbcdc049-8ec4-49da-976e-2f85b4c234a0" Type="IfcElement">
+	<Rules>
+		<DocModelRuleAttribute Name="ConnectedFrom" />
+		<DocModelRuleAttribute Name="ConnectedTo">
+			<Rules>
+				<DocModelRuleEntity Name="IfcRelConnectsElements" Identification="RelatedElement">
+					<Rules>
+						<DocModelRuleAttribute Name="RelatedElement" Identification="RelatedElement">
+							<Rules>
+								<DocModelRuleEntity Name="IfcElement">
+									<References>
+										<DocTemplateDefinition xsi:nil="true" href="Object_Predefined_Type_0b989XcDzD2fDaLbDNNAGX" />
+									</References>
+								</DocModelRuleEntity>
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocModelRuleEntity>
+			</Rules>
+		</DocModelRuleAttribute>
+	</Rules>
+</DocTemplateDefinition>
+

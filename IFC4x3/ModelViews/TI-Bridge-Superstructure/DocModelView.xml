@@ -32,6 +32,8 @@
 					<Items>
 						<DocTemplateItem UniqueId="1ac612f9-8fbc-4b38-bd0c-97364c8585f1" RuleParameters="RelatedElement=IfcBeam;RealizingElements=IfcPlate;" />
 						<DocTemplateItem UniqueId="11002346-bf93-49e9-9376-c7a453cc0e66" RuleParameters="RelatedElement=IfcElementAssembly;RealizingElements=IfcPlate;" />
+						<DocTemplateItem UniqueId="b904f050-2819-4c5c-b4a8-d9f2b59582bc" RuleParameters="RelatedElement=IfcBeam;RealizingElements=IfcFastener;" />
+						<DocTemplateItem UniqueId="5f6ae702-4cd6-4109-a031-91695a688442" RuleParameters="RelatedElement=IfcElementAssembly;RealizingElements=IfcFastener;" />
 					</Items>
 				</DocTemplateUsage>
 				<DocTemplateUsage Name="Connection Tail" UniqueId="4f663f4e-aadb-40a8-bfc0-84f3ac63d5e9">
@@ -40,6 +42,7 @@
 					<Items>
 						<DocTemplateItem UniqueId="93396472-db44-4190-b696-c07e2841fdf1" RuleParameters="RelatedElement=IfcBeam;RealizingElements=IfcPlate;" />
 						<DocTemplateItem UniqueId="9465c13e-11c7-4416-ab70-820aea6c2cc7" RuleParameters="RelatedElement=IfcElementAssembly;RealizingElements=IfcPlate;" />
+						<DocTemplateItem UniqueId="ca17786b-c11a-47ba-a4f9-0f569b3445d6" RuleParameters="RelatedElement=IfcBeam;RealizingElements=IfcFastener;" />
 					</Items>
 				</DocTemplateUsage>
 				<DocTemplateUsage Name="Connection Support" UniqueId="eb850e4e-d236-4b40-b3ba-d761b0b6c906">
@@ -104,16 +107,24 @@
 				</DocTemplateUsage>
 				<DocTemplateUsage Name="Connection Head" UniqueId="95c164f3-d73b-4694-8546-e9b430ff8f2a">
 					<Documentation>Relationship connecting head of diaphragm with a girder segment.</Documentation>
-					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Element_Connectivity_0Nv2C1Ibb9HROhB6JsocmI" />
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Element_Connectivity_with_Predefined_Type_2xpS19ZiH9sfTkBuMqmZIW" />
 					<Items>
-						<DocTemplateItem UniqueId="af175ac1-6ba4-4cc1-8553-c85ff59bac10" />
+						<DocTemplateItem UniqueId="af175ac1-6ba4-4cc1-8553-c85ff59bac10">
+							<Concepts>
+								<DocTemplateUsage Name="RelatedElement" UniqueId="216c5ff6-67f4-4fd0-8cee-ca1c574e49bc">
+									<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Object_Predefined_Type_0b989XcDzD2fDaLbDNNAGX" />
+								</DocTemplateUsage>
+							</Concepts>
+						</DocTemplateItem>
+						<DocTemplateItem UniqueId="8b7dfee9-6105-4c40-b634-efddfb83f58f" />
 					</Items>
 				</DocTemplateUsage>
 				<DocTemplateUsage Name="Connection Tail" UniqueId="f705446e-40cf-48f3-8b44-3d912e1704ce">
 					<Documentation>Relationship connecting tail of diaphragm with a girder segment.</Documentation>
-					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Element_Connectivity_0Nv2C1Ibb9HROhB6JsocmI" />
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Element_Connectivity_with_Predefined_Type_2xpS19ZiH9sfTkBuMqmZIW" />
 					<Items>
 						<DocTemplateItem UniqueId="25e1fb44-cbe1-46d0-97b4-5ff607efca7d" />
+						<DocTemplateItem UniqueId="947ed792-251b-4c0d-8fe8-e0f675c59881" />
 					</Items>
 				</DocTemplateUsage>
 				<DocTemplateUsage Name="Connection Support" UniqueId="7b62f6d8-dfa6-4405-8cb4-942d1edff4ff">
@@ -251,23 +262,34 @@
 					<Documentation>Position of cross frame relative to alignment.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Product_Relative_Positioning_1jo2X5iK969AcbDz7acLTX" />
 					<Items>
-						<DocTemplateItem UniqueId="b1b1692b-afe7-4023-803e-35073b0dd138">
+						<DocTemplateItem UniqueId="b1b1692b-afe7-4023-803e-35073b0dd138" RuleParameters="PositioningElement=IfcReferent;">
 							<Documentation>How do we specify more than one instance?</Documentation>
 						</DocTemplateItem>
 					</Items>
 				</DocTemplateUsage>
 				<DocTemplateUsage Name="Girder Segment Left" UniqueId="47cc5512-8b54-4f63-8d87-4cc95c712ddf">
 					<Documentation>Connection to girder on left as facing direction of alignment.</Documentation>
-					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Element_Connectivity_0Nv2C1Ibb9HROhB6JsocmI" />
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Element_Connectivity_with_Predefined_Type_2xpS19ZiH9sfTkBuMqmZIW" />
 					<Items>
-						<DocTemplateItem UniqueId="cebb616d-eddd-498c-b1ac-5a843f691c7a" />
+						<DocTemplateItem UniqueId="cebb616d-eddd-498c-b1ac-5a843f691c7a" RuleParameters="PredefinedType=GIRDER;">
+							<Concepts>
+								<DocTemplateUsage Name="RelatedElement" UniqueId="b83cbfd2-09c9-4633-98ba-7b9d6eb11017">
+									<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Object_Predefined_Type_0b989XcDzD2fDaLbDNNAGX" />
+									<Items>
+										<DocTemplateItem UniqueId="eacee038-1226-4fb2-807f-8777de000b40" />
+									</Items>
+								</DocTemplateUsage>
+							</Concepts>
+						</DocTemplateItem>
+						<DocTemplateItem UniqueId="673cf300-3348-468b-9c5d-3da681fe7dee" />
 					</Items>
 				</DocTemplateUsage>
 				<DocTemplateUsage Name="Girder Segment Right" UniqueId="042e7da0-2c21-4c9d-8542-b9acddd03b46">
 					<Documentation>Connection to girder on right as facing direction of alignment.</Documentation>
-					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Element_Connectivity_0Nv2C1Ibb9HROhB6JsocmI" />
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Element_Connectivity_with_Predefined_Type_2xpS19ZiH9sfTkBuMqmZIW" />
 					<Items>
-						<DocTemplateItem UniqueId="19632d3f-bf1a-4c96-9f50-305415fc1276" />
+						<DocTemplateItem UniqueId="19632d3f-bf1a-4c96-9f50-305415fc1276" RuleParameters="PredefinedType=GIRDER;" />
+						<DocTemplateItem UniqueId="7c62ee6a-bcca-412f-b10b-bca2960ef6e8" />
 					</Items>
 				</DocTemplateUsage>
 			</Concepts>
@@ -302,7 +324,7 @@
 					<Documentation>Gusset plates connecting truss memers.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Element_Decomposition_with_Predefined_Type_2doY2TqVr60xar2GKSiGHH" />
 					<Items>
-						<DocTemplateItem UniqueId="d94447c8-cffc-46c4-bb78-34699c6af102" RuleParameters="RelatedObjects=IfcPlate;">
+						<DocTemplateItem UniqueId="d94447c8-cffc-46c4-bb78-34699c6af102" RuleParameters="RelatedObjects=IfcPlate;PredefinedType=GUSSET_PLATE;">
 							<Documentation>GUSSET_PLATE</Documentation>
 						</DocTemplateItem>
 						<DocTemplateItem UniqueId="7a9b7509-c392-49e2-acd2-22446a76602f" />
@@ -361,11 +383,12 @@
 				</DocTemplateUsage>
 				<DocTemplateUsage Name="Segments" UniqueId="aaef6f97-f84c-4391-a290-c5e4e6021bb2">
 					<Documentation>Segmented girders may be decomposed into segments for each continuous section.</Documentation>
-					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Element_Decomposition_2A9y5QnEfCgOpEVxkXoRpW" />
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Element_Decomposition_with_Predefined_Type_2doY2TqVr60xar2GKSiGHH" />
 					<Items>
-						<DocTemplateItem UniqueId="67edb96a-b5e3-4748-8178-38815481a090" RuleParameters="RelatedObjects=IfcBeam;">
+						<DocTemplateItem UniqueId="67edb96a-b5e3-4748-8178-38815481a090" RuleParameters="RelatedObjects=IfcBeam;PredefinedType=GIRDER_SEGMENT;">
 							<Documentation>GIRDER_SEGMENT</Documentation>
 						</DocTemplateItem>
+						<DocTemplateItem UniqueId="6a71ad28-e36e-41aa-a8ff-33954c701332" />
 					</Items>
 				</DocTemplateUsage>
 				<DocTemplateUsage Name="Components" UniqueId="c6a6a48e-c468-41a6-8294-1ce2118a9d1d">
