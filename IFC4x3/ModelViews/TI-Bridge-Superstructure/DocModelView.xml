@@ -55,19 +55,50 @@
 				</DocTemplateUsage>
 				<DocTemplateUsage Name="Reinforcing" UniqueId="db8053ba-de64-4f9c-970b-1309cff09354">
 					<Documentation>For concrete girders, reinforcing embedded.</Documentation>
-					<Definition xsi:type="DocTemplateDefinition" Name="Reinforcing" UniqueId="5b7c69cc-9598-4a4f-a91b-992c7201f15a" Type="IfcBeam" />
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Element_Decomposition_with_Predefined_Type_2doY2TqVr60xar2GKSiGHH" />
+					<Items>
+						<DocTemplateItem UniqueId="838c980a-4665-4a8b-a1bb-716d30545147" RuleParameters="RelatedObjects=IfcBeam;PredefinedType=GIRDER_SEGMENT;">
+							<Concepts>
+								<DocTemplateUsage Name="RelatedObjects" UniqueId="bec487e2-3533-4ce6-904c-2564ea6c33e4">
+									<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Object_Predefined_Type_0b989XcDzD2fDaLbDNNAGX" />
+								</DocTemplateUsage>
+							</Concepts>
+						</DocTemplateItem>
+						<DocTemplateItem UniqueId="2ad5f62a-2541-432f-a068-9a24f68ee125" RuleParameters="RelatedObjects=IfcReinforcingElement;">
+							<Concepts>
+								<DocTemplateUsage Name="RelatedObjects" UniqueId="00639f93-a57b-45fd-9384-674f0134d682">
+									<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Object_Predefined_Type_0b989XcDzD2fDaLbDNNAGX" />
+								</DocTemplateUsage>
+							</Concepts>
+						</DocTemplateItem>
+					</Items>
 				</DocTemplateUsage>
 				<DocTemplateUsage Name="Tendons" UniqueId="26fde2e7-7586-44ee-a325-0e1f4f42b32b">
 					<Documentation>For concrete girders, tendons embedded.</Documentation>
-					<Definition xsi:type="DocTemplateDefinition" Name="Tendons" UniqueId="a7093537-e57f-415d-8be5-d48d120b1265" Type="IfcBeam" />
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Element_Decomposition_2A9y5QnEfCgOpEVxkXoRpW" />
+					<Items>
+						<DocTemplateItem UniqueId="8559d0d3-5d45-40ba-816d-f03138e22373" RuleParameters="RelatedObjects=IfcTendonConduit;">
+							<Concepts>
+								<DocTemplateUsage Name="RelatedObjects" UniqueId="644f5ef1-0b00-4158-93ee-7597299a22bd">
+									<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Object_Predefined_Type_0b989XcDzD2fDaLbDNNAGX" />
+								</DocTemplateUsage>
+							</Concepts>
+						</DocTemplateItem>
+					</Items>
 				</DocTemplateUsage>
 				<DocTemplateUsage Name="Stiffeners" UniqueId="03080ed1-284c-4911-9b91-0a1a84dd6bcd">
 					<Documentation>For steel girders, web stiffeners placed at intervals along inside face(s) of web.</Documentation>
-					<Definition xsi:type="DocTemplateDefinition" Name="Stiffeners" UniqueId="51c52317-dcd1-422e-bdb0-2fd0634f0adc" Type="IfcBeam" />
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Element_Decomposition_with_Predefined_Type_2doY2TqVr60xar2GKSiGHH" />
+					<Items>
+						<DocTemplateItem UniqueId="45572a32-df56-404f-844e-f1bfca824fc8" RuleParameters="RelatedObjects=IfcPlate;PredefinedType=STIFFENER_PLATE;" />
+					</Items>
 				</DocTemplateUsage>
 				<DocTemplateUsage Name="Shear Studs" UniqueId="2a2cd4a4-840e-4200-9c87-7f6edc340b29">
 					<Documentation>For steel girders, shear studs placed at intervals along top flange.</Documentation>
-					<Definition xsi:type="DocTemplateDefinition" Name="Shear Studs" UniqueId="5f43b9a9-68f7-495e-94eb-bda0aa8ff2a9" Type="IfcBeam" />
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Element_Decomposition_with_Predefined_Type_2doY2TqVr60xar2GKSiGHH" />
+					<Items>
+						<DocTemplateItem UniqueId="df22d80b-7efb-4a73-a51a-2a68ba20b51e" RuleParameters="RelatedObjects=IfcMechanicalFastener;PredefinedType=STUDSHEARCONNECTOR;" />
+					</Items>
 				</DocTemplateUsage>
 				<DocTemplateUsage Name="Camber" UniqueId="9c9249df-a749-46fc-8e8e-090427a7156c">
 					<Documentation>For steel girders, camber ordinates for fabrication.</Documentation>
@@ -109,22 +140,20 @@
 					<Documentation>Relationship connecting head of diaphragm with a girder segment.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Element_Connectivity_with_Predefined_Type_2xpS19ZiH9sfTkBuMqmZIW" />
 					<Items>
-						<DocTemplateItem UniqueId="af175ac1-6ba4-4cc1-8553-c85ff59bac10">
+						<DocTemplateItem UniqueId="af175ac1-6ba4-4cc1-8553-c85ff59bac10" RuleParameters="RelatedElement=IfcBeam;PredefinedType=GIRDER_SEGMENT;">
 							<Concepts>
 								<DocTemplateUsage Name="RelatedElement" UniqueId="216c5ff6-67f4-4fd0-8cee-ca1c574e49bc">
 									<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Object_Predefined_Type_0b989XcDzD2fDaLbDNNAGX" />
 								</DocTemplateUsage>
 							</Concepts>
 						</DocTemplateItem>
-						<DocTemplateItem UniqueId="8b7dfee9-6105-4c40-b634-efddfb83f58f" />
 					</Items>
 				</DocTemplateUsage>
 				<DocTemplateUsage Name="Connection Tail" UniqueId="f705446e-40cf-48f3-8b44-3d912e1704ce">
 					<Documentation>Relationship connecting tail of diaphragm with a girder segment.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Element_Connectivity_with_Predefined_Type_2xpS19ZiH9sfTkBuMqmZIW" />
 					<Items>
-						<DocTemplateItem UniqueId="25e1fb44-cbe1-46d0-97b4-5ff607efca7d" />
-						<DocTemplateItem UniqueId="947ed792-251b-4c0d-8fe8-e0f675c59881" />
+						<DocTemplateItem UniqueId="25e1fb44-cbe1-46d0-97b4-5ff607efca7d" RuleParameters="RelatedElement=IfcBeam;PredefinedType=GIRDER_SEGMENT;" />
 					</Items>
 				</DocTemplateUsage>
 				<DocTemplateUsage Name="Connection Support" UniqueId="7b62f6d8-dfa6-4405-8cb4-942d1edff4ff">
@@ -136,11 +165,25 @@
 				</DocTemplateUsage>
 				<DocTemplateUsage Name="Reinforcing" UniqueId="d487eea8-b262-4aeb-b449-705a1f98c019">
 					<Documentation>For concrete diaphragms, reinforcing embedded.</Documentation>
-					<Definition xsi:type="DocTemplateDefinition" Name="Reinforcing" UniqueId="e851122b-a56d-40d5-8724-14e3e40a500d" />
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Element_Decomposition_with_Predefined_Type_2doY2TqVr60xar2GKSiGHH" />
+					<Items>
+						<DocTemplateItem UniqueId="58d070b9-74e8-4b96-9297-16076fd078cf" RuleParameters="RelatedObjects=IfcBeam;PredefinedType=DIAPHRAGM;" />
+						<DocTemplateItem UniqueId="fd0bb18e-385f-4f6a-bb62-802de5c849cc" RuleParameters="RelatedObjects=IfcReinforcingElement;">
+							<Concepts>
+								<DocTemplateUsage Name="RelatedObjects" UniqueId="8383b9ce-4f5f-4004-b481-bcb6f8f3d218">
+									<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Object_Predefined_Type_0b989XcDzD2fDaLbDNNAGX" />
+								</DocTemplateUsage>
+							</Concepts>
+						</DocTemplateItem>
+						<DocTemplateItem UniqueId="5c3e1bc1-1671-41a8-9830-41da22a6ad9e" />
+					</Items>
 				</DocTemplateUsage>
 				<DocTemplateUsage Name="Tendons" UniqueId="f856256e-bf8e-4394-b24f-7e5132b40f52">
 					<Documentation>For concrete diaphragms, tendons embedded.</Documentation>
-					<Definition xsi:type="DocTemplateDefinition" Name="Tendons" UniqueId="ec3d693e-43e3-4178-8f35-5e44d5bbad7c" />
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Element_Decomposition_2A9y5QnEfCgOpEVxkXoRpW" />
+					<Items>
+						<DocTemplateItem UniqueId="9a98eca1-4b98-4113-bbdb-01d5a2f95529" RuleParameters="RelatedObjects=IfcTendonConduit;" />
+					</Items>
 				</DocTemplateUsage>
 			</Concepts>
 			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="3008e22d-4035-43ec-841a-921b8975ab27" Type="IfcBeam">
@@ -271,7 +314,7 @@
 					<Documentation>Connection to girder on left as facing direction of alignment.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Element_Connectivity_with_Predefined_Type_2xpS19ZiH9sfTkBuMqmZIW" />
 					<Items>
-						<DocTemplateItem UniqueId="cebb616d-eddd-498c-b1ac-5a843f691c7a" RuleParameters="PredefinedType=GIRDER;">
+						<DocTemplateItem UniqueId="cebb616d-eddd-498c-b1ac-5a843f691c7a" RuleParameters="RelatedElement=IfcBeam;PredefinedType=GIRDER_SEGMENT;">
 							<Concepts>
 								<DocTemplateUsage Name="RelatedElement" UniqueId="b83cbfd2-09c9-4633-98ba-7b9d6eb11017">
 									<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Object_Predefined_Type_0b989XcDzD2fDaLbDNNAGX" />
@@ -281,15 +324,13 @@
 								</DocTemplateUsage>
 							</Concepts>
 						</DocTemplateItem>
-						<DocTemplateItem UniqueId="673cf300-3348-468b-9c5d-3da681fe7dee" />
 					</Items>
 				</DocTemplateUsage>
 				<DocTemplateUsage Name="Girder Segment Right" UniqueId="042e7da0-2c21-4c9d-8542-b9acddd03b46">
 					<Documentation>Connection to girder on right as facing direction of alignment.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Element_Connectivity_with_Predefined_Type_2xpS19ZiH9sfTkBuMqmZIW" />
 					<Items>
-						<DocTemplateItem UniqueId="19632d3f-bf1a-4c96-9f50-305415fc1276" RuleParameters="PredefinedType=GIRDER;" />
-						<DocTemplateItem UniqueId="7c62ee6a-bcca-412f-b10b-bca2960ef6e8" />
+						<DocTemplateItem UniqueId="19632d3f-bf1a-4c96-9f50-305415fc1276" RuleParameters="RelatedElement=IfcBeam;PredefinedType=GIRDER_SEGMENT;" />
 					</Items>
 				</DocTemplateUsage>
 			</Concepts>
@@ -360,7 +401,10 @@
 				</DocTemplateUsage>
 				<DocTemplateUsage Name="Alignment" UniqueId="5e82185b-39f1-457c-9dcd-09c34a4772d2">
 					<Documentation>Reference to the alignment object used to position the girder line.</Documentation>
-					<Definition xsi:type="DocTemplateDefinition" Name="Alignment" UniqueId="6641a9f1-4ed8-4e7a-8674-fe5e511fd9cd" Type="IfcElementAssembly" />
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Product_Relative_Positioning_1jo2X5iK969AcbDz7acLTX" />
+					<Items>
+						<DocTemplateItem UniqueId="09aff01a-5e28-4f0f-a475-1f37e0b15fe1" RuleParameters="PositioningElement=IfcAlignment;" />
+					</Items>
 				</DocTemplateUsage>
 				<DocTemplateUsage Name="Axis" UniqueId="c923e180-fc6c-494a-b859-db1be1bfa646">
 					<Documentation>Axis curve defined as a sub-span with offsets relative to the alignment curve.</Documentation>
@@ -408,6 +452,18 @@
 			<ApplicableItems>
 				<DocTemplateItem UniqueId="5ea7c2b9-de24-418a-a52c-745b3ce292c5" RuleParameters="PredefinedType=GIRDER;" />
 			</ApplicableItems>
+		</DocConceptRoot>
+		<DocConceptRoot Name="Tendon" UniqueId="75388536-140e-4c2b-947d-0e11322d08b1">
+			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcTendonConduit" />
+			<Concepts>
+				<DocTemplateUsage Name="Tendon decomposition" UniqueId="efb5a271-110d-4ddc-bfec-298012969d5c">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Element_Decomposition_2A9y5QnEfCgOpEVxkXoRpW" />
+					<Items>
+						<DocTemplateItem UniqueId="cbb38ff4-7d89-46cf-ad99-674de46305ce" RuleParameters="RelatedObjects=IfcTendon;" />
+					</Items>
+				</DocTemplateUsage>
+			</Concepts>
+			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="f6aa069a-17e1-476b-8fe0-dbba7262d2ae" Type="IfcTendonConduit" />
 		</DocConceptRoot>
 	</ConceptRoots>
 </DocModelView>
