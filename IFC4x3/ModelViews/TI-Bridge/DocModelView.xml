@@ -85,7 +85,7 @@
 					<Documentation>Default unit for length. For imperial, inches are recommended. SI Meters are the default if not provided.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Project_Units_1CogmCYFXC7P7z8XJGvHF4" />
 					<Items>
-						<DocTemplateItem UniqueId="dd3cdeb3-b37d-4910-87a7-6cf081e954ac" RuleParameters="HasUnits=IfcUnitAssignment;SIUnitType=LENGTHUNIT;SIUnitName=METRE;" />
+						<DocTemplateItem UniqueId="dd3cdeb3-b37d-4910-87a7-6cf081e954ac" RuleParameters="HasUnits=IfcUnitAssignment;SIUnitType=LENGTHUNIT;SIPrefix:NOTEXISTS;SIUnitName=METRE;" />
 						<DocTemplateItem UniqueId="13d50766-f8b6-4166-b634-ab9ebae77c6b" RuleParameters="HasUnits=IfcUnitAssignment;ConversionUnitType=LENGTHUNIT;ConversionUnitName=inch;" />
 					</Items>
 				</DocTemplateUsage>
@@ -101,7 +101,7 @@
 					<Documentation>Default unit for mass. For imperial, pounds are recommended. SI Kilograms are the default if not provided.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Project_Units_1CogmCYFXC7P7z8XJGvHF4" />
 					<Items>
-						<DocTemplateItem UniqueId="986637a8-b557-46e2-826d-f2ba63ee6ac7" RuleParameters="HasUnits=IfcUnitAssignment;SIUnitType=MASSUNIT;SIUnitName=GRAM;" />
+						<DocTemplateItem UniqueId="986637a8-b557-46e2-826d-f2ba63ee6ac7" RuleParameters="HasUnits=IfcUnitAssignment;SIUnitType=MASSUNIT;SIPrefix=KILO;SIUnitName=GRAM;" />
 						<DocTemplateItem UniqueId="d6d49074-1732-477d-9a5e-c8862012ace0" RuleParameters="HasUnits=IfcUnitAssignment;ConversionUnitType=MASSUNIT;ConversionUnitName=pound;" />
 					</Items>
 				</DocTemplateUsage>
@@ -125,3 +125,4 @@
 		</DocConceptRoot>
 	</ConceptRoots>
 </DocModelView>
+
