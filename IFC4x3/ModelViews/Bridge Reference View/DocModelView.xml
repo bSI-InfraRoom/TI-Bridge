@@ -54,7 +54,7 @@
 			<Concepts>
 				<DocTemplateUsage Name="Spatial Composition" UniqueId="6952c6f8-03cd-4a45-b13f-8f5a9a242ca0">
 					<Documentation>&gt; NOTE&amp;nbsp; By using the inverse relationship _IfcBridge.Decomposes_ it references _IfcProject_ || _IfcSite_ || _IfcBridge_ through _IfcRelAggregates.RelatingObject_. If it refers to another instance of _IfcBridge_, the referenced _IfcBridge_ needs to have a different and higher _CompositionType_, i.e. COMPLEX (if the other _IfcBuilding_ has ELEMENT), or ELEMENT (if the other _IfcBridge_ has PARTIAL).</Documentation>
-					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Composition_2C3zBtSRjEReR30ApKl5A" />
+					<Definition xsi:type="DocTemplateDefinition" UniqueId="cb7fe80b-a286-475c-8caf-0090ca6dc8ff" />
 					<Items>
 						<DocTemplateItem UniqueId="1c8e09b3-c381-4245-b7a7-5dcc407f8c0a" RuleParameters="RelatingObject=IfcProject;">
 							<Documentation>Direct assignment to project, if the bridgeis the outermost spatial container, and no site information is provided for bridge projects</Documentation>
@@ -147,7 +147,7 @@
 _IfcBridgePart_ needs to have a different and higher
  _CompositionType_, i.e. COMPLEX (if the other _IfcBridgePart_ has ELEMENT), or ELEMENT (if the other
  _IfcBridgePart_ has PARTIAL)._</Documentation>
-					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Composition_2C3zBtSRjEReR30ApKl5A" />
+					<Definition xsi:type="DocTemplateDefinition" UniqueId="4c4eafc1-9247-43fc-a578-8d56b4e038df" />
 					<Items>
 						<DocTemplateItem UniqueId="49e9cfc4-42ad-48c0-970f-80bd2221258d" RuleParameters="RelatingObject=IfcBridge;">
 							<Documentation>Assignment to the bridge, where the bridge part is a part of.</Documentation>
@@ -221,7 +221,7 @@ _IfcBridgePart_ needs to have a different and higher
 			<Concepts>
 				<DocTemplateUsage Name="Spatial Composition" UniqueId="41d092e8-d6d0-4ee1-86e9-0288ea83d4a4">
 					<Documentation>&gt; NOTE&amp;nbsp; By using the inverse relationship _IfcFacility.Decomposes_ it references _IfcProject_ || _IfcSite_ || _IfcFacility_ through _IfcRelAggregates.RelatingObject_. If it refers to another instance of _IfcFacility_, the referenced _IfcFacility_ needs to have a different and higher _CompositionType_, i.e. COMPLEX (if the other _IfcBuilding_ has ELEMENT), or ELEMENT (if the other _IfcFacility_ has PARTIAL).</Documentation>
-					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Composition_2C3zBtSRjEReR30ApKl5A" />
+					<Definition xsi:type="DocTemplateDefinition" UniqueId="64777f4d-5ab8-4592-915c-762e076f6a13" />
 					<Items>
 						<DocTemplateItem UniqueId="ec844f4c-c227-4dcb-9556-62aca65716b1" RuleParameters="RelatingObject=IfcProject;">
 							<Documentation>Direct assignment to project, if the facility is the outermost spatial container, and no site information is provided for the building projects</Documentation>
@@ -290,7 +290,7 @@ _IfcBridgePart_ needs to have a different and higher
 			<Concepts>
 				<DocTemplateUsage Name="Spatial Composition" UniqueId="14675775-18ce-4b31-ab8c-2be71e0d5718">
 					<Documentation>&gt; NOTE&amp;nbsp; By using the inverse relationship _IfcFacility.Decomposes_ it references _IfcProject_ || _IfcSite_ || _IfcFacility_ through _IfcRelAggregates.RelatingObject_. If it refers to another instance of _IfcFacility_, the referenced _IfcFacility_ needs to have a different and higher _CompositionType_, i.e. COMPLEX (if the other _IfcBuilding_ has ELEMENT), or ELEMENT (if the other _IfcFacility_ has PARTIAL).</Documentation>
-					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Composition_2C3zBtSRjEReR30ApKl5A" />
+					<Definition xsi:type="DocTemplateDefinition" UniqueId="a8176879-ce0e-4e4d-9d97-b639f89c2a6d" />
 					<Items>
 						<DocTemplateItem UniqueId="70bfca30-39ca-471b-a92a-28e070d0d795" RuleParameters="RelatingObject=IfcProject;">
 							<Documentation>Direct assignment to project, if the facility is the outermost spatial container, and no site information is provided for the building projects</Documentation>

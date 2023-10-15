@@ -761,7 +761,7 @@ General requirements of software implementing the Reference Exchange:
 				</DocTemplateUsage>
 				<DocTemplateUsage Name="Spatial Composition" UniqueId="3dc5b493-557d-482d-8191-406e5e9cf962">
 					<Documentation>&gt; NOTE&amp;nbsp; By using the inverse relationship _IfcBuilding.Decomposes_ it references _IfcProject_ || _IfcSite_ || _IfcBuilding_ through _IfcRelAggregates.RelatingObject_. If it refers to another instance of _IfcBuilding_, the referenced _IfcBuilding_ needs to have a different and higher _CompositionType_, i.e. COMPLEX (if the other _IfcBuilding_ has ELEMENT), or ELEMENT (if the other _IfcBuilding_ has PARTIAL).</Documentation>
-					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Composition_2C3zBtSRjEReR30ApKl5A" />
+					<Definition xsi:type="DocTemplateDefinition" UniqueId="9ecd011d-2377-4d79-8258-fd37b0b27083" />
 					<Items>
 						<DocTemplateItem UniqueId="de28f014-ffc3-42ab-adbc-aaa2cdf6323d">
 							<Documentation>Direct assignment to project, if the building is the outermost spatial container, and no site information is provided for building projects</Documentation>
@@ -1085,7 +1085,7 @@ If no _IfcBuildingElementProxyType_ is attached (i.e. if only occurrence informa
 _IfcBuildingStorey_ needs to have a different and higher
  _CompositionType_, i.e. COMPLEX (if the other _IfcBuildingStorey_ has ELEMENT), or ELEMENT (if the other
  _IfcBuildingStorey_ has PARTIAL)._</Documentation>
-					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Composition_2C3zBtSRjEReR30ApKl5A" />
+					<Definition xsi:type="DocTemplateDefinition" UniqueId="04a52ddf-6db4-4cba-969c-983423c7629b" />
 					<Items>
 						<DocTemplateItem UniqueId="29e59c09-5fbe-4ad5-b68e-0ea5ca1df1fb">
 							<Documentation>Assignment to the building, where the building storey is a part of.</Documentation>
@@ -7490,7 +7490,7 @@ Figure 1 illustrates roof placement, with an _IfcRoof_ defining the local placem
 				</DocTemplateUsage>
 				<DocTemplateUsage Name="Spatial Composition" UniqueId="a3feffdb-78e2-4c87-ad0a-9908857dac92">
 					<Documentation>By using the inverse relationship _IfcSite.Decomposes_ it references _IfcProject_ || _IfcSite_ through _IfcRelAggregates.RelatingObject_, If it refers to another instance of _IfcSite_, the referenced _IfcSite_ needs to have a different and higher _CompositionType_, i.e. COMPLEX (if the other _IfcSite_ has ELEMENT), or ELEMENT (if the other _IfcSite_ has PARTIAL).</Documentation>
-					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Composition_2C3zBtSRjEReR30ApKl5A" />
+					<Definition xsi:type="DocTemplateDefinition" UniqueId="38ce6231-dc92-4808-ab96-be48afd94f70" />
 					<Items>
 						<DocTemplateItem UniqueId="f4982f7c-cdfd-4e8e-affd-8b6329314c36" RuleParameters="Spatial Composite=IfcProject;">
 							<Documentation>Direct assignment to project, if the site is the outermost spatial container (default)</Documentation>
@@ -8242,7 +8242,7 @@ Figure 1 shows an extrusion of an arbitrary profile definition with voids into t
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Product_Local_Placement_3Bw5jVUH9AGukt7cEGB9j" />
 				</DocTemplateUsage>
 				<DocTemplateUsage Name="Spatial Composition" UniqueId="38b73d1a-f412-4ceb-a893-c14bbaf59d72">
-					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Composition_2C3zBtSRjEReR30ApKl5A" />
+					<Definition xsi:type="DocTemplateDefinition" UniqueId="c4fb7521-58d1-4bcf-bdd4-3592a50fec27" />
 				</DocTemplateUsage>
 				<DocTemplateUsage Name="Spatial Decomposition" UniqueId="8289e647-2095-4fb2-9084-29bd95ec2a67">
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Decomposition_1cVuH3xCvAZQOan_h15FW" />

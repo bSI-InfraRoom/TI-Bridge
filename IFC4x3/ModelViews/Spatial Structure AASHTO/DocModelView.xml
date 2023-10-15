@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocModelView xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Spatial_Structure_AASHTO_0foT2BjR19xRW8Z5o45c0" Name="Spatial Structure AASHTO" UniqueId="29c9d08b-b5b0-49ed-b808-fe3172105980" Code="spatial-structure-aashto">
+	<ConceptRoots>
+		<DocConceptRoot Name="Bridge" UniqueId="705119c3-04c6-4baf-a636-85ad4af1da1d">
+			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcBridge" />
+			<Concepts>
+				<DocTemplateUsage Name="Site" UniqueId="d0d88298-8f9b-463c-9786-a66e7e9162a8">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Composition_2C3zBtSRjEReR30ApKl5A" />
+					<Items>
+						<DocTemplateItem UniqueId="9a267e92-e598-477a-8547-da832caf3741" RuleParameters="RelatingObject=IfcSite;" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Superstructure" UniqueId="33566e1e-eadc-4ee4-ac3e-32f7d222a67a">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Decomposition_PredefinedType_0w2wTQc5j8GfBRi1MaQVyx" />
+					<Items>
+						<DocTemplateItem UniqueId="905a68cc-7908-41af-a6fb-92f54a15d74b" RuleParameters="RelatedObjects=IfcBridgePart;PredefinedType=SUPERSTRUCTURE;" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Substructure" UniqueId="baebfecc-2e17-46ae-8987-0e08d3030550">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Decomposition_PredefinedType_0w2wTQc5j8GfBRi1MaQVyx" />
+					<Items>
+						<DocTemplateItem UniqueId="007f018f-8c6a-418f-a9aa-0071ad08938e" />
+					</Items>
+				</DocTemplateUsage>
+			</Concepts>
+			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="21920f1d-6681-474a-b829-0e064d5b3b82" Type="IfcBridge" />
+		</DocConceptRoot>
+		<DocConceptRoot Name="Substructure" UniqueId="4231e20e-9642-4582-8dd1-3232563078d5">
+			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcBridgePart" />
+			<Concepts>
+				<DocTemplateUsage Name="Bridge" UniqueId="36641eca-1a57-4316-b008-1eca9e2f3684">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Composition_2C3zBtSRjEReR30ApKl5A" />
+					<Items>
+						<DocTemplateItem UniqueId="83bfacc3-e102-4771-9c18-fe30ff500d20" RuleParameters="RelatingObject=IfcBridge;" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Pier" UniqueId="cc4f6a15-3caa-4af5-a687-5ca52a6ce787">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Decomposition_PredefinedType_0w2wTQc5j8GfBRi1MaQVyx" />
+					<Items>
+						<DocTemplateItem UniqueId="9ae434f8-e94c-4cbf-87df-f834badc26ca" RuleParameters="RelatedObjects=IfcBridgePart;PredefinedType=PIER;" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Abutment" UniqueId="d33551a6-3706-4bc8-af79-ccfff33bc2a3">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Decomposition_PredefinedType_0w2wTQc5j8GfBRi1MaQVyx" />
+					<Items>
+						<DocTemplateItem UniqueId="06163da5-6020-47b5-a245-3eda9d985bf3" RuleParameters="RelatedObjects=IfcBridgePart;PredefinedType=ABUTMENT;" />
+					</Items>
+				</DocTemplateUsage>
+			</Concepts>
+			<ApplicableTemplate xsi:type="DocTemplateDefinition" xsi:nil="true" href="Object_Predefined_Type_0b989XcDzD2fDaLbDNNAGX" />
+			<ApplicableItems>
+				<DocTemplateItem UniqueId="9340c52f-c30b-4c9c-8a03-af1f2caa23d0" RuleParameters="PredefinedType=SUBSTRUCTURE;" />
+			</ApplicableItems>
+		</DocConceptRoot>
+		<DocConceptRoot Name="Pier" UniqueId="ac3dd6e5-742e-4462-bf44-83041bdfcc07">
+			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcBridgePart" />
+			<Concepts>
+				<DocTemplateUsage Name="Substructure" UniqueId="a2e00bbf-da01-42f7-934a-5c7793b6e4ba">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Composition_Predefined_Type_1pTZ9yi_X8nhpZGks40sfZ" />
+					<Items>
+						<DocTemplateItem UniqueId="27ac214c-bb0c-4998-b6d8-81922f38dfc7" RuleParameters="RelatingObject=IfcBridgePart;PredefinedType=SUBSTRUCTURE;" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Containment" UniqueId="b5cc51be-b025-46e5-a76b-95694e6a5749">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Container_1XtGZjG59LPCtYlqeIWvl" />
+					<Items>
+						<DocTemplateItem UniqueId="21457943-5849-44f7-a2f3-2ee122542143" RuleParameters="Type=IfcPile;" />
+						<DocTemplateItem UniqueId="1c7e0a23-15b3-4cb3-afa7-3159efcbcf0b" RuleParameters="Type=IfcFooting;" />
+						<DocTemplateItem UniqueId="3ffa1318-f5a2-4617-953d-2d3465a942ec" RuleParameters="Type=IfcColumn;" />
+						<DocTemplateItem UniqueId="28c8db92-966a-460d-9ccc-054f52808af7" RuleParameters="Type=IfcWall;" />
+						<DocTemplateItem UniqueId="938698cd-2c12-48ab-a372-05a0522bbcc6" RuleParameters="Type=IfcBeam;" />
+						<DocTemplateItem UniqueId="f5237ed6-036d-4333-ae4a-fc70e9bd8a99" RuleParameters="Type=IfcBearing;" />
+					</Items>
+				</DocTemplateUsage>
+			</Concepts>
+			<ApplicableTemplate xsi:type="DocTemplateDefinition" xsi:nil="true" href="Object_Predefined_Type_0b989XcDzD2fDaLbDNNAGX" />
+			<ApplicableItems>
+				<DocTemplateItem UniqueId="9190aa74-1e74-4150-9f5e-0a0b52b61186" RuleParameters="PredefinedType=PIER;" />
+			</ApplicableItems>
+		</DocConceptRoot>
+		<DocConceptRoot Name="Deck" UniqueId="acf61912-bb46-4483-a75a-d23a6f479e26">
+			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcBridgePart" />
+			<Concepts>
+				<DocTemplateUsage Name="Superstructure" UniqueId="59d284b0-7777-4eda-8edf-d4b165644f9b">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Composition_Predefined_Type_1pTZ9yi_X8nhpZGks40sfZ" />
+					<Items>
+						<DocTemplateItem UniqueId="fe93afab-1f93-4c26-8f06-2abaca10bedd" RuleParameters="RelatingObject=IfcBridgePart;PredefinedType=SUPERSTRUCTURE;" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Containment" UniqueId="a4471edc-6d54-412a-8d1b-ed8a9209fd6e">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Container_1XtGZjG59LPCtYlqeIWvl" />
+					<Items>
+						<DocTemplateItem UniqueId="b586912e-71d0-4b8f-9126-14f24adc92d5" RuleParameters="Type=IfcRailing;" />
+						<DocTemplateItem UniqueId="596a75a7-1838-4505-90c7-8c5cc7e391ee" RuleParameters="Type=IfcSlab;" />
+						<DocTemplateItem UniqueId="bdd494f0-ec5f-47c0-bb30-f38e0228d03b" RuleParameters="Type=IfcKerb;" />
+						<DocTemplateItem UniqueId="7b889eb0-91f6-4f51-912f-1b08367e169a" RuleParameters="Type=IfcBeam;" />
+						<DocTemplateItem UniqueId="79dc128e-151f-4087-9e91-e2f5abf1ebdb" RuleParameters="Type=IfcWall;" />
+						<DocTemplateItem UniqueId="2e7cf5ea-5da8-4daf-9ea4-98c1cb0fc616" RuleParameters="Type=IfcElementAssembly;" />
+						<DocTemplateItem UniqueId="563343a5-f153-4d9d-a95a-c8446201bdcb" RuleParameters="Type=IfcCovering;" />
+					</Items>
+				</DocTemplateUsage>
+			</Concepts>
+			<ApplicableTemplate xsi:type="DocTemplateDefinition" xsi:nil="true" href="Object_Predefined_Type_0b989XcDzD2fDaLbDNNAGX" />
+			<ApplicableItems>
+				<DocTemplateItem UniqueId="4e89affd-23d6-4643-a887-4998a0d8ac42" RuleParameters="PredefinedType=DECK;" />
+			</ApplicableItems>
+		</DocConceptRoot>
+		<DocConceptRoot Name="Abutment" UniqueId="d10d1ae1-2cee-42d4-b451-f0412630503e">
+			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcBridgePart" />
+			<Concepts>
+				<DocTemplateUsage Name="Substructure" UniqueId="751ceda8-c9cd-4b0f-86b7-b300047d6339">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Composition_Predefined_Type_1pTZ9yi_X8nhpZGks40sfZ" />
+					<Items>
+						<DocTemplateItem UniqueId="241cfb8a-65ba-4f60-ae71-819bd33917c1" RuleParameters="RelatingObject=IfcBridgePart;PredefinedType=SUBSTRUCTURE;" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Containment" UniqueId="3687f25a-0928-45ad-b1ef-d62d1f1f6e5c">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Container_1XtGZjG59LPCtYlqeIWvl" />
+					<Items>
+						<DocTemplateItem UniqueId="8da71e62-5e7d-492e-94f0-f9b71612fe88" RuleParameters="Type=IfcPile;" />
+						<DocTemplateItem UniqueId="4b2f5cee-37f5-465d-9827-6b09a91f3f48" RuleParameters="Type=IfcFooting;" />
+						<DocTemplateItem UniqueId="11e6a032-31b5-48b0-90d0-95ac3c2461a6" RuleParameters="Type=IfcColumn;" />
+						<DocTemplateItem UniqueId="5bb2af0b-319f-4014-bab1-8ceb8a239200" RuleParameters="Type=IfcWall;" />
+						<DocTemplateItem UniqueId="83525971-6e15-4adf-a94f-187320c652b0" RuleParameters="Type=IfcBeam;" />
+						<DocTemplateItem UniqueId="973f3da3-12ab-479d-a22c-d3f9979d47b7" RuleParameters="Type=IfcBearing;" />
+					</Items>
+				</DocTemplateUsage>
+			</Concepts>
+			<ApplicableTemplate xsi:type="DocTemplateDefinition" xsi:nil="true" href="Object_Predefined_Type_0b989XcDzD2fDaLbDNNAGX" />
+			<ApplicableItems>
+				<DocTemplateItem UniqueId="c979c510-b612-48c8-8b3c-ce4c31bb9f29" RuleParameters="PredefinedType=ABUTMENT;" />
+			</ApplicableItems>
+		</DocConceptRoot>
+		<DocConceptRoot Name="Superstructure" UniqueId="def2af54-c980-41f3-ae60-2979c35a6a0b">
+			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcBridgePart" />
+			<Concepts>
+				<DocTemplateUsage Name="Bridge" UniqueId="6e5519fd-6633-4d14-abc5-0aff103fb2c3">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Composition_2C3zBtSRjEReR30ApKl5A" />
+					<Items>
+						<DocTemplateItem UniqueId="4ceb60b7-3483-425b-9e87-81abb05ac430" RuleParameters="RelatingObject=IfcBridge;" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Deck" UniqueId="5f36a6e0-6c9f-4049-8d18-bf8468b28693">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Decomposition_PredefinedType_0w2wTQc5j8GfBRi1MaQVyx" />
+					<Items>
+						<DocTemplateItem UniqueId="72632db1-82bc-4082-b9be-10ae58a57528" RuleParameters="RelatedObjects=IfcBridgePart;PredefinedType=DECK;" />
+					</Items>
+				</DocTemplateUsage>
+			</Concepts>
+			<ApplicableTemplate xsi:type="DocTemplateDefinition" xsi:nil="true" href="Object_Predefined_Type_0b989XcDzD2fDaLbDNNAGX" />
+			<ApplicableItems>
+				<DocTemplateItem UniqueId="504c7231-2e11-48b1-835e-4ff89c457fb8" RuleParameters="PredefinedType=SUPERSTRUCTURE;" />
+			</ApplicableItems>
+		</DocConceptRoot>
+		<DocConceptRoot Name="Project" UniqueId="ddba5f83-5b5a-4e71-a6ae-0061e6cab69e">
+			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcProject" />
+			<Concepts>
+				<DocTemplateUsage Name="Decomposition" UniqueId="5c440956-47a4-4a04-b9d3-00e822c8f0e8">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Decomposition_1cVuH3xCvAZQOan_h15FW" />
+					<Items>
+						<DocTemplateItem UniqueId="a815268c-709f-4bce-aaf4-36b13968bf43" RuleParameters="RelatedObjects=IfcSite;" />
+					</Items>
+				</DocTemplateUsage>
+			</Concepts>
+			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="3a6749e8-99cc-4a4d-b554-120c71f34525" Type="IfcProject" />
+		</DocConceptRoot>
+		<DocConceptRoot Name="Site" UniqueId="5ecd6253-44a1-48de-82f8-f74d199f006a">
+			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcSite" />
+			<Concepts>
+				<DocTemplateUsage Name="Project" UniqueId="69fd85bb-cd27-436f-8dbb-bcce21ed6cf8">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Composition_2C3zBtSRjEReR30ApKl5A" />
+					<Items>
+						<DocTemplateItem UniqueId="cb20f3b7-8765-4335-9d25-bed41405fb40" RuleParameters="RelatingObject=IfcProject;" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Bridge" UniqueId="9e0adee4-32cf-418b-b5f8-92349abe2ed6">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Decomposition_PredefinedType_0w2wTQc5j8GfBRi1MaQVyx" />
+					<Items>
+						<DocTemplateItem UniqueId="717f98f8-2a8e-4db4-bcd4-9d257c7b986a" RuleParameters="RelatedObjects=IfcBridge;" />
+					</Items>
+				</DocTemplateUsage>
+			</Concepts>
+			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="11b85678-a5df-438b-a947-1f4e44024c1e" Type="IfcSite" />
+		</DocConceptRoot>
+	</ConceptRoots>
+</DocModelView>
+

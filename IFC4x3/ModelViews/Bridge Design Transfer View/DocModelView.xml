@@ -69,7 +69,7 @@
 			<Concepts>
 				<DocTemplateUsage Name="Spatial Composition" UniqueId="413d2277-18ed-4734-ac29-cccdab7742e9">
 					<Documentation>&gt; NOTE&amp;nbsp; By using the inverse relationship _IfcBridge.Decomposes_ it references _IfcProject_ || _IfcSite_ || _IfcBridge_ through _IfcRelAggregates.RelatingObject_. If it refers to another instance of _IfcBridge_, the referenced _IfcBridge_ needs to have a different and higher _CompositionType_, i.e. COMPLEX (if the other _IfcBuilding_ has ELEMENT), or ELEMENT (if the other _IfcBridge_ has PARTIAL).</Documentation>
-					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Composition_2C3zBtSRjEReR30ApKl5A" />
+					<Definition xsi:type="DocTemplateDefinition" UniqueId="9da876d0-0f14-4b24-b6a6-86fab2f9fa2c" />
 					<Items>
 						<DocTemplateItem UniqueId="da6e4239-fddd-4973-9a8a-e1b6568851a6" RuleParameters="RelatingObject=IfcProject;">
 							<Documentation>Direct assignment to project, if the bridgeis the outermost spatial container, and no site information is provided for bridge projects</Documentation>
@@ -152,19 +152,14 @@
 			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="6d45754d-fe27-43c6-89b8-6b26766089bc" Type="IfcBridge" />
 		</DocConceptRoot>
 		<DocConceptRoot Name="IfcBridgePart" UniqueId="29da0d5a-33f5-4e65-8bd6-7bbbbde554e6">
-			<ApplicableEntity xsi:type="DocEntity" id="IfcBridgePart" Name="IfcBridgePart" UniqueId="ec446af0-21fb-441c-85cc-891cce613920" Status="Deprecated" BaseDefinition="IfcFacilityPart" EntityFlags="32">
-				<Documentation>In a bridge, BridgePart as subtype of FacilityPart represents the parts in breakdown structure according to local practices (e.g. Superstructure, Substructure, Foundation), and these can also be broken down further (e.g. Substructure as whole can be COMPLEX, while each abutment and pier would be ELEMENT, and a pier can be composed of separate towers (PARTIAL).</Documentation>
-				<Localization>
-					<DocLocalization Locale="en" Name="Bridge part" />
-				</Localization>
-			</ApplicableEntity>
+			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcBridgePart" />
 			<Concepts>
 				<DocTemplateUsage Name="Spatial Composition" UniqueId="9fd91591-6fe7-418b-af3c-3bf6346ac863">
 					<Documentation>&gt; NOTE&amp;nbsp; By using the inverse relationship _IfcBridgePart.Decomposes_ it references (_IfcBridge_ || _IfcBridgePart_) through _IfcRelAggregates.RelatingObject_IfcBridgePart_, the referenced 
 _IfcBridgePart_ needs to have a different and higher
  _CompositionType_, i.e. COMPLEX (if the other _IfcBridgePart_ has ELEMENT), or ELEMENT (if the other
  _IfcBridgePart_ has PARTIAL)._</Documentation>
-					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Composition_2C3zBtSRjEReR30ApKl5A" />
+					<Definition xsi:type="DocTemplateDefinition" UniqueId="565d1b3d-2289-46a5-b5f4-8a6fccceced4" />
 					<Items>
 						<DocTemplateItem UniqueId="a3bd15f7-412b-4c81-9ceb-4bffea3c239d" RuleParameters="RelatingObject=IfcBridge;">
 							<Documentation>Assignment to the bridge, where the bridge part is a part of.</Documentation>
@@ -253,7 +248,7 @@ _IfcBridgePart_ needs to have a different and higher
 			<Concepts>
 				<DocTemplateUsage Name="Spatial Composition" UniqueId="37e10a09-68c9-4fb3-af5c-e7a2c89ae18b">
 					<Documentation>&gt; NOTE&amp;nbsp; By using the inverse relationship _IfcFacility.Decomposes_ it references _IfcProject_ || _IfcSite_ || _IfcFacility_ through _IfcRelAggregates.RelatingObject_. If it refers to another instance of _IfcFacility_, the referenced _IfcFacility_ needs to have a different and higher _CompositionType_, i.e. COMPLEX (if the other _IfcBuilding_ has ELEMENT), or ELEMENT (if the other _IfcFacility_ has PARTIAL).</Documentation>
-					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Composition_2C3zBtSRjEReR30ApKl5A" />
+					<Definition xsi:type="DocTemplateDefinition" UniqueId="c4a30cf9-12d4-42f2-8f32-9dd3081dfe5d" />
 					<Items>
 						<DocTemplateItem UniqueId="57ae46ea-5b2b-47a8-9bf9-cc4d9c73cd93" RuleParameters="RelatingObject=IfcProject;">
 							<Documentation>Direct assignment to project, if the facility is the outermost spatial container, and no site information is provided for the building projects</Documentation>
@@ -325,7 +320,7 @@ _IfcBridgePart_ needs to have a different and higher
 _IfcFacilityPart_ needs to have a different and higher
  _CompositionType_, i.e. COMPLEX (if the other _IfcFacilityPart_ has ELEMENT), or ELEMENT (if the other
  _IfcFacilityPart_ has PARTIAL)._</Documentation>
-					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Composition_2C3zBtSRjEReR30ApKl5A" />
+					<Definition xsi:type="DocTemplateDefinition" UniqueId="689e2a42-7d05-42f0-a45e-5d27e09338e6" />
 					<Items>
 						<DocTemplateItem UniqueId="75e19c86-040a-4b65-8969-e767f0b829f5" RuleParameters="RelatingObject=IfcFacility;">
 							<Documentation>Assignment to the facility, where the facility part is a part of.</Documentation>

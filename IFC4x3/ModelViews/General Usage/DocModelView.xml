@@ -1412,7 +1412,7 @@ The shared profile definition is defined by assigning an _IfcMaterialProfileSet_
 			<Concepts>
 				<DocTemplateUsage Name="Spatial Composition" UniqueId="f0960974-7334-4908-8a41-c6b4c9c42823">
 					<Documentation>&gt; NOTE&amp;nbsp; By using the inverse relationship _IfcBridge.Decomposes_ it references _IfcProject_ || _IfcSite_ || _IfcBridge_ through _IfcRelAggregates.RelatingObject_. If it refers to another instance of _IfcBridge_, the referenced _IfcBridge_ needs to have a different and higher _CompositionType_, i.e. COMPLEX (if the other _IfcBuilding_ has ELEMENT), or ELEMENT (if the other _IfcBridge_ has PARTIAL).</Documentation>
-					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Composition_2C3zBtSRjEReR30ApKl5A" />
+					<Definition xsi:type="DocTemplateDefinition" UniqueId="9f65dae9-f537-47ad-bf44-f6cb5f31e25d" />
 					<Items>
 						<DocTemplateItem UniqueId="51a86f09-a3d1-45ce-81b6-556039425dc2" RuleParameters="RelatingObject=IfcProject;">
 							<Documentation>Direct assignment to project, if the bridgeis the outermost spatial container, and no site information is provided for bridge projects</Documentation>
@@ -1513,7 +1513,7 @@ The shared profile definition is defined by assigning an _IfcMaterialProfileSet_
 _IfcBridgePart_ needs to have a different and higher
  _CompositionType_, i.e. COMPLEX (if the other _IfcBridgePart_ has ELEMENT), or ELEMENT (if the other
  _IfcBridgePart_ has PARTIAL)._</Documentation>
-					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Composition_2C3zBtSRjEReR30ApKl5A" />
+					<Definition xsi:type="DocTemplateDefinition" UniqueId="cf570bf7-c019-4309-b709-33273c43e649" />
 					<Items>
 						<DocTemplateItem UniqueId="544cecaa-8fa5-4a00-a2e0-9b589756251f" RuleParameters="RelatingObject=IfcBridge;">
 							<Documentation>Assignment to the bridge, where the bridge part is a part of.</Documentation>
@@ -1569,7 +1569,7 @@ Elements can also be referenced in an _IfcBridgePart_, for example, if they span
 			<Concepts>
 				<DocTemplateUsage Name="Spatial Composition" UniqueId="8740d919-7bb6-45f5-9150-329cbc0a2e5d">
 					<Documentation>&gt; NOTE&amp;nbsp; By using the inverse relationship _IfcBuilding.Decomposes_ it references _IfcProject_ || _IfcSite_ || _IfcBuilding_ through _IfcRelAggregates.RelatingObject_. If it refers to another instance of _IfcBuilding_, the referenced _IfcBuilding_ needs to have a different and higher _CompositionType_, i.e. COMPLEX (if the other _IfcBuilding_ has ELEMENT), or ELEMENT (if the other _IfcBuilding_ has PARTIAL).</Documentation>
-					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Composition_2C3zBtSRjEReR30ApKl5A" />
+					<Definition xsi:type="DocTemplateDefinition" UniqueId="b3b79066-3956-4fbd-bcb3-9ed9c7ff998a" />
 					<Items>
 						<DocTemplateItem UniqueId="ff632d2a-0b96-4255-bcb8-667a41f5fd38">
 							<Documentation>Direct assignment to project, if the building is the outermost spatial container, and no site information is provided for building projects</Documentation>
@@ -1913,7 +1913,7 @@ Material information can also be given at the _IfcBuildingElementProxyType_, def
 _IfcBuildingStorey_ needs to have a different and higher
  _CompositionType_, i.e. COMPLEX (if the other _IfcBuildingStorey_ has ELEMENT), or ELEMENT (if the other
  _IfcBuildingStorey_ has PARTIAL)._</Documentation>
-					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Composition_2C3zBtSRjEReR30ApKl5A" />
+					<Definition xsi:type="DocTemplateDefinition" UniqueId="b166cd8e-57b3-430f-ab58-c93706ac44f7" />
 					<Items>
 						<DocTemplateItem UniqueId="ca844e99-1ea7-4505-b620-2a560a94397f">
 							<Documentation>Assignment to the building, where the building storey is a part of.</Documentation>
@@ -7060,7 +7060,7 @@ Representation identifier and type are the same as in single mapped representati
 			<Concepts>
 				<DocTemplateUsage Name="Spatial Composition" UniqueId="5d235417-9674-4363-aafe-478d1c9e8052">
 					<Documentation>&gt; NOTE&amp;nbsp; By using the inverse relationship _IfcFacility.Decomposes_ it references _IfcProject_ || _IfcSite_ || _IfcFacility_ through _IfcRelAggregates.RelatingObject_. If it refers to another instance of _IfcFacility_, the referenced _IfcFacility_ needs to have a different and higher _CompositionType_, i.e. COMPLEX (if the other _IfcBuilding_ has ELEMENT), or ELEMENT (if the other _IfcFacility_ has PARTIAL).</Documentation>
-					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Composition_2C3zBtSRjEReR30ApKl5A" />
+					<Definition xsi:type="DocTemplateDefinition" UniqueId="5d1837d0-087a-4f78-b9ff-4d8e97ae6403" />
 					<Items>
 						<DocTemplateItem UniqueId="e92c863e-af17-4f79-bd17-b7fd1b88599c" RuleParameters="RelatingObject=IfcProject;">
 							<Documentation>Direct assignment to project, if the facility is the outermost spatial container, and no site information is provided for the building projects</Documentation>
@@ -7125,7 +7125,7 @@ Representation identifier and type are the same as in single mapped representati
 _IfcFacilityPart_ needs to have a different and higher
  _CompositionType_, i.e. COMPLEX (if the other _IfcFacilityPart_ has ELEMENT), or ELEMENT (if the other
  _IfcFacilityPart_ has PARTIAL)._</Documentation>
-					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Composition_2C3zBtSRjEReR30ApKl5A" />
+					<Definition xsi:type="DocTemplateDefinition" UniqueId="446ea486-aefb-43ce-88c5-4ff0450b723a" />
 					<Items>
 						<DocTemplateItem UniqueId="e99de097-02b9-4244-8393-fc581d22c6b9" RuleParameters="Spatial Composite=IfcBuilding;">
 							<Documentation>Assignment to the building, where the building storey is a part of.</Documentation>
@@ -12053,7 +12053,7 @@ Figure 1 illustrates roof placement, with an _IfcRoof_ defining the local placem
 				</DocTemplateUsage>
 				<DocTemplateUsage Name="Spatial Composition" UniqueId="a7ebd0cc-b9f8-40f6-9f9e-53e24c4c1278">
 					<Documentation>By using the inverse relationship _IfcSite.Decomposes_ it references _IfcProject_ || _IfcSite_ through _IfcRelAggregates.RelatingObject_, If it refers to another instance of _IfcSite_, the referenced _IfcSite_ needs to have a different and higher _CompositionType_, i.e. COMPLEX (if the other _IfcSite_ has ELEMENT), or ELEMENT (if the other _IfcSite_ has PARTIAL).</Documentation>
-					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Composition_2C3zBtSRjEReR30ApKl5A" />
+					<Definition xsi:type="DocTemplateDefinition" UniqueId="4ba199f7-edff-4c88-adf8-aba5ef7f893b" />
 				</DocTemplateUsage>
 				<DocTemplateUsage Name="Spatial Decomposition" UniqueId="7afd1725-9992-4b62-b6da-6f2c9bae8177">
 					<Documentation>By using the inverse relationship _IfcSite.IsDecomposedBy_ it references (em&gt;IfcSite || _IfcBuilding_ || _IfcSpace_ by _IfcRelAggregates.RelatedObjects_. If it refers to another instance of _IfcSite_, the referenced _IfcSite_ needs to have a different and lower _CompositionType_, i.e. ELEMENT (if the other _IfcSite_ has COMPLEX), or PARTIAL (if the other _IfcSite_ has ELEMENT).</Documentation>
@@ -12633,7 +12633,7 @@ The shared material layer set definition is defined by assigning an _IfcMaterial
 				</DocTemplateUsage>
 				<DocTemplateUsage Name="Spatial Composition" UniqueId="ff9baddb-af39-40ee-a10c-663525809342">
 					<Documentation>By using the inverse relationship _IfcSpace.IsDecomposedBy_ it references _IfcSpace_ by _IfcRelAggregates.RelatedObjects_. If it refers to another instance of _IfcSpace_, the referenced _IfcSpace_ needs to have a different and lower _CompositionType_, i.e. ELEMENT (if the other _IfcSpace_ has COMPLEX), or PARTIAL (if the other _IfcSpace_ has ELEMENT).</Documentation>
-					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Composition_2C3zBtSRjEReR30ApKl5A" />
+					<Definition xsi:type="DocTemplateDefinition" UniqueId="9bc8b90b-96d2-4dd7-b2a5-02d3a065862b" />
 				</DocTemplateUsage>
 				<DocTemplateUsage Name="Spatial Decomposition" UniqueId="153728cb-e52f-4863-9ecb-612e831e29c2">
 					<Documentation>By using the inverse relationship _IfcSpace.Decomposes_ it references _IfcSite_ || _IfcBuildingStorey_ || _IfcSpace_ by _IfcRelAggregates.RelatingObject_. If it refers to another instance of _IfcSpace_, the referenced _IfcSpace_ needs to have a different and higher _CompositionType_, i.e. COMPLEX (if the other _IfcSpace_ has ELEMENT), or ELEMENT (if the other _IfcSpace_ has PARTIAL).</Documentation>

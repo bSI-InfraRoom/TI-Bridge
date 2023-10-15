@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocPublication xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="AASHTO" UniqueId="e0bf214e-4d39-49ee-a04b-89a58dcb98f9" HideHistory="true" Exchanges="true">
+	<Views>
+		<DocModelView xsi:nil="true" href="Spatial_Structure_AASHTO_0foT2BjR19xRW8Z5o45c0" />
+	</Views>
+	<Formats>
+		<DocFormat FormatType="xml" FormatOptions="examples" />
+		<DocFormat FormatType="step" FormatOptions="examples" />
+		<DocFormat FormatType="sql" />
+		<DocFormat FormatType="owl" />
+		<DocFormat FormatType="json" />
+		<DocFormat FormatType="cs" />
+	</Formats>
+	<Annotations>
+		<DocAnnotation Name="Foreword" UniqueId="47bbf8de-e87c-4c16-851d-09a7090f5980" />
+		<DocAnnotation Name="Introduction" UniqueId="13fe8578-1ab8-4fa0-acb5-6a01bf29473d" />
+	</Annotations>
+</DocPublication>
+
