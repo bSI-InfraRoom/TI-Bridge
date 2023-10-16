@@ -102,7 +102,10 @@
 				</DocTemplateUsage>
 				<DocTemplateUsage Name="Camber" UniqueId="9c9249df-a749-46fc-8e8e-090427a7156c">
 					<Documentation>For steel girders, camber ordinates for fabrication.</Documentation>
-					<Definition xsi:type="DocTemplateDefinition" Name="Camber" UniqueId="528707c1-1ea8-41bb-b307-5512a4ba47ff" Type="IfcBeam" />
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Structural_Curve_Assignment_1QdXXw3LrDN9VKn5B5wRlv" />
+					<Items>
+						<DocTemplateItem UniqueId="1b913857-664a-4451-842b-abb3fb4b9536" />
+					</Items>
 				</DocTemplateUsage>
 			</Concepts>
 			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="1c5e61c2-2c0e-45db-ba17-2c8518308d60" Type="IfcBeam">
@@ -228,18 +231,18 @@
 						<DocTemplateItem UniqueId="35712aa6-b3e1-4a2f-803c-bae3846334f4" />
 					</Items>
 				</DocTemplateUsage>
-				<DocTemplateUsage Name="Girders" UniqueId="148dafa3-aa4c-406b-85fd-c557ecbe3020">
+				<DocTemplateUsage Name="Girders" UniqueId="148dafa3-aa4c-406b-85fd-c557ecbe3020" Operator="or">
 					<Documentation>Girder lines.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Container_PredefinedType_37sQ6kOojEcAgyjx68vXkw" />
 					<Items>
-						<DocTemplateItem UniqueId="47c95fad-26c1-417f-bd68-0e2eeb9b18df" RuleParameters="Type=IfcElementAssembly;PredefinedType=GIRDER;">
+						<DocTemplateItem UniqueId="47c95fad-26c1-417f-bd68-0e2eeb9b18df" RuleParameters="Type=IfcElementAssembly;PredefinedType=GIRDER;" >
 							<Concepts>
 								<DocTemplateUsage Name="Type" UniqueId="03736d66-3828-43db-be0a-5feb72cae558">
 									<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Object_Predefined_Type_0b989XcDzD2fDaLbDNNAGX" />
 								</DocTemplateUsage>
 							</Concepts>
 						</DocTemplateItem>
-						<DocTemplateItem UniqueId="fb566f9c-c135-4561-b9c0-5163bbe9b59f" />
+						<DocTemplateItem UniqueId="fb566f9c-c135-4561-b9c0-5163bbe9b59f" RuleParameters="Type=IfcBeam;PredefinedType=GIRDER_SEGMENT;" />
 					</Items>
 				</DocTemplateUsage>
 				<DocTemplateUsage Name="Cross Frames" UniqueId="370c7087-2b8b-4134-bbb2-69bc53b0fbe5">
@@ -407,7 +410,7 @@
 					</Items>
 				</DocTemplateUsage>
 				<DocTemplateUsage Name="Axis" UniqueId="c923e180-fc6c-494a-b859-db1be1bfa646">
-					<Documentation>Axis curve defined as a sub-span with offsets relative to the alignment curve.</Documentation>
+					<Documentation>Axis curve defined as a sub-span with offsets relative to the alignment curve. This requirement is handled by Girder Segment.Solid Geometry. The girders of the superstructure may be realized either by IfcElementAssembly/GIRDER or IfcBeam/GIRDER_SEGMENT. IfcBeam/GIRDER_SEGMENT has a geometric representation which is of type Body SectionedSolidHorizontal.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" Name="Axis" UniqueId="dc803a94-5992-4c3e-8e8d-38051cd52669" Type="IfcElementAssembly" />
 				</DocTemplateUsage>
 				<DocTemplateUsage Name="Type" UniqueId="8a96806a-6b1c-4626-bda8-c741ba76b713">

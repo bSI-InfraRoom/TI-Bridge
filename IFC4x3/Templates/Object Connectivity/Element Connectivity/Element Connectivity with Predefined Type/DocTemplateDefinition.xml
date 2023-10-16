@@ -4,7 +4,7 @@
 		<DocModelRuleAttribute Name="ConnectedFrom" />
 		<DocModelRuleAttribute Name="ConnectedTo">
 			<Rules>
-				<DocModelRuleEntity Name="IfcRelConnectsElements" Identification="RelatedElement">
+				<DocModelRuleEntity Name="IfcRelConnectsElements">
 					<Rules>
 						<DocModelRuleAttribute Name="RelatedElement" Identification="RelatedElement">
 							<Rules>

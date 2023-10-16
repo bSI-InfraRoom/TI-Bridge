@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Structural_Curve_Assignment_1QdXXw3LrDN9VKn5B5wRlv" Name="Structural Curve Assignment" UniqueId="5a9e187a-0d5d-4d5c-97d4-c452c5e9bbf9" Type="IfcProduct">
+	<Rules>
+		<DocModelRuleAttribute Name="ReferencedBy">
+			<Rules>
+				<DocModelRuleEntity Name="IfcRelAssignsToProduct">
+					<Rules>
+						<DocModelRuleAttribute Name="RelatedObjects" Identification="RelatedObjects">
+							<Rules>
+								<DocModelRuleEntity Name="IfcStructuralCurveMemberVarying">
+									<Rules>
+										<DocModelRuleAttribute Name="AssignedStructuralActivity">
+											<Rules>
+												<DocModelRuleEntity Name="IfcRelConnectsStructuralActivity">
+													<Rules>
+														<DocModelRuleAttribute Name="RelatedStructuralActivity">
+															<Rules>
+																<DocModelRuleEntity Name="IfcStructuralCurveReaction">
+																	<Rules>
+																		<DocModelRuleAttribute Name="HasAssignments">
+																			<Rules>
+																				<DocModelRuleEntity Name="IfcRelAssignsToGroup">
+																					<Rules>
+																						<DocModelRuleAttribute Name="RelatingGroup">
+																							<Rules>
+																								<DocModelRuleEntity Name="IfcStructuralResultGroup">
+																									<Rules>
+																										<DocModelRuleAttribute Name="ResultForLoadGroup">
+																											<Rules>
+																												<DocModelRuleEntity Name="IfcStructuralLoadGroup" />
+																											</Rules>
+																										</DocModelRuleAttribute>
+																									</Rules>
+																								</DocModelRuleEntity>
+																							</Rules>
+																						</DocModelRuleAttribute>
+																					</Rules>
+																				</DocModelRuleEntity>
+																			</Rules>
+																		</DocModelRuleAttribute>
+																		<DocModelRuleAttribute Name="AppliedLoad">
+																			<Rules>
+																				<DocModelRuleEntity Name="IfcStructuralLoadConfiguration">
+																					<Rules>
+																						<DocModelRuleAttribute Name="Values">
+																							<Rules>
+																								<DocModelRuleEntity Name="IfcStructuralLoadSingleDisplacement" />
+																							</Rules>
+																						</DocModelRuleAttribute>
+																						<DocModelRuleAttribute Name="Locations">
+																							<Rules>
+																								<DocModelRuleEntity Name="IfcLengthMeasure" />
+																							</Rules>
+																						</DocModelRuleAttribute>
+																					</Rules>
+																				</DocModelRuleEntity>
+																			</Rules>
+																		</DocModelRuleAttribute>
+																		<DocModelRuleAttribute Name="PredefinedType">
+																			<Rules>
+																				<DocModelRuleEntity Name="IfcStructuralCurveActivityTypeEnum" />
+																			</Rules>
+																		</DocModelRuleAttribute>
+																	</Rules>
+																</DocModelRuleEntity>
+																<DocModelRuleEntity Name="IfcStructuralCurveAction">
+																	<Rules>
+																		<DocModelRuleAttribute Name="AppliedLoad">
+																			<Rules>
+																				<DocModelRuleEntity Name="IfcStructuralLoadLinearForce" />
+																			</Rules>
+																		</DocModelRuleAttribute>
+																	</Rules>
+																</DocModelRuleEntity>
+															</Rules>
+														</DocModelRuleAttribute>
+													</Rules>
+												</DocModelRuleEntity>
+											</Rules>
+										</DocModelRuleAttribute>
+									</Rules>
+								</DocModelRuleEntity>
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocModelRuleEntity>
+			</Rules>
+		</DocModelRuleAttribute>
+	</Rules>
+</DocTemplateDefinition>
+
