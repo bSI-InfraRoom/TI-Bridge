@@ -100,18 +100,18 @@
 			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="e392e308-e341-4e8c-876c-a894c79a71e1" Type="IfcBridge" />
 		</DocConceptRoot>
 		<DocConceptRoot Name="Site" UniqueId="5b07a4ce-3e5c-46d8-b52b-816501841e44">
-			<Documentation>Data sets shall include at least one site. The site may define existing and proposed terrain within vicinity of the bridge project and contain alignment(s), bridge(s) and potentially other structures such as the road/rail supported by the bridge. Boring points may be included as objects contained within the site.</Documentation>
+			<Documentation>Data sets shall include at least one Site. The Site may define existing and proposed terrain within vicinity of the bridge project and contain alignment(s), bridge(s) and potentially other structures such as the road/rail supported by the bridge. Boring points may be included as objects contained within the Site.</Documentation>
 			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcSite" />
 			<Concepts>
 				<DocTemplateUsage Name="Name" UniqueId="3fc89f97-ae7f-48fd-bf86-c763a731a9f0">
-					<Documentation>Name of the site for referencing purposes.</Documentation>
+					<Documentation>Name of the Site for referencing purposes.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Object_User_Identity_31di66dFr7AJKdxDG2D1A" />
 					<Items>
 						<DocTemplateItem UniqueId="e76f143a-90eb-4b24-bde9-ae14d9e78e18" RuleParameters="ObjectName=HDMI Plattrambro;" />
 					</Items>
 				</DocTemplateUsage>
 				<DocTemplateUsage Name="Bridge" UniqueId="7554fcb5-f806-44b6-aabf-b741ca557728">
-					<Documentation>Bridge structure(s) within site.</Documentation>
+					<Documentation>Bridge structure(s) within Site.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Decomposition_1cVuH3xCvAZQOan_h15FW" />
 					<Items>
 						<DocTemplateItem UniqueId="57319180-2ea6-4688-b8e4-f04b377802b0" RuleParameters="RelatedObjects=IfcBridge;SpatialElementName=2-2241-1;" />
@@ -125,7 +125,7 @@
 					</Items>
 				</DocTemplateUsage>
 				<DocTemplateUsage Name="Surface Proposed" UniqueId="7c465244-9668-4fa0-8cc9-9e69f65369f7" Operator="or">
-					<Documentation>The ground surface of the site indicating final conditions.</Documentation>
+					<Documentation>The ground surface of the Site indicating final conditions.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Container_1XtGZjG59LPCtYlqeIWvl" />
 					<Items>
 						<DocTemplateItem UniqueId="1bebfde7-91c2-4a32-a4aa-f4481dd37621" RuleParameters="Type=IfcGeotechnicalStratum;" />
@@ -133,7 +133,7 @@
 					</Items>
 				</DocTemplateUsage>
 				<DocTemplateUsage Name="Surface Existing" UniqueId="ac589648-5a70-4f3e-99d2-4ce5d30dba1d" Operator="or">
-					<Documentation>The ground surface of the site indicating existing conditions.</Documentation>
+					<Documentation>The ground surface of the Site indicating existing conditions.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Container_1XtGZjG59LPCtYlqeIWvl" />
 					<Items>
 						<DocTemplateItem UniqueId="875a4dfb-183b-4bda-8eb8-2c861cbb0506" RuleParameters="Type=IfcGeomodel;" />
@@ -232,4 +232,3 @@
 		</DocConceptRoot>
 	</ConceptRoots>
 </DocModelView>
-
