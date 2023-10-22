@@ -161,7 +161,7 @@
 					</Items>
 				</DocTemplateUsage>
 				<DocTemplateUsage Name="Geometry" UniqueId="35622964-9cc2-47ae-aeb1-e465fcb77330">
-					<Documentation>Surface Proposed shall be represented as a 3D surface tesselation _IfcTriangulatedIrregularNetwork_ geometric items.</Documentation>
+					<Documentation>Surface Proposed shall be represented as a 3D surface tessellation _IfcTriangulatedIrregularNetwork_ geometric items.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Surface_Tessellation_Geometry_0gcN00aHT7P84eQ4tB7HA6" />
 					<Items>
 						<DocTemplateItem UniqueId="3a70b9bd-1040-4ba4-a7c6-24c1a8a6249a" RuleParameters="Items=IfcTriangulatedIrregularNetwork;" />
@@ -181,7 +181,7 @@
 					</Items>
 				</DocTemplateUsage>
 				<DocTemplateUsage Name="Geometry" UniqueId="fec732b0-336c-4139-aeaf-9c0e419136b5">
-					<Documentation>Surface Proposed shall be represented as a 3D surface tesselation _IfcTriangulatedIrregularNetwork_ geometric items.</Documentation>
+					<Documentation>Surface Proposed shall be represented as a 3D surface tessellation _IfcTriangulatedIrregularNetwork_ geometric items.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Surface_Tessellation_Geometry_0gcN00aHT7P84eQ4tB7HA6" />
 					<Items>
 						<DocTemplateItem UniqueId="5dde3270-0d5b-4fe5-9c73-52c7fb5f3654" RuleParameters="Items=IfcTriangulatedIrregularNetwork;" />
@@ -201,7 +201,7 @@
 					</Items>
 				</DocTemplateUsage>
 				<DocTemplateUsage Name="Geometry" UniqueId="8057968e-6351-4ee9-88aa-a7791000fe4f">
-					<Documentation>Surface Proposed shall be represented as a 3D surface tesselation _IfcTriangulatedIrregularNetwork_ geometric items.</Documentation>
+					<Documentation>Surface Proposed shall be represented as a 3D surface tessellation _IfcTriangulatedIrregularNetwork_ geometric items.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Surface_Tessellation_Geometry_0gcN00aHT7P84eQ4tB7HA6" />
 					<Items>
 						<DocTemplateItem UniqueId="c4746c74-b98a-436e-80d7-48789063752e" RuleParameters="Items=IfcTriangulatedIrregularNetwork;" />
@@ -221,7 +221,7 @@
 					</Items>
 				</DocTemplateUsage>
 				<DocTemplateUsage Name="Geometry" UniqueId="a87476ed-13ba-43e9-964b-6c4d0b88869e">
-					<Documentation>Surface Proposed shall be represented as a 3D surface tesselation _IfcTriangulatedIrregularNetwork_ geometric items.</Documentation>
+					<Documentation>Surface Proposed shall be represented as a 3D surface tessellation _IfcTriangulatedIrregularNetwork_ geometric items.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Surface_Tessellation_Geometry_0gcN00aHT7P84eQ4tB7HA6" />
 					<Items>
 						<DocTemplateItem UniqueId="7c165059-faa5-41b6-9a67-7d063165a844" RuleParameters="Items=IfcTriangulatedIrregularNetwork;" />
