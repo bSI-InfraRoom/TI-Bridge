@@ -36,7 +36,7 @@
 					<Documentation>Alignment shall be placed at the global origin.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Product_Local_Placement_3Bw5jVUH9AGukt7cEGB9j" />
 					<Items>
-						<DocTemplateItem UniqueId="5db44495-e210-4e9a-85f4-53b99927bda7" />
+						<DocTemplateItem UniqueId="5db44495-e210-4e9a-85f4-53b99927bda7" RuleParameters="RelativeToElement:NOTEXISTS;" />
 					</Items>
 				</DocTemplateUsage>
 			</Concepts>
@@ -116,3 +116,4 @@
 		</DocConceptRoot>
 	</ConceptRoots>
 </DocModelView>
+
