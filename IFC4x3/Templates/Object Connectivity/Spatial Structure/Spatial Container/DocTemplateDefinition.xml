@@ -7,7 +7,7 @@
 					<Rules>
 						<DocModelRuleAttribute Name="RelatedElements" Identification="Type">
 							<Rules>
-								<DocModelRuleEntity Name="IfcProduct" />
+								<DocModelRuleEntity Name="IfcProduct" Prefix="ContainedElements" />
 							</Rules>
 						</DocModelRuleAttribute>
 					</Rules>

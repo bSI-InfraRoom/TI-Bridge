@@ -9,14 +9,14 @@
 					<Documentation>Name of the girder segment for referencing purposes as would be found on construction plans.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Object_User_Identity_31di66dFr7AJKdxDG2D1A" />
 					<Items>
-						<DocTemplateItem UniqueId="8c29057b-c687-45aa-86dc-edb87c501e54" />
+						<DocTemplateItem UniqueId="8c29057b-c687-45aa-86dc-edb87c501e54" RuleParameters="ObjectName=reg ^GirderSeg_;" />
 					</Items>
 				</DocTemplateUsage>
 				<DocTemplateUsage Name="Material" UniqueId="1f641498-b3ba-45b4-af6e-b3ad3494dcd1">
 					<Documentation>Material of the girder segment.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Material_Single_1VEQWKHA1Fiut6tQe5OFnK" />
 					<Items>
-						<DocTemplateItem UniqueId="d4cf7a19-087b-46f7-857e-7ae7d2017719" />
+						<DocTemplateItem UniqueId="d4cf7a19-087b-46f7-857e-7ae7d2017719" RuleParameters="MaterialName=Betong;" />
 					</Items>
 				</DocTemplateUsage>
 				<DocTemplateUsage Name="Solid Geometry" UniqueId="23678009-4cfa-44a7-9bf4-68b1304f3bf7">
@@ -49,8 +49,7 @@
 					<Documentation>Relationship connecting girder segment to substructure, where realizing element refers to bearing if present.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Element_Connectivity_With_Realizing_Element_38H4OefKb3NfgNZpVSuqAd" />
 					<Items>
-						<DocTemplateItem UniqueId="023b58e2-3107-41c7-ba6f-bbbe4b55d191" />
-						<DocTemplateItem UniqueId="668a1c98-dfad-4ab7-b5c3-81adc7ed84b1" />
+						<DocTemplateItem UniqueId="023b58e2-3107-41c7-ba6f-bbbe4b55d191" RuleParameters="RealizingElements=IfcBearing;" />
 					</Items>
 				</DocTemplateUsage>
 				<DocTemplateUsage Name="Reinforcing" UniqueId="db8053ba-de64-4f9c-970b-1309cff09354">
@@ -103,9 +102,6 @@
 				<DocTemplateUsage Name="Camber" UniqueId="9c9249df-a749-46fc-8e8e-090427a7156c">
 					<Documentation>For steel girders, camber ordinates for fabrication.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Structural_Curve_Assignment_1QdXXw3LrDN9VKn5B5wRlv" />
-					<Items>
-						<DocTemplateItem UniqueId="1b913857-664a-4451-842b-abb3fb4b9536" />
-					</Items>
 				</DocTemplateUsage>
 			</Concepts>
 			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="1c5e61c2-2c0e-45db-ba17-2c8518308d60" Type="IfcBeam">
@@ -122,14 +118,14 @@
 					<Documentation>Name of the diaphragm for referencing purposes as would be found on construction plans.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Object_User_Identity_31di66dFr7AJKdxDG2D1A" />
 					<Items>
-						<DocTemplateItem UniqueId="f3a1e121-85ba-44e3-b18a-f07390859333" />
+						<DocTemplateItem UniqueId="f3a1e121-85ba-44e3-b18a-f07390859333" RuleParameters="ObjectName=reg ^Dia_;" />
 					</Items>
 				</DocTemplateUsage>
 				<DocTemplateUsage Name="Material" UniqueId="a23c9639-1794-468c-875f-3621a7b4576c">
 					<Documentation>Material of the girder segment.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Material_Single_1VEQWKHA1Fiut6tQe5OFnK" />
 					<Items>
-						<DocTemplateItem UniqueId="0362322b-ef58-48c7-b439-da06e9c85c69" />
+						<DocTemplateItem UniqueId="0362322b-ef58-48c7-b439-da06e9c85c69" RuleParameters="MaterialName=Betong;" />
 					</Items>
 				</DocTemplateUsage>
 				<DocTemplateUsage Name="Solid Geometry" UniqueId="ac985208-9455-4948-8c38-f2882e13e174">
@@ -178,7 +174,6 @@
 								</DocTemplateUsage>
 							</Concepts>
 						</DocTemplateItem>
-						<DocTemplateItem UniqueId="5c3e1bc1-1671-41a8-9830-41da22a6ad9e" />
 					</Items>
 				</DocTemplateUsage>
 				<DocTemplateUsage Name="Tendons" UniqueId="f856256e-bf8e-4394-b24f-7e5132b40f52">
@@ -221,21 +216,20 @@
 					<Documentation>Truss lines.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Container_PredefinedType_37sQ6kOojEcAgyjx68vXkw" />
 					<Items>
-						<DocTemplateItem UniqueId="c317cfeb-cf7a-47f5-8808-2be63670b4ea" RuleParameters="Type=IfcElementAssembly;PredefinedType=TRUSS;">
+						<DocTemplateItem UniqueId="c317cfeb-cf7a-47f5-8808-2be63670b4ea" RuleParameters="Type=IfcElementAssembly;">
 							<Concepts>
 								<DocTemplateUsage Name="Type" UniqueId="db3db62a-f865-4197-b084-c08b9b431e6a">
 									<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Object_Predefined_Type_0b989XcDzD2fDaLbDNNAGX" />
 								</DocTemplateUsage>
 							</Concepts>
 						</DocTemplateItem>
-						<DocTemplateItem UniqueId="35712aa6-b3e1-4a2f-803c-bae3846334f4" />
 					</Items>
 				</DocTemplateUsage>
 				<DocTemplateUsage Name="Girders" UniqueId="148dafa3-aa4c-406b-85fd-c557ecbe3020" Operator="or">
 					<Documentation>Girder lines.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Container_PredefinedType_37sQ6kOojEcAgyjx68vXkw" />
 					<Items>
-						<DocTemplateItem UniqueId="47c95fad-26c1-417f-bd68-0e2eeb9b18df" RuleParameters="Type=IfcElementAssembly;PredefinedType=GIRDER;" >
+						<DocTemplateItem UniqueId="47c95fad-26c1-417f-bd68-0e2eeb9b18df" RuleParameters="Type=IfcElementAssembly;">
 							<Concepts>
 								<DocTemplateUsage Name="Type" UniqueId="03736d66-3828-43db-be0a-5feb72cae558">
 									<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Object_Predefined_Type_0b989XcDzD2fDaLbDNNAGX" />
@@ -249,24 +243,21 @@
 					<Documentation>Cross frames between girder lines.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Container_PredefinedType_37sQ6kOojEcAgyjx68vXkw" />
 					<Items>
-						<DocTemplateItem UniqueId="3548debb-c326-4e23-9a10-142ab59e5819" RuleParameters="Type=IfcElementAssembly;PredefinedType=CROSS_BRACING;" />
-						<DocTemplateItem UniqueId="64c84d1b-4b8c-4b14-92f6-5937b2134221" />
+						<DocTemplateItem UniqueId="3548debb-c326-4e23-9a10-142ab59e5819" RuleParameters="Type=IfcElementAssembly;" />
 					</Items>
 				</DocTemplateUsage>
 				<DocTemplateUsage Name="Floor Beams" UniqueId="abd97f83-66c8-4897-900c-969f879bf985">
 					<Documentation>Floor beams between girder lines.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Container_PredefinedType_37sQ6kOojEcAgyjx68vXkw" />
 					<Items>
-						<DocTemplateItem UniqueId="791590a9-c5a0-4842-9c42-a4d3f3bef19b" RuleParameters="Type=IfcBeam;PredefinedType=JOIST;" />
-						<DocTemplateItem UniqueId="c46f00da-f859-4591-a9d5-494d1de5987c" />
+						<DocTemplateItem UniqueId="791590a9-c5a0-4842-9c42-a4d3f3bef19b" RuleParameters="Type=IfcBeam;" />
 					</Items>
 				</DocTemplateUsage>
 				<DocTemplateUsage Name="Stringers" UniqueId="a74dd762-c3dc-49f1-a375-d9863cfb449b">
 					<Documentation>Stringers between floor beams.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Container_PredefinedType_37sQ6kOojEcAgyjx68vXkw" />
 					<Items>
-						<DocTemplateItem UniqueId="6497f1e1-a970-4457-9f2f-6ca4ebb2a91a" RuleParameters="Type=IfcMember;PredefinedType=STRINGER;" />
-						<DocTemplateItem UniqueId="36768d48-0bfc-4f42-9e9c-b73c3387275f" />
+						<DocTemplateItem UniqueId="6497f1e1-a970-4457-9f2f-6ca4ebb2a91a" RuleParameters="Type=IfcMember;" />
 					</Items>
 				</DocTemplateUsage>
 			</Concepts>
@@ -287,7 +278,7 @@
 					<Documentation>Name of cross frame occurrence as would be identified on construction plans.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Object_User_Identity_31di66dFr7AJKdxDG2D1A" />
 					<Items>
-						<DocTemplateItem UniqueId="1449b50b-85f6-4a63-ad20-bd6c13a402bd" />
+						<DocTemplateItem UniqueId="1449b50b-85f6-4a63-ad20-bd6c13a402bd" RuleParameters="ObjectName=reg ^Cross_;" />
 					</Items>
 				</DocTemplateUsage>
 				<DocTemplateUsage Name="Plates" UniqueId="be97cbc1-7a11-4543-a75c-59c4a61c5533">
@@ -354,7 +345,7 @@
 					<Documentation>Name of the truss for referencing purposes as would be found on construction plans.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Object_User_Identity_31di66dFr7AJKdxDG2D1A" />
 					<Items>
-						<DocTemplateItem UniqueId="ebe4f53a-dff6-4788-b66d-b1d2b4382564" />
+						<DocTemplateItem UniqueId="ebe4f53a-dff6-4788-b66d-b1d2b4382564" RuleParameters="ObjectName=reg ^Truss_;" />
 					</Items>
 				</DocTemplateUsage>
 				<DocTemplateUsage Name="Members" UniqueId="8334b8e1-147b-40c5-afce-7d5fea95f9ab">
@@ -371,15 +362,11 @@
 						<DocTemplateItem UniqueId="d94447c8-cffc-46c4-bb78-34699c6af102" RuleParameters="RelatedObjects=IfcPlate;PredefinedType=GUSSET_PLATE;">
 							<Documentation>GUSSET_PLATE</Documentation>
 						</DocTemplateItem>
-						<DocTemplateItem UniqueId="7a9b7509-c392-49e2-acd2-22446a76602f" />
 					</Items>
 				</DocTemplateUsage>
 				<DocTemplateUsage Name="Connections" UniqueId="c07badb1-6cca-4c6d-aa4a-34b9edcf6719">
 					<Documentation>Relationships connecting truss to other superstructure elements.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Element_Connectivity_0Nv2C1Ibb9HROhB6JsocmI" />
-					<Items>
-						<DocTemplateItem UniqueId="43588952-0646-4786-96ab-9a09482901fb" />
-					</Items>
 				</DocTemplateUsage>
 			</Concepts>
 			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="17cf9f91-0b80-4dda-9d83-71f2a1c95a3c" Type="IfcElementAssembly">
@@ -399,7 +386,7 @@
 					<Documentation>Name of the girder line for referencing purposes as would be found on construction plans.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Object_User_Identity_31di66dFr7AJKdxDG2D1A" />
 					<Items>
-						<DocTemplateItem UniqueId="d0bb99f6-8e52-4cb6-82e3-2e45b606841c" />
+						<DocTemplateItem UniqueId="d0bb99f6-8e52-4cb6-82e3-2e45b606841c" RuleParameters="ObjectName=reg ^Girder_;" />
 					</Items>
 				</DocTemplateUsage>
 				<DocTemplateUsage Name="Alignment" UniqueId="5e82185b-39f1-457c-9dcd-09c34a4772d2">
@@ -410,8 +397,11 @@
 					</Items>
 				</DocTemplateUsage>
 				<DocTemplateUsage Name="Axis" UniqueId="c923e180-fc6c-494a-b859-db1be1bfa646">
-					<Documentation>Axis curve defined as a sub-span with offsets relative to the alignment curve. This requirement is handled by Girder Segment.Solid Geometry. The girders of the superstructure may be realized either by IfcElementAssembly/GIRDER or IfcBeam/GIRDER_SEGMENT. IfcBeam/GIRDER_SEGMENT has a geometric representation which is of type Body SectionedSolidHorizontal.</Documentation>
-					<Definition xsi:type="DocTemplateDefinition" Name="Axis" UniqueId="dc803a94-5992-4c3e-8e8d-38051cd52669" Type="IfcElementAssembly" />
+					<Documentation>Axis curve defined as a sub-span with offsets relative to the alignment curve.</Documentation>
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Axis_Offset_Geometry_2AJbsQ_N1CQP5yYcm676d" />
+					<Items>
+						<DocTemplateItem UniqueId="26198f02-68bc-41bf-b8de-8bf16111a4b3" RuleParameters="Type=Curve;Items=IfcOffsetCurveByDistances;OffsetValues=2;" />
+					</Items>
 				</DocTemplateUsage>
 				<DocTemplateUsage Name="Type" UniqueId="8a96806a-6b1c-4626-bda8-c741ba76b713">
 					<Documentation>Template defining general construction that may be used across projects.</Documentation>
@@ -424,8 +414,7 @@
 					<Documentation>Common material that applies to all segments of the girder.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Material_Single_1VEQWKHA1Fiut6tQe5OFnK" />
 					<Items>
-						<DocTemplateItem UniqueId="43226abe-20a0-49eb-b9fc-45ae97acd961" />
-						<DocTemplateItem UniqueId="700e477d-19c6-428d-bf8e-1e8a22348e53" />
+						<DocTemplateItem UniqueId="43226abe-20a0-49eb-b9fc-45ae97acd961" RuleParameters="MaterialName=Betong;" />
 					</Items>
 				</DocTemplateUsage>
 				<DocTemplateUsage Name="Segments" UniqueId="aaef6f97-f84c-4391-a290-c5e4e6021bb2">
@@ -435,7 +424,6 @@
 						<DocTemplateItem UniqueId="67edb96a-b5e3-4748-8178-38815481a090" RuleParameters="RelatedObjects=IfcBeam;PredefinedType=GIRDER_SEGMENT;">
 							<Documentation>GIRDER_SEGMENT</Documentation>
 						</DocTemplateItem>
-						<DocTemplateItem UniqueId="6a71ad28-e36e-41aa-a8ff-33954c701332" />
 					</Items>
 				</DocTemplateUsage>
 				<DocTemplateUsage Name="Components" UniqueId="c6a6a48e-c468-41a6-8294-1ce2118a9d1d">
@@ -444,6 +432,25 @@
 					<Items>
 						<DocTemplateItem UniqueId="428f8536-98de-41aa-922b-6f9001e5e103" RuleParameters="RelatedObjects=IfcPlate;" />
 						<DocTemplateItem UniqueId="964857d5-06ae-4125-b6d9-b74ca578f480" RuleParameters="RelatedObjects=IfcMember;" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Containment" UniqueId="48abdc08-cbbb-47a1-926c-bc0938781d0a">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Containment_PredefinedType_1Fu2ZQMRn4SRw0ykuu37" />
+					<Items>
+						<DocTemplateItem UniqueId="ac4d3b93-065f-4147-8132-35e7aeea7423" RuleParameters="RelatingStructure=IfcBridgePart;PredefinedType=SUPERSTRUCTURE;">
+							<Concepts>
+								<DocTemplateUsage Name="RelatingStructure" UniqueId="ab549654-caa6-4f78-90d6-ed8d7364b124">
+									<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Object_Predefined_Type_0b989XcDzD2fDaLbDNNAGX" />
+								</DocTemplateUsage>
+							</Concepts>
+						</DocTemplateItem>
+						<DocTemplateItem UniqueId="e5d72e0f-de7d-459f-a9e4-b6ada6ab6ca4" RuleParameters="RelatingStructure=IfcBridgePart;PredefinedType=DECK;">
+							<Concepts>
+								<DocTemplateUsage Name="RelatingStructure" UniqueId="935a100b-561a-4876-ab92-401dfa3e9acf">
+									<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Object_Predefined_Type_0b989XcDzD2fDaLbDNNAGX" />
+								</DocTemplateUsage>
+							</Concepts>
+						</DocTemplateItem>
 					</Items>
 				</DocTemplateUsage>
 			</Concepts>

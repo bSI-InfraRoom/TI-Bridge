@@ -8,7 +8,7 @@
 					<Rules>
 						<DocModelRuleAttribute Name="RelatedElement" Identification="RelatedElement">
 							<Rules>
-								<DocModelRuleEntity Name="IfcElement">
+								<DocModelRuleEntity Name="IfcElement" Prefix="ConnectedElements">
 									<References>
 										<DocTemplateDefinition xsi:nil="true" href="Object_Predefined_Type_0b989XcDzD2fDaLbDNNAGX" />
 									</References>

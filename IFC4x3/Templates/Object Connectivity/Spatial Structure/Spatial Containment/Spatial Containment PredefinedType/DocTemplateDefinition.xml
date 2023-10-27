@@ -1,12 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Spatial_Containment_3PeWY01HBmesKdP1dTP15" Name="Spatial Containment" UniqueId="3Pe$WY01HBmesKdP1dTP15" Type="IfcElement">
-	<Localization>
-		<DocLocalization Locale="tt">
-			<Documentation>&lt;TemplateRules operator=&quot;and&quot;&gt;
-    &lt;TemplateRule Parameters=&quot;RelatingStructure[Type]=&apos;IfcBuildingStorey&apos; AND SpatialElementName[Value]=&apos;Ground Floor&apos;&quot;/&gt;
-&lt;/TemplateRules&gt;</Documentation>
-		</DocLocalization>
-	</Localization>
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Spatial_Containment_PredefinedType_1Fu2ZQMRn4SRw0ykuu37" Name="Spatial Containment PredefinedType" UniqueId="4fe028da-59bc-4471-bebf-03cbbfe380c7" Type="IfcElement">
 	<Rules>
 		<DocModelRuleAttribute Name="ContainedInStructure">
 			<Rules>
@@ -14,7 +7,7 @@
 					<Rules>
 						<DocModelRuleAttribute Name="RelatingStructure" Identification="RelatingStructure">
 							<Rules>
-								<DocModelRuleEntity Name="IfcSpatialElement" Prefix="ContainedInElements">
+								<DocModelRuleEntity Name="IfcSpatialElement">
 									<Rules>
 										<DocModelRuleAttribute Name="Name" Identification="SpatialElementName">
 											<Rules>
@@ -22,6 +15,9 @@
 											</Rules>
 										</DocModelRuleAttribute>
 									</Rules>
+									<References>
+										<DocTemplateDefinition xsi:nil="true" href="Object_Predefined_Type_0b989XcDzD2fDaLbDNNAGX" />
+									</References>
 								</DocModelRuleEntity>
 							</Rules>
 						</DocModelRuleAttribute>
