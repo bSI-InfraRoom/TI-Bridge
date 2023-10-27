@@ -51,7 +51,7 @@
 					</Items>
 				</DocTemplateUsage>
 				<DocTemplateUsage Name="Product Local Placement" UniqueId="768316c5-4071-4279-817a-d1679cf4c55b">
-					<Documentation>Boreholes shall be placed localy with _IfcLocalPlacement_.</Documentation>
+					<Documentation>Boreholes shall be placed locally with _IfcLocalPlacement_.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Product_Local_Placement_3Bw5jVUH9AGukt7cEGB9j" />
 					<Items>
 						<DocTemplateItem UniqueId="063b4fbf-8496-447a-8ee0-3f5f9ffb38b4" RuleParameters="RelativeToElement=IfcSite;ElementName=HDMI Plattrambro;" />
@@ -154,14 +154,14 @@
 			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcGeomodel" />
 			<Concepts>
 				<DocTemplateUsage Name="Product Local Placement" UniqueId="437748ef-61eb-485d-92d2-7cdc615a1805">
-					<Documentation>Surface Proposed shall be locally placed in the Site.</Documentation>
+					<Documentation>Surface Existing shall be locally placed in the Site.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Product_Local_Placement_3Bw5jVUH9AGukt7cEGB9j" />
 					<Items>
 						<DocTemplateItem UniqueId="db040752-8fee-45c7-ba17-78eeaa936a13" RuleParameters="RelativeToElement=IfcSite;ElementName=HDMI Plattrambro;" />
 					</Items>
 				</DocTemplateUsage>
 				<DocTemplateUsage Name="Geometry" UniqueId="35622964-9cc2-47ae-aeb1-e465fcb77330">
-					<Documentation>Surface Proposed shall be represented as a 3D surface tessellation _IfcTriangulatedIrregularNetwork_ geometric items.</Documentation>
+					<Documentation>Surface Existing shall be represented as a 3D surface tessellation _IfcTriangulatedIrregularNetwork_ geometric items.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Surface_Tessellation_Geometry_0gcN00aHT7P84eQ4tB7HA6" />
 					<Items>
 						<DocTemplateItem UniqueId="3a70b9bd-1040-4ba4-a7c6-24c1a8a6249a" RuleParameters="Items=IfcTriangulatedIrregularNetwork;" />
@@ -174,14 +174,14 @@
 			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcGeotechnicalStratum" />
 			<Concepts>
 				<DocTemplateUsage Name="Product Local Placement" UniqueId="fcd93046-3f50-4811-8df0-7a0575188e8d">
-					<Documentation>Surface Proposed shall be locally placed in the Site.</Documentation>
+					<Documentation>Surface Existing shall be locally placed in the Site.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Product_Local_Placement_3Bw5jVUH9AGukt7cEGB9j" />
 					<Items>
 						<DocTemplateItem UniqueId="52a2105e-9d63-46e3-a4c6-b88b707a2364" RuleParameters="RelativeToElement=IfcSite;ElementName=HDMI Plattrambro;" />
 					</Items>
 				</DocTemplateUsage>
 				<DocTemplateUsage Name="Geometry" UniqueId="fec732b0-336c-4139-aeaf-9c0e419136b5">
-					<Documentation>Surface Proposed shall be represented as a 3D surface tessellation _IfcTriangulatedIrregularNetwork_ geometric items.</Documentation>
+					<Documentation>Surface Existing shall be represented as a 3D surface tessellation _IfcTriangulatedIrregularNetwork_ geometric items.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Surface_Tessellation_Geometry_0gcN00aHT7P84eQ4tB7HA6" />
 					<Items>
 						<DocTemplateItem UniqueId="5dde3270-0d5b-4fe5-9c73-52c7fb5f3654" RuleParameters="Items=IfcTriangulatedIrregularNetwork;" />
