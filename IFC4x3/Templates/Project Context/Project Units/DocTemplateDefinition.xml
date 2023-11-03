@@ -61,7 +61,7 @@
 												<DocModelRuleEntity Name="IfcUnitEnum" />
 											</Rules>
 										</DocModelRuleAttribute>
-										<DocModelRuleAttribute Name="Prefix">
+										<DocModelRuleAttribute Name="Prefix" Identification="SIPrefix">
 											<Rules>
 												<DocModelRuleEntity Name="IfcSIPrefix" />
 											</Rules>
