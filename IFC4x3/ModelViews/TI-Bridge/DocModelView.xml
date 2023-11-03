@@ -1,6 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
 <DocModelView xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="TI-Bridge" UniqueId="14849e45-e262-4cfc-a27c-2bf98308d8f3" BaseView="e5d27119-bcb5-43e6-b6b3-8ababc4593f4">
 	<ConceptRoots>
+		<DocConceptRoot Name="Alignment" UniqueId="75c3c532-ca41-4dfd-befc-56d2265421db">
+			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcAlignment" />
+			<Concepts>
+				<DocTemplateUsage Name="Name" UniqueId="ccf142e0-fe82-4307-b53b-dc6b210a0604">
+					<Documentation>Name of the alignment used for referencing purposes.</Documentation>
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Object_User_Identity_31di66dFr7AJKdxDG2D1A" />
+					<Items>
+						<DocTemplateItem UniqueId="3aa5783a-10bd-465c-b2ef-abbe2e73317a" RuleParameters="ObjectName=All datasets name alignment &apos;Alignment&apos;;" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="AxisGradientCurve" UniqueId="237cbb24-fc03-4418-b7e5-95f2141cb971">
+					<Documentation>Alignment shall define an axis curve, which may consist of a horizontal alignment curve only, a horizontal curve and vertical curve.</Documentation>
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Alignment_Geometry_Gradient_39lYC44uLCdvW3MC_LnJxz" />
+					<Items>
+						<DocTemplateItem UniqueId="3f5e9227-8bf9-40a2-aeea-9610a41f4cb4" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="AxisPolyline" UniqueId="05c11688-a64b-46cc-8053-3c7931c44565">
+					<Documentation>Alignment shall define an axis curve, which may consist of a polyline for capturing existing conditions at approximate intervals.</Documentation>
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Axis_2D_Geometry_1u94Jere57Mf0qgUVrF6rb" />
+					<Items>
+						<DocTemplateItem UniqueId="f34127f9-c7d9-4f2e-b362-125557948bd0" RuleParameters="Items=IfcPolyline;" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="AxisOffsetCurve" UniqueId="5c40888e-3998-44c2-bd27-34da76f339b4">
+					<Documentation>Alignment shall define an axis curve, which may consist of an offset curve for capturing derivate alignments such as for a girder line.</Documentation>
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Axis_3D_Geometry_2ubDZB_q55xBeOSih6klyq" />
+					<Items>
+						<DocTemplateItem UniqueId="89806e87-48c0-4a6c-8da8-ca14e6b25899" RuleParameters="Items=IfcOffsetCurveByDistances;" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Placement" UniqueId="dcc6f16b-d065-44fe-b078-26e76ed879a6">
+					<Documentation>Alignment shall be placed at the global origin.</Documentation>
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Product_Local_Placement_3Bw5jVUH9AGukt7cEGB9j" />
+					<Items>
+						<DocTemplateItem UniqueId="5db44495-e210-4e9a-85f4-53b99927bda7" RuleParameters="RelativeToElement:NOTEXISTS;" />
+					</Items>
+				</DocTemplateUsage>
+			</Concepts>
+			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="3167ec23-5456-42e2-b637-dd09a0900949" Type="IfcAlignment" />
+		</DocConceptRoot>
 		<DocConceptRoot Name="Beam" UniqueId="e46e0915-a31b-45d4-9111-ae1a4ba6b92b">
 			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcBeam" />
 			<Concepts>
