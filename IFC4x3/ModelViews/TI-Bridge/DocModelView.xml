@@ -8,7 +8,7 @@
 					<Documentation>Name of the alignment used for referencing purposes.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Object_User_Identity_31di66dFr7AJKdxDG2D1A" />
 					<Items>
-						<DocTemplateItem UniqueId="3aa5783a-10bd-465c-b2ef-abbe2e73317a" RuleParameters="ObjectName=All datasets name alignment &apos;Alignmemt&apos;;" />
+						<DocTemplateItem UniqueId="3aa5783a-10bd-465c-b2ef-abbe2e73317a" RuleParameters="ObjectName=All datasets name alignment &apos;Alignment&apos;;" />
 					</Items>
 				</DocTemplateUsage>
 				<DocTemplateUsage Name="AxisGradientCurve" UniqueId="237cbb24-fc03-4418-b7e5-95f2141cb971">
