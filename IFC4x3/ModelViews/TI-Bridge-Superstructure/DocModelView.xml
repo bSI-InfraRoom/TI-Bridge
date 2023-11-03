@@ -210,7 +210,10 @@
 				</DocTemplateUsage>
 				<DocTemplateUsage Name="Alignments" UniqueId="4dc839ff-3200-49fd-b765-8426124d3a3f">
 					<Documentation>Alignment objects used longitudinally (e.g. for girders) or laterally (e.g. for floor beams).</Documentation>
-					<Definition xsi:type="DocTemplateDefinition" Name="Alignments" UniqueId="075a9f24-e844-4472-b691-9d9b40d7f29b" Type="IfcBridgePart" />
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Container_PredefinedType_37sQ6kOojEcAgyjx68vXkw" />
+					<Items>
+						<DocTemplateItem UniqueId="a1f36cf9-5dd4-4972-a9ad-89652e91439d" />
+					</Items>
 				</DocTemplateUsage>
 				<DocTemplateUsage Name="Trusses" UniqueId="4cac19b5-d739-4700-b92c-e57929cc86b5">
 					<Documentation>Truss lines.</Documentation>

@@ -7,7 +7,11 @@
 					<Rules>
 						<DocModelRuleAttribute Name="RelatedElements" Identification="Type">
 							<Rules>
-								<DocModelRuleEntity Name="IfcProduct" />
+								<DocModelRuleEntity Name="IfcProduct">
+									<References>
+										<DocTemplateDefinition xsi:nil="true" href="Object_Predefined_Type_0b989XcDzD2fDaLbDNNAGX" />
+									</References>
+								</DocModelRuleEntity>
 							</Rules>
 						</DocModelRuleAttribute>
 					</Rules>
