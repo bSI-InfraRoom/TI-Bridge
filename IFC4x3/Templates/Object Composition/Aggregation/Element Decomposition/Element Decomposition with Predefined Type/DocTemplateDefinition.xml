@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Element_Decomposition_with_Predefined_Type_2doY2TqVr60xar2GKSiGHH" Name="Element Decomposition with Predefined Type" UniqueId="a7ca209d-d1fd-4603-b935-09051cb10451" Type="IfcElement">
+	<Rules>
+		<DocModelRuleAttribute Name="IsDecomposedBy" Identification="IsDecomposedBy">
+			<Rules>
+				<DocModelRuleEntity Name="IfcRelAggregates">
+					<Rules>
+						<DocModelRuleAttribute Name="RelatedObjects" Identification="RelatedObjects">
+							<Rules>
+								<DocModelRuleEntity Name="IfcElement">
+									<Rules>
+										<DocModelRuleAttribute Name="Name" Identification="PartName">
+											<Rules>
+												<DocModelRuleEntity Name="IfcLabel" />
+											</Rules>
+										</DocModelRuleAttribute>
+									</Rules>
+									<References>
+										<DocTemplateDefinition xsi:nil="true" href="Object_Predefined_Type_0b989XcDzD2fDaLbDNNAGX" />
+									</References>
+								</DocModelRuleEntity>
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocModelRuleEntity>
+			</Rules>
+		</DocModelRuleAttribute>
+	</Rules>
+</DocTemplateDefinition>
+
