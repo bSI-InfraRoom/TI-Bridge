@@ -210,7 +210,7 @@
 				</DocTemplateUsage>
 				<DocTemplateUsage Name="Alignments" UniqueId="4dc839ff-3200-49fd-b765-8426124d3a3f">
 					<Documentation>Alignment objects used longitudinally (e.g. for girders) or laterally (e.g. for floor beams).</Documentation>
-					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Container_PredefinedType_37sQ6kOojEcAgyjx68vXkw" />
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Container_1XtGZjG59LPCtYlqeIWvl" />
 					<Items>
 						<DocTemplateItem UniqueId="153d8c0a-0cc3-4abd-a175-586724fdf868" RuleParameters="Type=IfcAlignment;">
 							<Concepts>
