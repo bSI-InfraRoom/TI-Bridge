@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <mvdXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://buildingsmart-tech.org/mvd/XML/1.1" xsi:schemaLocation="http://standards.buildingsmart.org/MVD/RELEASE/mvdXML/v1-1/mvdXML_V1.1.xsd" uuid="89789d4b-3699-4a64-811a-c9599c72f230" name="mvd">
 	<Templates>
 		<ConceptTemplate uuid="a322fdd7-cd28-4ea7-8797-f6cf124ab3d6" name="Partial Templates" applicableSchema="IFC4">
@@ -244,9 +244,7 @@
 															<EntityRules>
 																<EntityRule EntityName="IfcCurveSegment">
 																	<References>
-																		<Template>
 																			<Template ref="0a3d3dd9-f726-42f4-ab52-250f4c89b546" />
-																		</Template>
 																	</References>
 																</EntityRule>
 															</EntityRules>
@@ -259,9 +257,7 @@
 											<EntityRules>
 												<EntityRule EntityName="IfcCurveSegment">
 													<References>
-														<Template>
 															<Template ref="0a3d3dd9-f726-42f4-ab52-250f4c89b546" />
-														</Template>
 													</References>
 												</EntityRule>
 											</EntityRules>
@@ -658,9 +654,7 @@
 															<EntityRules>
 																<EntityRule EntityName="IfcSurfaceStyle">
 																	<References>
-																		<Template>
 																			<Template ref="ea473562-c1e5-4dc7-ad75-ff3492576e36" />
-																		</Template>
 																	</References>
 																</EntityRule>
 															</EntityRules>
@@ -754,9 +748,7 @@
 															<EntityRules>
 																<EntityRule EntityName="IfcSurfaceStyle">
 																	<References>
-																		<Template>
 																			<Template ref="ea473562-c1e5-4dc7-ad75-ff3492576e36" />
-																		</Template>
 																	</References>
 																</EntityRule>
 															</EntityRules>
@@ -867,16 +859,12 @@
 															<EntityRules>
 																<EntityRule EntityName="IfcArbitraryClosedProfileDef">
 																	<References>
-																		<Template>
 																			<Template ref="0373a86a-1387-45bd-bf09-bb3cc39092d9" />
-																		</Template>
 																	</References>
 																</EntityRule>
 																<EntityRule EntityName="IfcArbitraryProfileDefWithVoids">
 																	<References>
-																		<Template>
 																			<Template ref="d3b8661b-e65b-4077-adc7-c6742d219691" />
-																		</Template>
 																	</References>
 																</EntityRule>
 																<EntityRule EntityName="IfcProfileDef" />
@@ -1018,9 +1006,7 @@
 															<EntityRules>
 																<EntityRule EntityName="IfcArbitraryProfileDefWithVoids">
 																	<References>
-																		<Template>
 																			<Template ref="d3b8661b-e65b-4077-adc7-c6742d219691" />
-																		</Template>
 																	</References>
 																</EntityRule>
 																<EntityRule EntityName="IfcProfileDef" />
@@ -1276,9 +1262,7 @@
 															<EntityRules>
 																<EntityRule EntityName="IfcIndexedTriangleTextureMap">
 																	<References>
-																		<Template>
 																			<Template ref="36f5b37a-5390-4743-a8a5-2b29fa5d50bd" />
-																		</Template>
 																	</References>
 																</EntityRule>
 															</EntityRules>
@@ -1745,9 +1729,7 @@
 											<EntityRules>
 												<EntityRule EntityName="IfcImageTexture">
 													<References>
-														<Template>
 															<Template ref="19574eae-52be-43e7-9124-79a9451486cb" />
-														</Template>
 													</References>
 												</EntityRule>
 											</EntityRules>
@@ -1961,9 +1943,7 @@
 								<Definition>
 									<Body lang="tt">
 									</Body>
-									<Links>
 										<Link lang="tt" href="" />
-									</Links>
 								</Definition>
 							</Definitions>
 							<Rules>
@@ -1999,9 +1979,7 @@
 								<Definition>
 									<Body lang="tt">
 									</Body>
-									<Links>
 										<Link lang="tt" href="" />
-									</Links>
 								</Definition>
 							</Definitions>
 							<Rules>
@@ -2039,9 +2017,7 @@
 						<Definition>
 							<Body lang="tt">
 							</Body>
-							<Links>
 								<Link lang="tt" href="" />
-							</Links>
 						</Definition>
 					</Definitions>
 					<Rules>
@@ -2079,9 +2055,7 @@
 						<Definition>
 							<Body lang="tt">
 							</Body>
-							<Links>
 								<Link lang="tt" href="" />
-							</Links>
 						</Definition>
 					</Definitions>
 					<Rules>
@@ -2199,9 +2173,7 @@
 								<Definition>
 									<Body lang="tt">
 									</Body>
-									<Links>
 										<Link lang="tt" href="" />
-									</Links>
 								</Definition>
 							</Definitions>
 							<Rules>
@@ -2231,9 +2203,7 @@
 																					<EntityRules>
 																						<EntityRule EntityName="IfcMaterial">
 																							<References>
-																								<Template>
 																									<Template ref="5986b61a-b79f-44e0-a93f-9fddf470a4e1" />
-																								</Template>
 																							</References>
 																						</EntityRule>
 																					</EntityRules>
@@ -2281,9 +2251,7 @@
 								<Definition>
 									<Body lang="tt">
 									</Body>
-									<Links>
 										<Link lang="tt" href="" />
-									</Links>
 								</Definition>
 							</Definitions>
 							<Rules>
@@ -2313,9 +2281,7 @@
 																					<EntityRules>
 																						<EntityRule EntityName="IfcMaterial">
 																							<References>
-																								<Template>
 																									<Template ref="5986b61a-b79f-44e0-a93f-9fddf470a4e1" />
-																								</Template>
 																							</References>
 																						</EntityRule>
 																					</EntityRules>
@@ -2373,9 +2339,7 @@
 								<Definition>
 									<Body lang="tt">
 									</Body>
-									<Links>
 										<Link lang="tt" href="" />
-									</Links>
 								</Definition>
 							</Definitions>
 							<Rules>
@@ -2405,9 +2369,7 @@
 																					<EntityRules>
 																						<EntityRule EntityName="IfcMaterial">
 																							<References>
-																								<Template>
 																									<Template ref="5986b61a-b79f-44e0-a93f-9fddf470a4e1" />
-																								</Template>
 																							</References>
 																						</EntityRule>
 																					</EntityRules>
@@ -2473,9 +2435,7 @@
 								<Definition>
 									<Body lang="tt">
 									</Body>
-									<Links>
 										<Link lang="tt" href="" />
-									</Links>
 								</Definition>
 							</Definitions>
 							<Rules>
@@ -2487,9 +2447,7 @@
 													<EntityRules>
 														<EntityRule EntityName="IfcMaterial">
 															<References>
-																<Template>
 																	<Template ref="5986b61a-b79f-44e0-a93f-9fddf470a4e1" />
-																</Template>
 															</References>
 														</EntityRule>
 													</EntityRules>
@@ -2552,9 +2510,7 @@
 										<Definition>
 											<Body lang="tt">
 											</Body>
-											<Links>
 												<Link lang="tt" href="" />
-											</Links>
 										</Definition>
 									</Definitions>
 									<Rules>
@@ -2925,9 +2881,7 @@
 										<Definition>
 											<Body lang="tt">
 											</Body>
-											<Links>
 												<Link lang="tt" href="" />
-											</Links>
 										</Definition>
 									</Definitions>
 									<Rules>
@@ -3030,9 +2984,7 @@
 								<Definition>
 									<Body lang="tt">
 									</Body>
-									<Links>
 										<Link lang="tt" href="" />
-									</Links>
 								</Definition>
 							</Definitions>
 							<Rules>
@@ -3125,9 +3077,7 @@
 										<Definition>
 											<Body lang="tt">
 											</Body>
-											<Links>
 												<Link lang="tt" href="" />
-											</Links>
 										</Definition>
 									</Definitions>
 									<Rules>
@@ -3225,9 +3175,7 @@
 										<Definition>
 											<Body lang="tt">
 											</Body>
-											<Links>
 												<Link lang="tt" href="" />
-											</Links>
 										</Definition>
 									</Definitions>
 									<Rules>
@@ -3335,9 +3283,7 @@
 										<Definition>
 											<Body lang="tt">
 											</Body>
-											<Links>
 												<Link lang="tt" href="" />
-											</Links>
 										</Definition>
 									</Definitions>
 									<Rules>
@@ -3433,9 +3379,7 @@
 										<Definition>
 											<Body lang="tt">
 											</Body>
-											<Links>
 												<Link lang="tt" href="" />
-											</Links>
 										</Definition>
 									</Definitions>
 									<Rules>
@@ -3474,9 +3418,7 @@
 						<Definition>
 							<Body lang="tt">
 							</Body>
-							<Links>
 								<Link lang="tt" href="" />
-							</Links>
 						</Definition>
 					</Definitions>
 					<Rules>
@@ -3549,9 +3491,7 @@
 						<Definition>
 							<Body lang="tt">
 							</Body>
-							<Links>
 								<Link lang="tt" href="" />
-							</Links>
 						</Definition>
 					</Definitions>
 					<Rules>
@@ -3635,9 +3575,7 @@
 								<Definition>
 									<Body lang="tt">
 									</Body>
-									<Links>
 										<Link lang="tt" href="" />
-									</Links>
 								</Definition>
 							</Definitions>
 							<Rules>
@@ -3673,9 +3611,7 @@
 								<Definition>
 									<Body lang="tt">
 									</Body>
-									<Links>
 										<Link lang="tt" href="" />
-									</Links>
 								</Definition>
 							</Definitions>
 							<Rules>
@@ -3711,9 +3647,7 @@
 								<Definition>
 									<Body lang="tt">
 									</Body>
-									<Links>
 										<Link lang="tt" href="" />
-									</Links>
 								</Definition>
 							</Definitions>
 							<Rules>
@@ -3758,9 +3692,7 @@
 								<Definition>
 									<Body lang="tt">
 									</Body>
-									<Links>
 										<Link lang="tt" href="" />
-									</Links>
 								</Definition>
 							</Definitions>
 							<Rules>
@@ -3860,9 +3792,7 @@
 								<Definition>
 									<Body lang="tt">
 									</Body>
-									<Links>
 										<Link lang="tt" href="" />
-									</Links>
 								</Definition>
 							</Definitions>
 							<Rules>
@@ -3959,9 +3889,7 @@
 											<EntityRules>
 												<EntityRule EntityName="IfcReferent">
 													<References>
-														<Template>
 															<Template ref="6dc82845-b142-4624-a9a5-37d1e4995761" />
-														</Template>
 													</References>
 													<AttributeRules>
 														<AttributeRule RuleID="Station" AttributeName="Name" />
@@ -3996,9 +3924,7 @@
 								<Definition>
 									<Body lang="tt">
 									</Body>
-									<Links>
 										<Link lang="tt" href="" />
-									</Links>
 								</Definition>
 							</Definitions>
 							<Rules>
@@ -4201,9 +4127,7 @@
 								<Definition>
 									<Body lang="tt">
 									</Body>
-									<Links>
 										<Link lang="tt" href="" />
-									</Links>
 								</Definition>
 							</Definitions>
 							<Rules>
@@ -4251,9 +4175,7 @@
 						<Definition>
 							<Body lang="tt">
 							</Body>
-							<Links>
 								<Link lang="tt" href="" />
-							</Links>
 						</Definition>
 					</Definitions>
 					<Rules>
@@ -4307,37 +4229,27 @@
 																	<EntityRules>
 																		<EntityRule EntityName="IfcPropertySingleValue">
 																			<References>
-																				<Template>
 																					<Template ref="6655f6d0-29a8-47b8-8f3d-c9fce9c9a620" />
-																				</Template>
 																			</References>
 																		</EntityRule>
 																		<EntityRule EntityName="IfcPropertyBoundedValue">
 																			<References>
-																				<Template>
 																					<Template ref="3d67a2d2-761d-44d9-a09e-b7fbb1fa5632" />
-																				</Template>
 																			</References>
 																		</EntityRule>
 																		<EntityRule EntityName="IfcPropertyEnumeratedValue">
 																			<References>
-																				<Template>
 																					<Template ref="c148a099-c351-43a8-9266-5f3de0b45a95" />
-																				</Template>
 																			</References>
 																		</EntityRule>
 																		<EntityRule EntityName="IfcPropertyListValue">
 																			<References>
-																				<Template>
 																					<Template ref="8e10b688-9179-4e3a-8db2-6abcaafe952d" />
-																				</Template>
 																			</References>
 																		</EntityRule>
 																		<EntityRule EntityName="IfcPropertyTableValue">
 																			<References>
-																				<Template>
 																					<Template ref="35c947b0-6abc-4b13-8ec7-696ef2041721" />
-																				</Template>
 																			</References>
 																		</EntityRule>
 																	</EntityRules>
@@ -4368,37 +4280,27 @@
 																			<EntityRules>
 																				<EntityRule EntityName="IfcPropertySingleValue">
 																					<References>
-																						<Template>
 																							<Template ref="6655f6d0-29a8-47b8-8f3d-c9fce9c9a620" />
-																						</Template>
 																					</References>
 																				</EntityRule>
 																				<EntityRule EntityName="IfcPropertyBoundedValue">
 																					<References>
-																						<Template>
 																							<Template ref="3d67a2d2-761d-44d9-a09e-b7fbb1fa5632" />
-																						</Template>
 																					</References>
 																				</EntityRule>
 																				<EntityRule EntityName="IfcPropertyEnumeratedValue">
 																					<References>
-																						<Template>
 																							<Template ref="c148a099-c351-43a8-9266-5f3de0b45a95" />
-																						</Template>
 																					</References>
 																				</EntityRule>
 																				<EntityRule EntityName="IfcPropertyListValue">
 																					<References>
-																						<Template>
 																							<Template ref="8e10b688-9179-4e3a-8db2-6abcaafe952d" />
-																						</Template>
 																					</References>
 																				</EntityRule>
 																				<EntityRule EntityName="IfcPropertyTableValue">
 																					<References>
-																						<Template>
 																							<Template ref="35c947b0-6abc-4b13-8ec7-696ef2041721" />
-																						</Template>
 																					</References>
 																				</EntityRule>
 																			</EntityRules>
@@ -4428,37 +4330,27 @@
 																							<EntityRules>
 																								<EntityRule EntityName="IfcPropertySingleValue">
 																									<References IdPrefix="Type">
-																										<Template>
 																											<Template ref="6655f6d0-29a8-47b8-8f3d-c9fce9c9a620" />
-																										</Template>
 																									</References>
 																								</EntityRule>
 																								<EntityRule EntityName="IfcPropertyBoundedValue">
 																									<References IdPrefix="Type">
-																										<Template>
 																											<Template ref="3d67a2d2-761d-44d9-a09e-b7fbb1fa5632" />
-																										</Template>
 																									</References>
 																								</EntityRule>
 																								<EntityRule EntityName="IfcPropertyEnumeratedValue">
 																									<References IdPrefix="Type">
-																										<Template>
 																											<Template ref="c148a099-c351-43a8-9266-5f3de0b45a95" />
-																										</Template>
 																									</References>
 																								</EntityRule>
 																								<EntityRule EntityName="IfcPropertyListValue">
 																									<References IdPrefix="Type">
-																										<Template>
 																											<Template ref="8e10b688-9179-4e3a-8db2-6abcaafe952d" />
-																										</Template>
 																									</References>
 																								</EntityRule>
 																								<EntityRule EntityName="IfcPropertyTableValue">
 																									<References IdPrefix="Type">
-																										<Template>
 																											<Template ref="35c947b0-6abc-4b13-8ec7-696ef2041721" />
-																										</Template>
 																									</References>
 																								</EntityRule>
 																							</EntityRules>
@@ -4490,9 +4382,7 @@
 						<Definition>
 							<Body lang="tt">
 							</Body>
-							<Links>
 								<Link lang="tt" href="" />
-							</Links>
 						</Definition>
 					</Definitions>
 					<Rules>
@@ -4523,44 +4413,32 @@
 															<EntityRules>
 																<EntityRule EntityName="IfcQuantityLength">
 																	<References>
-																		<Template>
 																			<Template ref="dd8678e1-e300-4f70-9d63-e539db4bd11c" />
-																		</Template>
 																	</References>
 																</EntityRule>
 																<EntityRule EntityName="IfcQuantityArea">
 																	<References>
-																		<Template>
 																			<Template ref="65ac4747-6eff-437e-94e2-643fd4e3bf86" />
-																		</Template>
 																	</References>
 																</EntityRule>
 																<EntityRule EntityName="IfcQuantityVolume">
 																	<References>
-																		<Template>
 																			<Template ref="6491a3b0-b7e9-412a-8226-bcd91c2b0b0e" />
-																		</Template>
 																	</References>
 																</EntityRule>
 																<EntityRule EntityName="IfcQuantityWeight">
 																	<References>
-																		<Template>
 																			<Template ref="e1016e56-3c89-4f42-9679-07e1db3c0afb" />
-																		</Template>
 																	</References>
 																</EntityRule>
 																<EntityRule EntityName="IfcQuantityCount">
 																	<References>
-																		<Template>
 																			<Template ref="8aaeff32-572c-4f6a-ac64-e2151663cbf1" />
-																		</Template>
 																	</References>
 																</EntityRule>
 																<EntityRule EntityName="IfcQuantityTime">
 																	<References>
-																		<Template>
 																			<Template ref="43c4c050-04de-4b0f-9e43-708bd98201a8" />
-																		</Template>
 																	</References>
 																</EntityRule>
 															</EntityRules>
@@ -4718,9 +4596,7 @@
 																			<EntityRules>
 																				<EntityRule EntityName="IfcGradientCurve">
 																					<References>
-																						<Template>
 																							<Template ref="cf0d4709-dc5b-484e-ae24-946553d6a4e1" />
-																						</Template>
 																					</References>
 																				</EntityRule>
 																			</EntityRules>
@@ -5041,9 +4917,7 @@
 																					<EntityRules>
 																						<EntityRule EntityName="IfcSweptDiskSolid">
 																							<References>
-																								<Template>
 																									<Template ref="62457eb3-66ff-4bbd-b503-794688544cba" />
-																								</Template>
 																							</References>
 																						</EntityRule>
 																					</EntityRules>
@@ -5153,9 +5027,7 @@
 																					<EntityRules>
 																						<EntityRule EntityName="IfcSweptAreaSolid">
 																							<References>
-																								<Template>
 																									<Template ref="394297ba-f77f-4107-a9cc-9ecb11744de6" />
-																								</Template>
 																							</References>
 																						</EntityRule>
 																					</EntityRules>
@@ -5217,16 +5089,12 @@
 																			<EntityRules>
 																				<EntityRule EntityName="IfcTriangulatedFaceSet">
 																					<References>
-																						<Template>
 																							<Template ref="8a96e670-c72c-4dde-933a-b8e9bffd6983" />
-																						</Template>
 																					</References>
 																				</EntityRule>
 																				<EntityRule EntityName="IfcPolygonalFaceSet">
 																					<References>
-																						<Template>
 																							<Template ref="72c0b316-6b48-478d-91fa-6e4b5a781b07" />
-																						</Template>
 																					</References>
 																				</EntityRule>
 																			</EntityRules>
@@ -5777,9 +5645,7 @@
 																					<EntityRules>
 																						<EntityRule EntityName="IfcSweptAreaSolid">
 																							<References>
-																								<Template>
 																									<Template ref="394297ba-f77f-4107-a9cc-9ecb11744de6" />
-																								</Template>
 																							</References>
 																						</EntityRule>
 																					</EntityRules>
@@ -5841,16 +5707,12 @@
 																			<EntityRules>
 																				<EntityRule EntityName="IfcTriangulatedFaceSet">
 																					<References>
-																						<Template>
 																							<Template ref="677bd4ce-e38b-4581-b40d-c9eaa2416971" />
-																						</Template>
 																					</References>
 																				</EntityRule>
 																				<EntityRule EntityName="IfcPolygonalFaceSet">
 																					<References>
-																						<Template>
 																							<Template ref="72c0b316-6b48-478d-91fa-6e4b5a781b07" />
-																						</Template>
 																					</References>
 																				</EntityRule>
 																			</EntityRules>
@@ -5930,9 +5792,7 @@
 								<Definition>
 									<Body lang="tt">
 									</Body>
-									<Links>
 										<Link lang="tt" href="" />
-									</Links>
 								</Definition>
 							</Definitions>
 							<Rules>
@@ -6034,9 +5894,7 @@
 						<Definition>
 							<Body lang="tt">
 							</Body>
-							<Links>
 								<Link lang="tt" href="" />
-							</Links>
 						</Definition>
 					</Definitions>
 					<Rules>
@@ -6164,9 +6022,7 @@
 								<Definition>
 									<Body lang="tt">
 									</Body>
-									<Links>
 										<Link lang="tt" href="" />
-									</Links>
 								</Definition>
 							</Definitions>
 							<Rules>
@@ -6211,9 +6067,7 @@
 						<Definition>
 							<Body lang="tt">
 							</Body>
-							<Links>
 								<Link lang="tt" href="" />
-							</Links>
 						</Definition>
 					</Definitions>
 					<Rules>
@@ -6437,9 +6291,7 @@
 								<Definition>
 									<Body lang="tt">
 									</Body>
-									<Links>
 										<Link lang="tt" href="" />
-									</Links>
 								</Definition>
 							</Definitions>
 							<Rules>
@@ -6557,9 +6409,7 @@
 						<Definition>
 							<Body lang="tt">
 							</Body>
-							<Links>
 								<Link lang="tt" href="" />
-							</Links>
 						</Definition>
 					</Definitions>
 					<Rules>
@@ -6702,13 +6552,13 @@
 				</ConceptTemplate>
 			</SubTemplates>
 		</ConceptTemplate>
-		<ConceptTemplate uuid="e5d27119-bcb5-43e6-b6b3-8ababc4593f4" name="_Bridge Alignment Reference View" applicableSchema="IFC4">
+		<ConceptTemplate uuid="e5d27119-bcb5-43e6-b8b3-8ababc4593f4" name="_Bridge Alignment Reference View" applicableSchema="IFC4">
 			<SubTemplates>
 				<ConceptTemplate uuid="e5c197c2-7836-40e9-acf9-f8f530b1cebb" name="NOTDEFINED" applicableSchema="IFC4" applicableEntity="IfcAlignment" />
 				<ConceptTemplate uuid="a92fcf75-c200-4a09-b59f-5bd8e6177960" name="NOTDEFINED" applicableSchema="IFC4" applicableEntity="IfcReferent" />
 			</SubTemplates>
 		</ConceptTemplate>
-		<ConceptTemplate uuid="2c20c595-6b25-445b-92f5-37ef9eb1825f" name="_Bridge Reference View" applicableSchema="IFC4">
+		<ConceptTemplate uuid="2c20c595-6b25-445b-98f5-37ef9eb1825f" name="_Bridge Reference View" applicableSchema="IFC4">
 			<SubTemplates>
 				<ConceptTemplate uuid="a84051db-9083-4067-9e82-c78da7b05794" name="NOTDEFINED" applicableSchema="IFC4" applicableEntity="IfcBearing" />
 				<ConceptTemplate uuid="93f7366f-b854-48e3-98b7-8c4a953955db" name="NOTDEFINED" applicableSchema="IFC4" applicableEntity="IfcBridge" />
@@ -6722,7 +6572,7 @@
 				<ConceptTemplate uuid="6992c049-6292-40ec-82f0-7eae15af6220" name="NOTDEFINED" applicableSchema="IFC4" applicableEntity="IfcVibrationDamper" />
 			</SubTemplates>
 		</ConceptTemplate>
-		<ConceptTemplate uuid="86aa67de-829b-467b-9cd8-dd364beabe79" name="_Reference View" applicableSchema="IFC4">
+		<ConceptTemplate uuid="86aa67de-829b-467b-98d8-dd364beabe79" name="_Reference View" applicableSchema="IFC4">
 			<SubTemplates>
 				<ConceptTemplate uuid="a1cdc00a-185f-445f-a0dc-09e47679b2e7" name="NOTDEFINED" applicableSchema="IFC4" applicableEntity="IfcActuator" />
 				<ConceptTemplate uuid="a1d3af86-d601-4cc7-ad44-5d8832b39b0b" name="NOTDEFINED" applicableSchema="IFC4" applicableEntity="IfcAirTerminal" />
@@ -6857,7 +6707,7 @@
 				<ConceptTemplate uuid="613b63bd-fa2a-4465-96dc-241f077b6c9a" name="NOTDEFINED" applicableSchema="IFC4" applicableEntity="IfcZone" />
 			</SubTemplates>
 		</ConceptTemplate>
-		<ConceptTemplate uuid="14849e45-e262-4cfc-a27c-2bf98308d8f3" name="_TI-Bridge" applicableSchema="IFC4">
+		<ConceptTemplate uuid="14849e45-e262-4c8c-a27c-2bf98308d8f3" name="_TI-Bridge" applicableSchema="IFC4">
 			<SubTemplates>
 				<ConceptTemplate uuid="3167ec23-5456-42e2-b637-dd09a0900949" name="NOTDEFINED" applicableSchema="IFC4" applicableEntity="IfcAlignment" />
 				<ConceptTemplate uuid="2c709a05-e33d-4567-97af-b4b2263ef509" name="NOTDEFINED" applicableSchema="IFC4" applicableEntity="IfcBeam" />
@@ -6876,7 +6726,7 @@
 					</Body>
 				</Definition>
 			</Definitions>
-			<BaseView>2c20c595-6b25-445b-92f5-37ef9eb1825f</BaseView>
+			<BaseView ref="2c20c595-6b25-445b-92f5-37ef9eb1825f"/>
 			<ExchangeRequirements>
 				<ExchangeRequirement uuid="467ca84f-1089-4244-90c3-31244472a078" name="Bridge Alignment Reference Exchange" />
 			</ExchangeRequirements>
@@ -6935,7 +6785,7 @@
 					</Body>
 				</Definition>
 			</Definitions>
-			<BaseView>86aa67de-829b-467b-9cd8-dd364beabe79</BaseView>
+			<BaseView ref="86aa67de-829b-467b-9cd8-dd364beabe79"/>
 			<ExchangeRequirements>
 				<ExchangeRequirement uuid="41afc7d6-399c-4250-9047-9b5000e233e4" name="Bridge Reference Exchange" status="proposal" />
 			</ExchangeRequirements>
@@ -6978,7 +6828,7 @@
 								</Definition>
 							</Definitions>
 							<Template ref="8c0fd2f7-71bb-4e6e-8fdb-0c02b352f14a" />
-							<TemplateRules>
+							<TemplateRules operator="or">
 								<TemplateRule Description="Direct assignment to project, if the bridgeis the outermost spatial container, and no site information is provided for bridge projects" Parameters="RelatingObject[Type]=&apos;IfcProject&apos;" />
 								<TemplateRule Description="Assignment to site, if the bridge is the spatial container for the bridge project with site information" Parameters="RelatingObject[Type]=&apos;IfcSite&apos;" />
 								<TemplateRule Description="Assignment to another bridge as spatial container, e.g. if this bridge represents a bridge section." Parameters="RelatingObject[Type]=&apos;IfcBridge&apos;" />
@@ -6993,7 +6843,7 @@
 								</Definition>
 							</Definitions>
 							<Template ref="667f8443-ecce-4a8d-a63f-931fab0453e0" />
-							<TemplateRules>
+							<TemplateRules operator="or">
 								<TemplateRule Description="Spatial decomposition into bridge parts" Parameters="RelatedObjects[Type]=&apos;IfcBridgePart&apos;" />
 								<TemplateRule Description="Spatial decomposition into other bridges, e.g. if this bridge represents a complex bridge that is subdivided into bridge sections." Parameters="RelatedObjects[Type]=&apos;IfcBridge&apos;" />
 							</TemplateRules>
@@ -7006,7 +6856,7 @@
 								</Definition>
 							</Definitions>
 							<Template ref="61dd08ed-fd01-4955-9337-8afd284a0e6f" />
-							<TemplateRules>
+							<TemplateRules operator="or">
 								<TemplateRule Description="Physical elements that are directly related to the building." Parameters="Type[Type]=&apos;IfcElement&apos;" />
 								<TemplateRule Description="Annotations that are directly related to the building." Parameters="Type[Type]=&apos;IfcAnnotation&apos;" />
 								<TemplateRule Description="Positioning elements that are directly related to the building." Parameters="Type[Type]=&apos;IfcPositioningElement&apos;" />
@@ -7057,7 +6907,7 @@
 								</Definition>
 							</Definitions>
 							<Template ref="8c0fd2f7-71bb-4e6e-8fdb-0c02b352f14a" />
-							<TemplateRules>
+							<TemplateRules operator="or">
 								<TemplateRule Description="Assignment to the bridge, where the bridge part is a part of." Parameters="RelatingObject[Type]=&apos;IfcBridge&apos;" />
 								<TemplateRule Description="Assignment to another bridge part, e.g. if this bridge part is a part that refers to another bridge part." Parameters="RelatingObject[Type]=&apos;IfcBridgePart&apos;" />
 							</TemplateRules>
@@ -7100,7 +6950,7 @@
 								</Definition>
 							</Definitions>
 							<Template ref="61dd08ed-fd01-4955-9337-8afd284a0e6f" />
-							<TemplateRules>
+							<TemplateRules operator="or">
 								<TemplateRule Description="Physical elements that are directly related to the building." Parameters="Type[Type]=&apos;IfcElement&apos;" />
 								<TemplateRule Description="Annotations that are directly related to the building." Parameters="Type[Type]=&apos;IfcAnnotation&apos;" />
 								<TemplateRule Description="Positioning elements that are directly related to the building." Parameters="Type[Type]=&apos;IfcPositioningElement&apos;" />
@@ -7134,7 +6984,7 @@
 								</Definition>
 							</Definitions>
 							<Template ref="8c0fd2f7-71bb-4e6e-8fdb-0c02b352f14a" />
-							<TemplateRules>
+							<TemplateRules operator="or">
 								<TemplateRule Description="Direct assignment to project, if the facility is the outermost spatial container, and no site information is provided for the building projects" Parameters="RelatingObject[Type]=&apos;IfcProject&apos;" />
 								<TemplateRule Description="Assignment to site, if the facility is the spatial container for the building project with site information" Parameters="RelatingObject[Type]=&apos;IfcSite&apos;" />
 								<TemplateRule Description="Assignment to another facility as spatial container, e.g. if this facility represents a facility section." Parameters="RelatingObject[Type]=&apos;IfcFacility&apos;" />
@@ -7148,7 +6998,7 @@
 								</Definition>
 							</Definitions>
 							<Template ref="667f8443-ecce-4a8d-a63f-931fab0453e0" />
-							<TemplateRules>
+							<TemplateRules operator="or">
 								<TemplateRule Description="Spatial decomposition into facility parts." Parameters="RelatedObjects[Type]=&apos;IfcFacilityPart&apos;" />
 								<TemplateRule Description="Spatial decomposition into other bridges, e.g. if this facility represents a complex facilitiy that is subdivided into facility sections." Parameters="RelatedObjects[Type]=&apos;IfcFacility&apos;" />
 								<TemplateRule Description="Spatial decomposition into other bridges, e.g. if this facility represents a complex facilitiy that is subdivided into facility sections." Parameters="RelatedObjects[Type]=&apos;IfcBridge&apos;" />
@@ -7162,7 +7012,7 @@
 								</Definition>
 							</Definitions>
 							<Template ref="61dd08ed-fd01-4955-9337-8afd284a0e6f" />
-							<TemplateRules>
+							<TemplateRules operator="or">
 								<TemplateRule Description="Physical elements contained in the facility." Parameters="Type[Type]=&apos;IfcElement&apos;" />
 								<TemplateRule Description="Annotations that are directly related to the facility." Parameters="Type[Type]=&apos;IfcAnnotation&apos;" />
 								<TemplateRule Description="Positioning elements that are directly related to the facility." Parameters="Type[Type]=&apos;IfcPositioningElement&apos;" />
@@ -7201,7 +7051,7 @@
 								</Definition>
 							</Definitions>
 							<Template ref="8c0fd2f7-71bb-4e6e-8fdb-0c02b352f14a" />
-							<TemplateRules>
+							<TemplateRules operator="or">
 								<TemplateRule Description="Direct assignment to project, if the facility is the outermost spatial container, and no site information is provided for the building projects" Parameters="RelatingObject[Type]=&apos;IfcProject&apos;" />
 								<TemplateRule Description="Assignment to site, if the facility is the spatial container for the building project with site information" Parameters="RelatingObject[Type]=&apos;IfcSite&apos;" />
 								<TemplateRule Description="Assignment to another facility as spatial container, e.g. if this facility represents a facility section." Parameters="RelatingObject[Type]=&apos;IfcFacility&apos;" />
@@ -7239,7 +7089,7 @@
 								</Definition>
 							</Definitions>
 							<Template ref="61dd08ed-fd01-4955-9337-8afd284a0e6f" />
-							<TemplateRules>
+							<TemplateRules operator="or">
 								<TemplateRule Description="Physical elements that are directly related to the building." Parameters="Type[Type]=&apos;IfcElement&apos;" />
 								<TemplateRule Description="Annotations that are directly related to the building." Parameters="Type[Type]=&apos;IfcAnnotation&apos;" />
 								<TemplateRule Description="Positioning elements that are directly related to the building." Parameters="Type[Type]=&apos;IfcPositioningElement&apos;" />
@@ -10058,7 +9908,7 @@
 						</Concept>
 					</Concepts>
 				</ConceptRoot>
-				<ConceptRoot uuid="280bbb91-3d77-4b73-88d5-594762c1989d" name="IfcPositioningElement" applicableRootEntity="IfcPositioningElement">
+				<ConceptRoot uuid="280bbb91-3d77-4b73-88d5-594762c1989d" name="Grid" applicableRootEntity="IfcGrid">
 					<Applicability>
 						<Template ref="fd1c3d66-5258-4759-987b-f77bd88b8c8c" />
 					</Applicability>
@@ -10118,8 +9968,8 @@
 							</Definitions>
 							<Template ref="0c93e2c2-cb23-46a8-8b9a-c772c280fc26" />
 							<Requirements>
-								<Requirement applicability="export" requirement="notrelevant" exchangeRequirement="dcd96125-898e-4ff0-b294-eb02afe953aa" />
-								<Requirement applicability="import" requirement="notrelevant" exchangeRequirement="dcd96125-898e-4ff0-b294-eb02afe953aa" />
+								<Requirement applicability="export" requirement="recommended" exchangeRequirement="dcd96125-898e-4ff0-b294-eb02afe953aa" />
+								<Requirement applicability="import" requirement="recommended" exchangeRequirement="dcd96125-898e-4ff0-b294-eb02afe953aa" />
 							</Requirements>
 							<TemplateRules>
 								<TemplateRule Description="Main representation context for all sub contexts defining geometric representations in 3D coordinate space." Parameters="ContextType[Value]=&apos;Model&apos;" />
@@ -11747,7 +11597,7 @@
 			</Roots>
 		</ModelView>
 		<ModelView uuid="14849e45-e262-4cfc-a27c-2bf98308d8f3" name="TI-Bridge" applicableSchema="IFC4X3">
-			<BaseView>e5d27119-bcb5-43e6-b6b3-8ababc4593f4</BaseView>
+			<BaseView ref="e5d27119-bcb5-43e6-b6b3-8ababc4593f4"/>
 			<Roots>
 				<ConceptRoot uuid="75c3c532-ca41-4dfd-befc-56d2265421db" name="Alignment" applicableRootEntity="IfcAlignment">
 					<Applicability>
@@ -11763,7 +11613,7 @@
 							</Definitions>
 							<Template ref="c19ec186-9cfd-47fc-a4d4-9fb35008d04a" />
 							<TemplateRules>
-								<TemplateRule Parameters="ObjectName[Value]=&apos;All datasets name alignment &apos;Alignment&apos;&apos;" />
+								<TemplateRule Parameters="ObjectName[Value]=&apos;Alignment&apos;" />
 							</TemplateRules>
 						</Concept>
 						<Concept uuid="237cbb24-fc03-4418-b7e5-95f2141cb971" name="AxisGradientCurve">
@@ -11811,7 +11661,7 @@
 							</Definitions>
 							<Template ref="cbe85b5f-7912-4a43-8bb7-1e63bf40b26d" />
 							<TemplateRules>
-								<TemplateRule Parameters="RelativeToElement[Type]=&apos;false&apos;" />
+								<TemplateRule Parameters="RelativeToElement[EXISTS]=false" />
 							</TemplateRules>
 						</Concept>
 					</Concepts>
@@ -11878,7 +11728,7 @@
 								</Definition>
 							</Definitions>
 							<Template ref="61dd08ed-fd01-4955-9337-8afd284a0e6f" />
-							<TemplateRules>
+							<TemplateRules operator="or">
 								<TemplateRule Parameters="Type[Type]=&apos;IfcBeam&apos;" />
 								<TemplateRule Parameters="Type[Type]=&apos;IfcBearing&apos;" />
 								<TemplateRule Parameters="Type[Type]=&apos;IfcColumn&apos;" />
@@ -11948,8 +11798,8 @@
 								</Definition>
 							</Definitions>
 							<Template ref="4ccaac0c-88f8-4c1d-91fd-2214d0e513c4" />
-							<TemplateRules>
-								<TemplateRule Parameters="HasUnits[Type]=&apos;IfcUnitAssignment&apos; AND SIUnitType[Value]=&apos;LENGTHUNIT&apos; AND SIPrefix[Exists]=&apos;false&apos; AND SIUnitName[Value]=&apos;METRE&apos;" />
+							<TemplateRules operator="or">
+								<TemplateRule Parameters="HasUnits[Type]=&apos;IfcUnitAssignment&apos; AND SIUnitType[Value]=&apos;LENGTHUNIT&apos; AND SIPrefix[Exists]=false AND SIUnitName[Value]=&apos;METRE&apos;" />
 								<TemplateRule Parameters="HasUnits[Type]=&apos;IfcUnitAssignment&apos; AND ConversionUnitType[Value]=&apos;LENGTHUNIT&apos; AND ConversionUnitName[Value]=&apos;inch&apos;" />
 							</TemplateRules>
 						</Concept>
@@ -11961,7 +11811,7 @@
 								</Definition>
 							</Definitions>
 							<Template ref="4ccaac0c-88f8-4c1d-91fd-2214d0e513c4" />
-							<TemplateRules>
+							<TemplateRules operator="or">
 								<TemplateRule Parameters="HasUnits[Type]=&apos;IfcUnitAssignment&apos; AND ConversionUnitType[Value]=&apos;PLANEANGLEUNIT&apos; AND ConversionUnitName[Value]=&apos;degree&apos;" />
 								<TemplateRule Parameters="HasUnits[Type]=&apos;IfcUnitAssignment&apos; AND SIUnitType[Value]=&apos;PLANEANGLEUNIT&apos; AND SIUnitName[Value]=&apos;RADIAN&apos;" />
 							</TemplateRules>
@@ -11974,7 +11824,7 @@
 								</Definition>
 							</Definitions>
 							<Template ref="4ccaac0c-88f8-4c1d-91fd-2214d0e513c4" />
-							<TemplateRules>
+							<TemplateRules operator="or">
 								<TemplateRule Parameters="HasUnits[Type]=&apos;IfcUnitAssignment&apos; AND SIUnitType[Value]=&apos;MASSUNIT&apos; AND SIPrefix[Value]=&apos;KILO&apos; AND SIUnitName[Value]=&apos;GRAM&apos;" />
 								<TemplateRule Parameters="HasUnits[Type]=&apos;IfcUnitAssignment&apos; AND ConversionUnitType[Value]=&apos;MASSUNIT&apos; AND ConversionUnitName[Value]=&apos;pound&apos;" />
 							</TemplateRules>
@@ -11987,7 +11837,7 @@
 								</Definition>
 							</Definitions>
 							<Template ref="4ccaac0c-88f8-4c1d-91fd-2214d0e513c4" />
-							<TemplateRules>
+							<TemplateRules operator="or">
 								<TemplateRule Parameters="HasUnits[Type]=&apos;IfcUnitAssignment&apos; AND SIUnitType[Value]=&apos;THERMODYNAMICTEMPERATUREUNIT&apos; AND SIUnitName[Value]=&apos;DEGREE_CELSIUS&apos;" />
 								<TemplateRule Parameters="HasUnits[Type]=&apos;IfcUnitAssignment&apos; AND ConversionUnitType[Value]=&apos;THERMODYNAMICTEMPERATUREUNIT&apos; AND ConversionUnitName[Value]=&apos;Fahrenheit&apos;" />
 							</TemplateRules>
@@ -12061,7 +11911,7 @@
 								</Definition>
 							</Definitions>
 							<Template ref="61dd08ed-fd01-4955-9337-8afd284a0e6f" />
-							<TemplateRules>
+							<TemplateRules operator="or">
 								<TemplateRule Parameters="Type[Type]=&apos;IfcGeotechnicalStratum&apos;" />
 								<TemplateRule Parameters="Type[Type]=&apos;IfcGeomodel&apos;" />
 							</TemplateRules>
@@ -12074,7 +11924,7 @@
 								</Definition>
 							</Definitions>
 							<Template ref="61dd08ed-fd01-4955-9337-8afd284a0e6f" />
-							<TemplateRules>
+							<TemplateRules operator="or">
 								<TemplateRule Parameters="Type[Type]=&apos;IfcGeomodel&apos;" />
 								<TemplateRule Parameters="Type[Type]=&apos;IfcGeotechnicalStratum&apos;" />
 							</TemplateRules>
