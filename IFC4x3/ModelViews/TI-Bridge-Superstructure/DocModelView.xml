@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<DocModelView xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="TI-Bridge-Superstructure" UniqueId="fcc6bbbc-8f8f-40a2-96d2-a00b1d46ea4c">
+<DocModelView xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="TIBridgeSuperstructure_3ynhkyZuz0efRIe0iTHkfC" Name="TI-Bridge-Superstructure" UniqueId="fcc6bbbc-8f8f-40a2-96d2-a00b1d46ea4c" Code="ti-bridge-superstructure">
 	<ConceptRoots>
 		<DocConceptRoot Name="Girder Segment" UniqueId="5d25181b-c624-45c3-b4b2-16f9f5e8fede">
 			<Documentation>Girder segments refer to discrete sections along a girder line. They may be modelled as one object that encapsulates the overall cross section (e.g. I-Shape steel, arbitrary precast profile), or as separate objects (e.g. steel flange plates, steel web plate). Each segment may have a constant cross section, a tapered cross section (linearly interpolated from start to end), a variable cross section (linearly interpolated at multiple points between start and end), or free-form geometry. The connection between beams is represented using IfcRelConnectsWithRealizingElements, where the RealizingElements refers to IfcPlate elements for fastening plates on each side, IfcFastener for bolts, and IfcPlate for any flange transition plates. The reason for using this connection relationship specifically (as opposed to just placing the elements) is to be able to derive an IfcStructuralAnalysisModel that captures the beam connectivity.</Documentation>
@@ -473,6 +473,9 @@
 			</ApplicableItems>
 		</DocConceptRoot>
 		<DocConceptRoot Name="Tendon" UniqueId="75388536-140e-4c2b-947d-0e11322d08b1">
+			<Documentation>A tendon refers to a tensioned element producing compression in prestressed concrete.
+
+![&quot;Tendon conduit in concrete&quot;](../../figures/IR-Bridge-WP1_RequirementAnalysisReport_tendonsInConcrete.png &quot;Figure 1 &amp;mdash; Tendons in concrete&quot;)</Documentation>
 			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcTendonConduit" />
 			<Concepts>
 				<DocTemplateUsage Name="Tendon decomposition" UniqueId="efb5a271-110d-4ddc-bfec-298012969d5c">

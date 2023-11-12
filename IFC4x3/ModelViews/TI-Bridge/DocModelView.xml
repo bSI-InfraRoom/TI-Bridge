@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<DocModelView xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="TI-Bridge" UniqueId="14849e45-e262-4cfc-a27c-2bf98308d8f3" BaseView="e5d27119-bcb5-43e6-b6b3-8ababc4593f4">
+<DocModelView xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="TIBridge_0KX9v5uc9CA9yAc32DZp" Name="TI-Bridge" UniqueId="14849e45-e262-4cfc-a27c-2bf98308d8f3" Code="ti-bridge" BaseView="e5d27119-bcb5-43e6-b6b3-8ababc4593f4">
 	<ConceptRoots>
 		<DocConceptRoot Name="Boring Point" UniqueId="3b40b2cc-9440-430c-8e6e-7f543b8c3c25">
 			<Documentation>Boring points shall have properties and be placed at discrete locations.</Documentation>
