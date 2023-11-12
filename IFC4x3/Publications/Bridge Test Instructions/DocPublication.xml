@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocPublication xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="Bridge Test Instructions" UniqueId="f97e2ae2-bd63-4dbd-ac09-2f1999a95aa4" Status="Proposal" HideHistory="true">
+	<Views>
+		<DocModelView xsi:nil="true" href="TIBridge_0KX9v5uc9CA9yAc32DZp" />
+		<DocModelView xsi:nil="true" href="TIBridgeSuperstructure_3ynhkyZuz0efRIe0iTHkfC" />
+	</Views>
+	<Formats>
+		<DocFormat FormatType="xml" />
+		<DocFormat FormatType="step" />
+		<DocFormat FormatType="sql" />
+		<DocFormat FormatType="owl" />
+		<DocFormat FormatType="json" />
+		<DocFormat FormatType="cs" />
+	</Formats>
+	<Annotations>
+		<DocAnnotation Name="Foreword" UniqueId="84ef754c-fbbf-4aed-99f6-d5517b1915d0" />
+		<DocAnnotation Name="Introduction" UniqueId="0a2bcb5c-e78f-4a93-983f-15ef5617dde3" />
+	</Annotations>
+</DocPublication>
+

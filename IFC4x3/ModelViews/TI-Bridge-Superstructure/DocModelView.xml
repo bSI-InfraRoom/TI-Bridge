@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<DocModelView xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="TI-Bridge-Superstructure" UniqueId="fcc6bbbc-8f8f-40a2-96d2-a00b1d46ea4c">
+<DocModelView xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="TIBridgeSuperstructure_3ynhkyZuz0efRIe0iTHkfC" Name="TI-Bridge-Superstructure" UniqueId="fcc6bbbc-8f8f-40a2-96d2-a00b1d46ea4c" Code="ti-bridge-superstructure">
 	<ConceptRoots>
 		<DocConceptRoot Name="Girder Segment" UniqueId="5d25181b-c624-45c3-b4b2-16f9f5e8fede">
 			<Documentation>Girder segments refer to discrete sections along a girder line. They may be modelled as one object that encapsulates the overall cross section (e.g. I-Shape steel, arbitrary precast profile), or as separate objects (e.g. steel flange plates, steel web plate). Each segment may have a constant cross section, a tapered cross section (linearly interpolated from start to end), a variable cross section (linearly interpolated at multiple points between start and end), or free-form geometry. The connection between beams is represented using IfcRelConnectsWithRealizingElements, where the RealizingElements refers to IfcPlate elements for fastening plates on each side, IfcFastener for bolts, and IfcPlate for any flange transition plates. The reason for using this connection relationship specifically (as opposed to just placing the elements) is to be able to derive an IfcStructuralAnalysisModel that captures the beam connectivity.</Documentation>
@@ -210,16 +210,22 @@
 				</DocTemplateUsage>
 				<DocTemplateUsage Name="Alignments" UniqueId="4dc839ff-3200-49fd-b765-8426124d3a3f">
 					<Documentation>Alignment objects used longitudinally (e.g. for girders) or laterally (e.g. for floor beams).</Documentation>
-					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Container_PredefinedType_37sQ6kOojEcAgyjx68vXkw" />
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Container_1XtGZjG59LPCtYlqeIWvl" />
 					<Items>
-						<DocTemplateItem UniqueId="a1f36cf9-5dd4-4972-a9ad-89652e91439d" />
+						<DocTemplateItem UniqueId="153d8c0a-0cc3-4abd-a175-586724fdf868" RuleParameters="Type=IfcAlignment;">
+							<Concepts>
+								<DocTemplateUsage Name="Type" UniqueId="6144dfe4-ce52-41d7-9090-0375b4511764">
+									<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Object_Predefined_Type_0b989XcDzD2fDaLbDNNAGX" />
+								</DocTemplateUsage>
+							</Concepts>
+						</DocTemplateItem>
 					</Items>
 				</DocTemplateUsage>
 				<DocTemplateUsage Name="Trusses" UniqueId="4cac19b5-d739-4700-b92c-e57929cc86b5">
 					<Documentation>Truss lines.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Container_PredefinedType_37sQ6kOojEcAgyjx68vXkw" />
 					<Items>
-						<DocTemplateItem UniqueId="c317cfeb-cf7a-47f5-8808-2be63670b4ea" RuleParameters="Type=IfcElementAssembly;">
+						<DocTemplateItem UniqueId="c317cfeb-cf7a-47f5-8808-2be63670b4ea" RuleParameters="Type=IfcElementAssembly;PredefinedType=TRUSS;">
 							<Concepts>
 								<DocTemplateUsage Name="Type" UniqueId="db3db62a-f865-4197-b084-c08b9b431e6a">
 									<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Object_Predefined_Type_0b989XcDzD2fDaLbDNNAGX" />
@@ -232,7 +238,7 @@
 					<Documentation>Girder lines.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Container_PredefinedType_37sQ6kOojEcAgyjx68vXkw" />
 					<Items>
-						<DocTemplateItem UniqueId="47c95fad-26c1-417f-bd68-0e2eeb9b18df" RuleParameters="Type=IfcElementAssembly;">
+						<DocTemplateItem UniqueId="47c95fad-26c1-417f-bd68-0e2eeb9b18df" RuleParameters="Type=IfcElementAssembly;PredefinedType=GIRDER;">
 							<Concepts>
 								<DocTemplateUsage Name="Type" UniqueId="03736d66-3828-43db-be0a-5feb72cae558">
 									<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Object_Predefined_Type_0b989XcDzD2fDaLbDNNAGX" />
@@ -246,21 +252,21 @@
 					<Documentation>Cross frames between girder lines.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Container_PredefinedType_37sQ6kOojEcAgyjx68vXkw" />
 					<Items>
-						<DocTemplateItem UniqueId="3548debb-c326-4e23-9a10-142ab59e5819" RuleParameters="Type=IfcElementAssembly;" />
+						<DocTemplateItem UniqueId="3548debb-c326-4e23-9a10-142ab59e5819" RuleParameters="Type=IfcElementAssembly;PredefinedType=CROSS_BRACING;" />
 					</Items>
 				</DocTemplateUsage>
 				<DocTemplateUsage Name="Floor Beams" UniqueId="abd97f83-66c8-4897-900c-969f879bf985">
 					<Documentation>Floor beams between girder lines.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Container_PredefinedType_37sQ6kOojEcAgyjx68vXkw" />
 					<Items>
-						<DocTemplateItem UniqueId="791590a9-c5a0-4842-9c42-a4d3f3bef19b" RuleParameters="Type=IfcBeam;" />
+						<DocTemplateItem UniqueId="791590a9-c5a0-4842-9c42-a4d3f3bef19b" RuleParameters="Type=IfcBeam;PredefinedType=JOIST;" />
 					</Items>
 				</DocTemplateUsage>
 				<DocTemplateUsage Name="Stringers" UniqueId="a74dd762-c3dc-49f1-a375-d9863cfb449b">
 					<Documentation>Stringers between floor beams.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Container_PredefinedType_37sQ6kOojEcAgyjx68vXkw" />
 					<Items>
-						<DocTemplateItem UniqueId="6497f1e1-a970-4457-9f2f-6ca4ebb2a91a" RuleParameters="Type=IfcMember;" />
+						<DocTemplateItem UniqueId="6497f1e1-a970-4457-9f2f-6ca4ebb2a91a" RuleParameters="Type=IfcMember;PredefinedType=STRINGER;" />
 					</Items>
 				</DocTemplateUsage>
 			</Concepts>
@@ -467,6 +473,9 @@
 			</ApplicableItems>
 		</DocConceptRoot>
 		<DocConceptRoot Name="Tendon" UniqueId="75388536-140e-4c2b-947d-0e11322d08b1">
+			<Documentation>A tendon refers to a tensioned element producing compression in prestressed concrete.
+
+![&quot;Tendon conduit in concrete&quot;](../../figures/IR-Bridge-WP1_RequirementAnalysisReport_tendonsInConcrete.png &quot;Figure 1 &amp;mdash; Tendons in concrete&quot;)</Documentation>
 			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcTendonConduit" />
 			<Concepts>
 				<DocTemplateUsage Name="Tendon decomposition" UniqueId="efb5a271-110d-4ddc-bfec-298012969d5c">
