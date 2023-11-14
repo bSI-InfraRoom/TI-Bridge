@@ -261,7 +261,7 @@
 					</Items>
 				</DocTemplateUsage>
 			</Concepts>
-			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="e145a899-cfde-4262-84bc-e279b2936b83" Type="IfcBridgePart" />
+			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="e145a899-cfde-4262-84bc-e279b2936b83" />
 			<ApplicableItems>
 				<DocTemplateItem UniqueId="138c3834-b797-47e7-af75-0acf6bd46069" RuleParameters="PredefinedType=SUPERSTRUCTURE;" />
 			</ApplicableItems>
