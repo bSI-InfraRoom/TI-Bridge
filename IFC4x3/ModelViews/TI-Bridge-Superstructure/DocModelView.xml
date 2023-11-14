@@ -104,11 +104,7 @@
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Structural_Curve_Assignment_1QdXXw3LrDN9VKn5B5wRlv" />
 				</DocTemplateUsage>
 			</Concepts>
-			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="1c5e61c2-2c0e-45db-ba17-2c8518308d60" Type="IfcBeam">
-				<Rules>
-					<DocModelRuleAttribute Name="PredefinedType" Identification="PredefinedType" />
-				</Rules>
-			</ApplicableTemplate>
+			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="1c5e61c2-2c0e-45db-ba17-2c8518308d60" Type="IfcBeam" />
 			<ApplicableItems>
 				<DocTemplateItem UniqueId="4fa0e36b-8cd6-4869-9a88-fe47988591bb" RuleParameters="PredefinedType=GIRDER_SEGMENT;" />
 			</ApplicableItems>
@@ -187,15 +183,7 @@
 					</Items>
 				</DocTemplateUsage>
 			</Concepts>
-			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="3008e22d-4035-43ec-841a-921b8975ab27" Type="IfcBeam">
-				<Rules>
-					<DocModelRuleAttribute Name="PredefinedType" Identification="PredefinedType">
-						<Rules>
-							<DocModelRuleEntity Name="IfcBeamTypeEnum" />
-						</Rules>
-					</DocModelRuleAttribute>
-				</Rules>
-			</ApplicableTemplate>
+			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="3008e22d-4035-43ec-841a-921b8975ab27" Type="IfcBeam" />
 			<ApplicableItems>
 				<DocTemplateItem UniqueId="5789b406-b164-48d0-b6b0-fe374bb83f69" RuleParameters="PredefinedType=DIAPHRAGM;" />
 			</ApplicableItems>
@@ -273,11 +261,7 @@
 					</Items>
 				</DocTemplateUsage>
 			</Concepts>
-			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="e145a899-cfde-4262-84bc-e279b2936b83" Type="IfcBridgePart">
-				<Rules>
-					<DocModelRuleAttribute Name="PredefinedType" Identification="PredefinedType" />
-				</Rules>
-			</ApplicableTemplate>
+			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="e145a899-cfde-4262-84bc-e279b2936b83" Type="IfcBridgePart" />
 			<ApplicableItems>
 				<DocTemplateItem UniqueId="138c3834-b797-47e7-af75-0acf6bd46069" RuleParameters="PredefinedType=SUPERSTRUCTURE;" />
 			</ApplicableItems>
@@ -340,11 +324,7 @@
 					</Items>
 				</DocTemplateUsage>
 			</Concepts>
-			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="06e51d50-a53a-4602-bc33-8c1a334f56d0" Type="IfcElementAssembly">
-				<Rules>
-					<DocModelRuleAttribute Name="PredefinedType" Identification="PredefinedType" />
-				</Rules>
-			</ApplicableTemplate>
+			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="06e51d50-a53a-4602-bc33-8c1a334f56d0" Type="IfcElementAssembly" />
 			<ApplicableItems>
 				<DocTemplateItem UniqueId="3dd55068-e911-4524-a930-b12c88835d10" RuleParameters="PredefinedType=CROSS_BRACING;" />
 			</ApplicableItems>
@@ -381,11 +361,7 @@
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Element_Connectivity_0Nv2C1Ibb9HROhB6JsocmI" />
 				</DocTemplateUsage>
 			</Concepts>
-			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="17cf9f91-0b80-4dda-9d83-71f2a1c95a3c" Type="IfcElementAssembly">
-				<Rules>
-					<DocModelRuleAttribute Name="PredefinedType" Identification="PredefinedType" />
-				</Rules>
-			</ApplicableTemplate>
+			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="17cf9f91-0b80-4dda-9d83-71f2a1c95a3c" Type="IfcElementAssembly" />
 			<ApplicableItems>
 				<DocTemplateItem UniqueId="350f0d8f-d3f6-4cb0-85c5-92ccb0087540" RuleParameters="PredefinedType=TRUSS;" />
 			</ApplicableItems>
@@ -466,11 +442,7 @@
 					</Items>
 				</DocTemplateUsage>
 			</Concepts>
-			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="564a4cde-b65b-4219-887e-2027e45f84c6" Type="IfcElementAssembly">
-				<Rules>
-					<DocModelRuleAttribute Name="PredefinedType" Identification="PredefinedType" />
-				</Rules>
-			</ApplicableTemplate>
+			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="564a4cde-b65b-4219-887e-2027e45f84c6" Type="IfcElementAssembly" />
 			<ApplicableItems>
 				<DocTemplateItem UniqueId="5ea7c2b9-de24-418a-a52c-745b3ce292c5" RuleParameters="PredefinedType=GIRDER;" />
 			</ApplicableItems>
