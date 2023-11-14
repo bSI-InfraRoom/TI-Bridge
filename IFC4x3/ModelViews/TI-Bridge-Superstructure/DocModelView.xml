@@ -109,6 +109,9 @@
 					<DocModelRuleAttribute Name="PredefinedType" Identification="PredefinedType" />
 				</Rules>
 			</ApplicableTemplate>
+			<ApplicableItems>
+				<DocTemplateItem UniqueId="4fa0e36b-8cd6-4869-9a88-fe47988591bb" RuleParameters="PredefinedType=GIRDER_SEGMENT;" />
+			</ApplicableItems>
 		</DocConceptRoot>
 		<DocConceptRoot Name="Diaphragm" UniqueId="5e947f3b-87f5-4ce7-a930-c75299524396">
 			<Documentation>Diaphragms refer to sections of bridge girders immediately above supporting structures that provide additional lateral and vertical support. Diaphragms are modeled similarly as concrete girder segments, except are distinguished according to a predefined type (e.g. IfcBeamTypeEnum.DIAPHRAGM), and have connections to underlying supports.</Documentation>
