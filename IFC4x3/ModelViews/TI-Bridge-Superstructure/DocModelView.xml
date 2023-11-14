@@ -134,7 +134,7 @@
 						<DocTemplateItem UniqueId="85716367-b65b-49da-b053-59ee8ea75a35" />
 					</Items>
 				</DocTemplateUsage>
-				<DocTemplateUsage Name="Connection Head" UniqueId="95c164f3-d73b-4694-8546-e9b430ff8f2a">
+				<DocTemplateUsage Name="Connection Head" UniqueId="95c164f3-d73b-4694-8546-e9b430ff8f2a" Override="true">
 					<Documentation>Relationship connecting head of diaphragm with a girder segment.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Element_Connectivity_with_Predefined_Type_2xpS19ZiH9sfTkBuMqmZIW" />
 					<Items>
@@ -147,21 +147,21 @@
 						</DocTemplateItem>
 					</Items>
 				</DocTemplateUsage>
-				<DocTemplateUsage Name="Connection Tail" UniqueId="f705446e-40cf-48f3-8b44-3d912e1704ce">
+				<DocTemplateUsage Name="Connection Tail" UniqueId="f705446e-40cf-48f3-8b44-3d912e1704ce" Override="true">
 					<Documentation>Relationship connecting tail of diaphragm with a girder segment.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Element_Connectivity_with_Predefined_Type_2xpS19ZiH9sfTkBuMqmZIW" />
 					<Items>
 						<DocTemplateItem UniqueId="25e1fb44-cbe1-46d0-97b4-5ff607efca7d" RuleParameters="RelatedElement=IfcBeam;PredefinedType=GIRDER_SEGMENT;" />
 					</Items>
 				</DocTemplateUsage>
-				<DocTemplateUsage Name="Connection Support" UniqueId="7b62f6d8-dfa6-4405-8cb4-942d1edff4ff">
+				<DocTemplateUsage Name="Connection Support" UniqueId="7b62f6d8-dfa6-4405-8cb4-942d1edff4ff" Override="true">
 					<Documentation>Relationship connecting diaphragm to substructure, where realizing element refers to bearing if present.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Element_Connectivity_With_Realizing_Element_38H4OefKb3NfgNZpVSuqAd" />
 					<Items>
 						<DocTemplateItem UniqueId="6b993492-a207-4dcc-845e-adb785e3c619" RuleParameters="RealizingElements=IfcBearing;" />
 					</Items>
 				</DocTemplateUsage>
-				<DocTemplateUsage Name="Reinforcing" UniqueId="d487eea8-b262-4aeb-b449-705a1f98c019">
+				<DocTemplateUsage Name="Reinforcing" UniqueId="d487eea8-b262-4aeb-b449-705a1f98c019" Override="true">
 					<Documentation>For concrete diaphragms, reinforcing embedded.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Element_Decomposition_with_Predefined_Type_2doY2TqVr60xar2GKSiGHH" />
 					<Items>
@@ -185,7 +185,7 @@
 			</Concepts>
 			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="3008e22d-4035-43ec-841a-921b8975ab27" Type="IfcBeam" />
 			<ApplicableItems>
-				<DocTemplateItem UniqueId="5789b406-b164-48d0-b6b0-fe374bb83f69" RuleParameters="PredefinedType=DIAPHRAGM;" />
+				<DocTemplateItem UniqueId="5789b406-b164-48d0-b6b0-fe374bb83f69" />
 			</ApplicableItems>
 		</DocConceptRoot>
 		<DocConceptRoot Name="Superstructure" UniqueId="3616397d-521c-4810-80ab-172f14356062">
@@ -212,7 +212,7 @@
 						</DocTemplateItem>
 					</Items>
 				</DocTemplateUsage>
-				<DocTemplateUsage Name="Trusses" UniqueId="4cac19b5-d739-4700-b92c-e57929cc86b5">
+				<DocTemplateUsage Name="Trusses" UniqueId="4cac19b5-d739-4700-b92c-e57929cc86b5" Override="true">
 					<Documentation>Truss lines.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Container_PredefinedType_37sQ6kOojEcAgyjx68vXkw" />
 					<Items>
@@ -225,7 +225,7 @@
 						</DocTemplateItem>
 					</Items>
 				</DocTemplateUsage>
-				<DocTemplateUsage Name="Girders" UniqueId="148dafa3-aa4c-406b-85fd-c557ecbe3020" Operator="or">
+				<DocTemplateUsage Name="Girders" UniqueId="148dafa3-aa4c-406b-85fd-c557ecbe3020" Override="true" Operator="or">
 					<Documentation>Girder lines.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Container_PredefinedType_37sQ6kOojEcAgyjx68vXkw" />
 					<Items>
@@ -239,21 +239,21 @@
 						<DocTemplateItem UniqueId="fb566f9c-c135-4561-b9c0-5163bbe9b59f" RuleParameters="Type=IfcBeam;PredefinedType=GIRDER_SEGMENT;" />
 					</Items>
 				</DocTemplateUsage>
-				<DocTemplateUsage Name="Cross Frames" UniqueId="370c7087-2b8b-4134-bbb2-69bc53b0fbe5">
+				<DocTemplateUsage Name="Cross Frames" UniqueId="370c7087-2b8b-4134-bbb2-69bc53b0fbe5" Override="true">
 					<Documentation>Cross frames between girder lines.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Container_PredefinedType_37sQ6kOojEcAgyjx68vXkw" />
 					<Items>
 						<DocTemplateItem UniqueId="3548debb-c326-4e23-9a10-142ab59e5819" RuleParameters="Type=IfcElementAssembly;PredefinedType=CROSS_BRACING;" />
 					</Items>
 				</DocTemplateUsage>
-				<DocTemplateUsage Name="Floor Beams" UniqueId="abd97f83-66c8-4897-900c-969f879bf985">
+				<DocTemplateUsage Name="Floor Beams" UniqueId="abd97f83-66c8-4897-900c-969f879bf985" Override="true">
 					<Documentation>Floor beams between girder lines.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Container_PredefinedType_37sQ6kOojEcAgyjx68vXkw" />
 					<Items>
 						<DocTemplateItem UniqueId="791590a9-c5a0-4842-9c42-a4d3f3bef19b" RuleParameters="Type=IfcBeam;PredefinedType=JOIST;" />
 					</Items>
 				</DocTemplateUsage>
-				<DocTemplateUsage Name="Stringers" UniqueId="a74dd762-c3dc-49f1-a375-d9863cfb449b">
+				<DocTemplateUsage Name="Stringers" UniqueId="a74dd762-c3dc-49f1-a375-d9863cfb449b" Override="true">
 					<Documentation>Stringers between floor beams.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Container_PredefinedType_37sQ6kOojEcAgyjx68vXkw" />
 					<Items>
@@ -263,7 +263,7 @@
 			</Concepts>
 			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="e145a899-cfde-4262-84bc-e279b2936b83" />
 			<ApplicableItems>
-				<DocTemplateItem UniqueId="138c3834-b797-47e7-af75-0acf6bd46069" RuleParameters="PredefinedType=SUPERSTRUCTURE;" />
+				<DocTemplateItem UniqueId="138c3834-b797-47e7-af75-0acf6bd46069" />
 			</ApplicableItems>
 		</DocConceptRoot>
 		<DocConceptRoot Name="Cross Frame" UniqueId="096b281a-518f-489d-b511-62717b96f38f">
