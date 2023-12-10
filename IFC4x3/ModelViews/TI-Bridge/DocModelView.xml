@@ -293,7 +293,7 @@
 						<DocTemplateItem UniqueId="6effeb6a-ec4c-4587-8d33-df811fca5cfd" RuleParameters="RelatingObject=IfcProject;ProjectName=8448590;" />
 					</Items>
 				</DocTemplateUsage>
-				<DocTemplateUsage Name="Surface Proposed" UniqueId="7c465244-9668-4fa0-8cc9-9e69f65369f7" Operator="or">
+				<DocTemplateUsage Name="Surface Proposed" UniqueId="7c465244-9668-4fa0-8cc9-9e69f65369f7" Override="true" Operator="or">
 					<Documentation>The ground surface of the Site indicating final conditions.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Container_1XtGZjG59LPCtYlqeIWvl" />
 					<Items>
@@ -301,7 +301,7 @@
 						<DocTemplateItem UniqueId="a0c003b4-3724-4346-8ca2-55a72df4e0c1" RuleParameters="Type=IfcGeomodel;" />
 					</Items>
 				</DocTemplateUsage>
-				<DocTemplateUsage Name="Surface Existing" UniqueId="ac589648-5a70-4f3e-99d2-4ce5d30dba1d" Operator="or">
+				<DocTemplateUsage Name="Surface Existing" UniqueId="ac589648-5a70-4f3e-99d2-4ce5d30dba1d" Override="true" Operator="or">
 					<Documentation>The ground surface of the Site indicating existing conditions.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Container_1XtGZjG59LPCtYlqeIWvl" />
 					<Items>
@@ -309,7 +309,7 @@
 						<DocTemplateItem UniqueId="2fa38e7e-3f85-4c30-932c-83431815087f" RuleParameters="Type=IfcGeotechnicalStratum;" />
 					</Items>
 				</DocTemplateUsage>
-				<DocTemplateUsage Name="Boring Points" UniqueId="50ec5b3c-82b7-432b-be2d-c61380eda8ab">
+				<DocTemplateUsage Name="Boring Points" UniqueId="50ec5b3c-82b7-432b-be2d-c61380eda8ab" Override="true">
 					<Documentation>Boring points indicating soil layers and properties at discrete locations.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Container_1XtGZjG59LPCtYlqeIWvl" />
 					<Items>

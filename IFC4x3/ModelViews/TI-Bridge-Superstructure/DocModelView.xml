@@ -1,6 +1,84 @@
 <?xml version="1.0" encoding="utf-8"?>
 <DocModelView xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="TIBridgeSuperstructure_3ynhkyZuz0efRIe0iTHkfC" Name="TI-Bridge-Superstructure" UniqueId="fcc6bbbc-8f8f-40a2-96d2-a00b1d46ea4c" Code="ti-bridge-superstructure">
 	<ConceptRoots>
+		<DocConceptRoot Name="Superstructure" UniqueId="3616397d-521c-4810-80ab-172f14356062">
+			<Documentation>The superstructure of a bridge refers to those elements than span horizontally to carry loads onto substructures.</Documentation>
+			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcBridgePart" />
+			<Concepts>
+				<DocTemplateUsage Name="Name" UniqueId="3d59816d-2ef8-470d-9a82-09ba0bddd095">
+					<Documentation>Name of the superstructure for organizational purposes.</Documentation>
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Object_User_Identity_31di66dFr7AJKdxDG2D1A" />
+					<Items>
+						<DocTemplateItem UniqueId="c9c75962-4f57-4abe-b9eb-321b88e06c3f" RuleParameters="ObjectName=Överbyggnad;" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Alignments" UniqueId="4dc839ff-3200-49fd-b765-8426124d3a3f">
+					<Documentation>Alignment objects used longitudinally (e.g. for girders) or laterally (e.g. for floor beams).</Documentation>
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Container_1XtGZjG59LPCtYlqeIWvl" />
+					<Items>
+						<DocTemplateItem UniqueId="153d8c0a-0cc3-4abd-a175-586724fdf868" RuleParameters="Type=IfcAlignment;">
+							<Concepts>
+								<DocTemplateUsage Name="Type" UniqueId="6144dfe4-ce52-41d7-9090-0375b4511764">
+									<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Object_Predefined_Type_0b989XcDzD2fDaLbDNNAGX" />
+								</DocTemplateUsage>
+							</Concepts>
+						</DocTemplateItem>
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Trusses" UniqueId="4cac19b5-d739-4700-b92c-e57929cc86b5" Override="true">
+					<Documentation>Truss lines.</Documentation>
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Container_PredefinedType_37sQ6kOojEcAgyjx68vXkw" />
+					<Items>
+						<DocTemplateItem UniqueId="c317cfeb-cf7a-47f5-8808-2be63670b4ea" RuleParameters="Type=IfcElementAssembly;PredefinedType=TRUSS;">
+							<Concepts>
+								<DocTemplateUsage Name="Type" UniqueId="db3db62a-f865-4197-b084-c08b9b431e6a">
+									<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Object_Predefined_Type_0b989XcDzD2fDaLbDNNAGX" />
+								</DocTemplateUsage>
+							</Concepts>
+						</DocTemplateItem>
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Girders" UniqueId="148dafa3-aa4c-406b-85fd-c557ecbe3020" Override="true" Operator="or">
+					<Documentation>Girder lines.</Documentation>
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Container_PredefinedType_37sQ6kOojEcAgyjx68vXkw" />
+					<Items>
+						<DocTemplateItem UniqueId="47c95fad-26c1-417f-bd68-0e2eeb9b18df" RuleParameters="Type=IfcElementAssembly;PredefinedType=GIRDER;">
+							<Concepts>
+								<DocTemplateUsage Name="Type" UniqueId="03736d66-3828-43db-be0a-5feb72cae558">
+									<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Object_Predefined_Type_0b989XcDzD2fDaLbDNNAGX" />
+								</DocTemplateUsage>
+							</Concepts>
+						</DocTemplateItem>
+						<DocTemplateItem UniqueId="fb566f9c-c135-4561-b9c0-5163bbe9b59f" RuleParameters="Type=IfcBeam;PredefinedType=GIRDER_SEGMENT;" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Cross Frames" UniqueId="370c7087-2b8b-4134-bbb2-69bc53b0fbe5" Override="true">
+					<Documentation>Cross frames between girder lines.</Documentation>
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Container_PredefinedType_37sQ6kOojEcAgyjx68vXkw" />
+					<Items>
+						<DocTemplateItem UniqueId="3548debb-c326-4e23-9a10-142ab59e5819" RuleParameters="Type=IfcElementAssembly;PredefinedType=CROSS_BRACING;" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Floor Beams" UniqueId="abd97f83-66c8-4897-900c-969f879bf985" Override="true">
+					<Documentation>Floor beams between girder lines.</Documentation>
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Container_PredefinedType_37sQ6kOojEcAgyjx68vXkw" />
+					<Items>
+						<DocTemplateItem UniqueId="791590a9-c5a0-4842-9c42-a4d3f3bef19b" RuleParameters="Type=IfcBeam;PredefinedType=JOIST;" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Stringers" UniqueId="a74dd762-c3dc-49f1-a375-d9863cfb449b" Override="true">
+					<Documentation>Stringers between floor beams.</Documentation>
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Container_PredefinedType_37sQ6kOojEcAgyjx68vXkw" />
+					<Items>
+						<DocTemplateItem UniqueId="6497f1e1-a970-4457-9f2f-6ca4ebb2a91a" RuleParameters="Type=IfcMember;PredefinedType=STRINGER;" />
+					</Items>
+				</DocTemplateUsage>
+			</Concepts>
+			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="e145a899-cfde-4262-84bc-e279b2936b83" />
+			<ApplicableItems>
+				<DocTemplateItem UniqueId="138c3834-b797-47e7-af75-0acf6bd46069" />
+			</ApplicableItems>
+		</DocConceptRoot>
 		<DocConceptRoot Name="Girder Segment" UniqueId="5d25181b-c624-45c3-b4b2-16f9f5e8fede">
 			<Documentation>Girder segments refer to discrete sections along a girder line. They may be modelled as one object that encapsulates the overall cross section (e.g. I-Shape steel, arbitrary precast profile), or as separate objects (e.g. steel flange plates, steel web plate). Each segment may have a constant cross section, a tapered cross section (linearly interpolated from start to end), a variable cross section (linearly interpolated at multiple points between start and end), or free-form geometry. The connection between beams is represented using IfcRelConnectsWithRealizingElements, where the RealizingElements refers to IfcPlate elements for fastening plates on each side, IfcFastener for bolts, and IfcPlate for any flange transition plates. The reason for using this connection relationship specifically (as opposed to just placing the elements) is to be able to derive an IfcStructuralAnalysisModel that captures the beam connectivity.</Documentation>
 			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcBeam" />
@@ -26,7 +104,7 @@
 						<DocTemplateItem UniqueId="72ca4580-5f4c-44aa-8b1e-b53cd63603c2" />
 					</Items>
 				</DocTemplateUsage>
-				<DocTemplateUsage Name="Connection Head" UniqueId="b04f73f2-4e19-433e-8152-c70c0577876c">
+				<DocTemplateUsage Name="Connection Head" UniqueId="b04f73f2-4e19-433e-8152-c70c0577876c" Override="true">
 					<Documentation>Relationship connecting head of girder segment with abutment or another girder segment, where realizing element refers to splice plates.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Element_Connectivity_With_Realizing_Element_38H4OefKb3NfgNZpVSuqAd" />
 					<Items>
@@ -36,7 +114,7 @@
 						<DocTemplateItem UniqueId="5f6ae702-4cd6-4109-a031-91695a688442" RuleParameters="RelatedElement=IfcElementAssembly;RealizingElements=IfcFastener;" />
 					</Items>
 				</DocTemplateUsage>
-				<DocTemplateUsage Name="Connection Tail" UniqueId="4f663f4e-aadb-40a8-bfc0-84f3ac63d5e9">
+				<DocTemplateUsage Name="Connection Tail" UniqueId="4f663f4e-aadb-40a8-bfc0-84f3ac63d5e9" Override="true">
 					<Documentation>Relationship connecting tail of girder segment with another girder segment or abutment, where realizing element refers to splice plates.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Element_Connectivity_With_Realizing_Element_38H4OefKb3NfgNZpVSuqAd" />
 					<Items>
@@ -45,14 +123,14 @@
 						<DocTemplateItem UniqueId="ca17786b-c11a-47ba-a4f9-0f569b3445d6" RuleParameters="RelatedElement=IfcBeam;RealizingElements=IfcFastener;" />
 					</Items>
 				</DocTemplateUsage>
-				<DocTemplateUsage Name="Connection Support" UniqueId="eb850e4e-d236-4b40-b3ba-d761b0b6c906">
+				<DocTemplateUsage Name="Connection Support" UniqueId="eb850e4e-d236-4b40-b3ba-d761b0b6c906" Override="true">
 					<Documentation>Relationship connecting girder segment to substructure, where realizing element refers to bearing if present.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Element_Connectivity_With_Realizing_Element_38H4OefKb3NfgNZpVSuqAd" />
 					<Items>
 						<DocTemplateItem UniqueId="023b58e2-3107-41c7-ba6f-bbbe4b55d191" RuleParameters="RealizingElements=IfcBearing;" />
 					</Items>
 				</DocTemplateUsage>
-				<DocTemplateUsage Name="Reinforcing" UniqueId="db8053ba-de64-4f9c-970b-1309cff09354">
+				<DocTemplateUsage Name="Reinforcing" UniqueId="db8053ba-de64-4f9c-970b-1309cff09354" Override="true">
 					<Documentation>For concrete girders, reinforcing embedded.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Element_Decomposition_with_Predefined_Type_2doY2TqVr60xar2GKSiGHH" />
 					<Items>
@@ -85,14 +163,14 @@
 						</DocTemplateItem>
 					</Items>
 				</DocTemplateUsage>
-				<DocTemplateUsage Name="Stiffeners" UniqueId="03080ed1-284c-4911-9b91-0a1a84dd6bcd">
+				<DocTemplateUsage Name="Stiffeners" UniqueId="03080ed1-284c-4911-9b91-0a1a84dd6bcd" Override="true">
 					<Documentation>For steel girders, web stiffeners placed at intervals along inside face(s) of web.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Element_Decomposition_with_Predefined_Type_2doY2TqVr60xar2GKSiGHH" />
 					<Items>
 						<DocTemplateItem UniqueId="45572a32-df56-404f-844e-f1bfca824fc8" RuleParameters="RelatedObjects=IfcPlate;PredefinedType=STIFFENER_PLATE;" />
 					</Items>
 				</DocTemplateUsage>
-				<DocTemplateUsage Name="Shear Studs" UniqueId="2a2cd4a4-840e-4200-9c87-7f6edc340b29">
+				<DocTemplateUsage Name="Shear Studs" UniqueId="2a2cd4a4-840e-4200-9c87-7f6edc340b29" Override="true">
 					<Documentation>For steel girders, shear studs placed at intervals along top flange.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Element_Decomposition_with_Predefined_Type_2doY2TqVr60xar2GKSiGHH" />
 					<Items>
@@ -106,7 +184,7 @@
 			</Concepts>
 			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="1c5e61c2-2c0e-45db-ba17-2c8518308d60" Type="IfcBeam" />
 			<ApplicableItems>
-				<DocTemplateItem UniqueId="4fa0e36b-8cd6-4869-9a88-fe47988591bb" RuleParameters="PredefinedType=GIRDER_SEGMENT;" />
+				<DocTemplateItem UniqueId="4fa0e36b-8cd6-4869-9a88-fe47988591bb" />
 			</ApplicableItems>
 		</DocConceptRoot>
 		<DocConceptRoot Name="Diaphragm" UniqueId="5e947f3b-87f5-4ce7-a930-c75299524396">
@@ -188,84 +266,6 @@
 				<DocTemplateItem UniqueId="5789b406-b164-48d0-b6b0-fe374bb83f69" />
 			</ApplicableItems>
 		</DocConceptRoot>
-		<DocConceptRoot Name="Superstructure" UniqueId="3616397d-521c-4810-80ab-172f14356062">
-			<Documentation>The superstructure of a bridge refers to those elements than span horizontally to carry loads onto substructures.</Documentation>
-			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcBridgePart" />
-			<Concepts>
-				<DocTemplateUsage Name="Name" UniqueId="3d59816d-2ef8-470d-9a82-09ba0bddd095">
-					<Documentation>Name of the superstructure for organizational purposes.</Documentation>
-					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Object_User_Identity_31di66dFr7AJKdxDG2D1A" />
-					<Items>
-						<DocTemplateItem UniqueId="c9c75962-4f57-4abe-b9eb-321b88e06c3f" RuleParameters="ObjectName=Överbyggnad;" />
-					</Items>
-				</DocTemplateUsage>
-				<DocTemplateUsage Name="Alignments" UniqueId="4dc839ff-3200-49fd-b765-8426124d3a3f">
-					<Documentation>Alignment objects used longitudinally (e.g. for girders) or laterally (e.g. for floor beams).</Documentation>
-					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Container_1XtGZjG59LPCtYlqeIWvl" />
-					<Items>
-						<DocTemplateItem UniqueId="153d8c0a-0cc3-4abd-a175-586724fdf868" RuleParameters="Type=IfcAlignment;">
-							<Concepts>
-								<DocTemplateUsage Name="Type" UniqueId="6144dfe4-ce52-41d7-9090-0375b4511764">
-									<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Object_Predefined_Type_0b989XcDzD2fDaLbDNNAGX" />
-								</DocTemplateUsage>
-							</Concepts>
-						</DocTemplateItem>
-					</Items>
-				</DocTemplateUsage>
-				<DocTemplateUsage Name="Trusses" UniqueId="4cac19b5-d739-4700-b92c-e57929cc86b5" Override="true">
-					<Documentation>Truss lines.</Documentation>
-					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Container_PredefinedType_37sQ6kOojEcAgyjx68vXkw" />
-					<Items>
-						<DocTemplateItem UniqueId="c317cfeb-cf7a-47f5-8808-2be63670b4ea" RuleParameters="Type=IfcElementAssembly;PredefinedType=TRUSS;">
-							<Concepts>
-								<DocTemplateUsage Name="Type" UniqueId="db3db62a-f865-4197-b084-c08b9b431e6a">
-									<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Object_Predefined_Type_0b989XcDzD2fDaLbDNNAGX" />
-								</DocTemplateUsage>
-							</Concepts>
-						</DocTemplateItem>
-					</Items>
-				</DocTemplateUsage>
-				<DocTemplateUsage Name="Girders" UniqueId="148dafa3-aa4c-406b-85fd-c557ecbe3020" Override="true" Operator="or">
-					<Documentation>Girder lines.</Documentation>
-					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Container_PredefinedType_37sQ6kOojEcAgyjx68vXkw" />
-					<Items>
-						<DocTemplateItem UniqueId="47c95fad-26c1-417f-bd68-0e2eeb9b18df" RuleParameters="Type=IfcElementAssembly;PredefinedType=GIRDER;">
-							<Concepts>
-								<DocTemplateUsage Name="Type" UniqueId="03736d66-3828-43db-be0a-5feb72cae558">
-									<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Object_Predefined_Type_0b989XcDzD2fDaLbDNNAGX" />
-								</DocTemplateUsage>
-							</Concepts>
-						</DocTemplateItem>
-						<DocTemplateItem UniqueId="fb566f9c-c135-4561-b9c0-5163bbe9b59f" RuleParameters="Type=IfcBeam;PredefinedType=GIRDER_SEGMENT;" />
-					</Items>
-				</DocTemplateUsage>
-				<DocTemplateUsage Name="Cross Frames" UniqueId="370c7087-2b8b-4134-bbb2-69bc53b0fbe5" Override="true">
-					<Documentation>Cross frames between girder lines.</Documentation>
-					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Container_PredefinedType_37sQ6kOojEcAgyjx68vXkw" />
-					<Items>
-						<DocTemplateItem UniqueId="3548debb-c326-4e23-9a10-142ab59e5819" RuleParameters="Type=IfcElementAssembly;PredefinedType=CROSS_BRACING;" />
-					</Items>
-				</DocTemplateUsage>
-				<DocTemplateUsage Name="Floor Beams" UniqueId="abd97f83-66c8-4897-900c-969f879bf985" Override="true">
-					<Documentation>Floor beams between girder lines.</Documentation>
-					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Container_PredefinedType_37sQ6kOojEcAgyjx68vXkw" />
-					<Items>
-						<DocTemplateItem UniqueId="791590a9-c5a0-4842-9c42-a4d3f3bef19b" RuleParameters="Type=IfcBeam;PredefinedType=JOIST;" />
-					</Items>
-				</DocTemplateUsage>
-				<DocTemplateUsage Name="Stringers" UniqueId="a74dd762-c3dc-49f1-a375-d9863cfb449b" Override="true">
-					<Documentation>Stringers between floor beams.</Documentation>
-					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Container_PredefinedType_37sQ6kOojEcAgyjx68vXkw" />
-					<Items>
-						<DocTemplateItem UniqueId="6497f1e1-a970-4457-9f2f-6ca4ebb2a91a" RuleParameters="Type=IfcMember;PredefinedType=STRINGER;" />
-					</Items>
-				</DocTemplateUsage>
-			</Concepts>
-			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="e145a899-cfde-4262-84bc-e279b2936b83" />
-			<ApplicableItems>
-				<DocTemplateItem UniqueId="138c3834-b797-47e7-af75-0acf6bd46069" />
-			</ApplicableItems>
-		</DocConceptRoot>
 		<DocConceptRoot Name="Cross Frame" UniqueId="096b281a-518f-489d-b511-62717b96f38f">
 			<Documentation>Bridge cross frames connect two girders laterally. Cross-framing between girders may be described using templates of member configurations. Such cross framing is captured within components, using standard shapes (e.g. AISC in U.S.) where applicable. For curved alignments where girders are placed at different elevations, members must be placed relative to the girders at each side, for which positioning is defined relative to alignment curves. Such cross-framing is then instantiated as object occurrences according to repetition intervals, where each occurrence has unique connectivity relationships with corresponding girder segments.</Documentation>
 			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcElementAssembly" />
@@ -277,14 +277,14 @@
 						<DocTemplateItem UniqueId="1449b50b-85f6-4a63-ad20-bd6c13a402bd" RuleParameters="ObjectName=reg ^Cross_;" />
 					</Items>
 				</DocTemplateUsage>
-				<DocTemplateUsage Name="Plates" UniqueId="be97cbc1-7a11-4543-a75c-59c4a61c5533">
+				<DocTemplateUsage Name="Plates" UniqueId="be97cbc1-7a11-4543-a75c-59c4a61c5533" Override="true">
 					<Documentation>Plates used within cross frame.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Element_Decomposition_2A9y5QnEfCgOpEVxkXoRpW" />
 					<Items>
 						<DocTemplateItem UniqueId="6d6ae5dd-fcb9-4778-96b2-a09737b4229c" RuleParameters="RelatedObjects=IfcPlate;" />
 					</Items>
 				</DocTemplateUsage>
-				<DocTemplateUsage Name="Members" UniqueId="de2c81ea-db01-4311-ac54-d3d42e87e59c">
+				<DocTemplateUsage Name="Members" UniqueId="de2c81ea-db01-4311-ac54-d3d42e87e59c" Override="true">
 					<Documentation>Members used within cross frame.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Element_Decomposition_2A9y5QnEfCgOpEVxkXoRpW" />
 					<Items>
@@ -300,7 +300,7 @@
 						</DocTemplateItem>
 					</Items>
 				</DocTemplateUsage>
-				<DocTemplateUsage Name="Girder Segment Left" UniqueId="47cc5512-8b54-4f63-8d87-4cc95c712ddf">
+				<DocTemplateUsage Name="Girder Segment Left" UniqueId="47cc5512-8b54-4f63-8d87-4cc95c712ddf" Override="true">
 					<Documentation>Connection to girder on left as facing direction of alignment.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Element_Connectivity_with_Predefined_Type_2xpS19ZiH9sfTkBuMqmZIW" />
 					<Items>
@@ -316,7 +316,7 @@
 						</DocTemplateItem>
 					</Items>
 				</DocTemplateUsage>
-				<DocTemplateUsage Name="Girder Segment Right" UniqueId="042e7da0-2c21-4c9d-8542-b9acddd03b46">
+				<DocTemplateUsage Name="Girder Segment Right" UniqueId="042e7da0-2c21-4c9d-8542-b9acddd03b46" Override="true">
 					<Documentation>Connection to girder on right as facing direction of alignment.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Element_Connectivity_with_Predefined_Type_2xpS19ZiH9sfTkBuMqmZIW" />
 					<Items>
@@ -326,7 +326,7 @@
 			</Concepts>
 			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="06e51d50-a53a-4602-bc33-8c1a334f56d0" Type="IfcElementAssembly" />
 			<ApplicableItems>
-				<DocTemplateItem UniqueId="3dd55068-e911-4524-a930-b12c88835d10" RuleParameters="PredefinedType=CROSS_BRACING;" />
+				<DocTemplateItem UniqueId="3dd55068-e911-4524-a930-b12c88835d10" />
 			</ApplicableItems>
 		</DocConceptRoot>
 		<DocConceptRoot Name="Truss" UniqueId="e60a06df-d7c5-46e6-8922-66241ebd35ed">
